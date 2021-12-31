@@ -1,0 +1,1251 @@
+---
+title: "Computational Intelligence Summary"
+author: "Roman Hoehn"
+date: "9/19/2021"
+output: pdf_document
+---
+
+# Computational Intelligence
+
+\tableofcontents
+
+## Optimization
+
+### Basic Definition
+
+- Mathematical view: Select the best solution from a given set of availible solutions
+
+- Economic view: Find the solution with minimal costs and/or highest performance under given constraints
+
+Components of an optimization problem:
+
+1. *D*: Decision Space/ Search Space
+2. *O*: Objective Space
+3. *f: D -> O*: Objective function that maps each element of the decision space to a solution
+    
+Goal: Minimize or Maximize by finding min/max(f(x*)) for x* is element of D
+
+Additional constraints may be added
+
+
+### Optima
+- Global Optima: x* (Element of D) is a global optima of f if it holds that for each element x of D:
+    - Minimization: f(x) <= f(x*)
+    - Maximization: f(x) >= f(x*)
+- Local Optima: Optima for a reduced area around x*
+
+### Decision Spaces
+- Coninuous Spaces: Real valued variables with infinite precision
+    - Linear goal functions: Can be solved efficiently by using e.g. linear programming
+    - nonlinear goal functions: Not easy to solve efficiently, eg. nonlinear programming
+- Discrete Spaces: Combinatorial optimization
+    - Very hard so solve without using exhaustive search
+    - Heuristics as the main approach in real word problems
+- Mixed Spaces: Search space can also be a combination of continuous and discrete variables
+
+
+### Search Space Complexity (discrete)
+- For a TSP with n Cities the Search Space consists of:
+    - Symmetric:    (n - 1)! / 2
+    - Asymmetric:   (n - 1)!
+- Exhaustive Search algorithm will take O(n!) -> Factorial Runtime
+- Even for smaller n > 16 the algorithm will take forever and is unuseable 
+
+
+
+
+### Solving Discrete Optimization - Methods
+1. Random Search/ Sampling      -> Inefficient
+2. Exact Search (exhaustive)    -> Inefficient because of factorial search space complexity
+3. Branch and Bound/ Branch an cut algorithms: Divides D in smaller subspaces which can be solved efficiently, combines solution from smaller subsolutions
+    -> Very effective for TSP but very problem specific and hard to transfer to other problems
+4. Approximation algorithms: Get solution not worse than x in time y
+5. Heuristic algorithms: No guarantee for getting a high quality solution but usually creates good solutions very fast
+
+
+## Heuristics - in depth
+- Heuristic: Algorithms that quickly find solutions without any guarantee of finding global optimum/ high qualit solutions
+- 3 main principles of finding heuristics:
+    - 1. Analogy: Adapt known techniques from similiar problems
+    - 2. Induction: Develope techniques by solving small/trivial instances of the problem
+    - 3. Auxillary problems: Divide into subproblems and find heuristics to solve those
+- Heuristics are based on intuition and prior Knowledge, approaches can arrise from:
+    - Trial and Error
+    - Rule of thumbs
+    - mental shortcuts to simplify problem
+- Classification of heuristics:
+    - 1. Construction heuristics: Starting with an empty (=invalid) solution in each iteration another part is added (e.g. nearest neighbour for TSP)
+    - 2. Improvement heuristic: Starting with a valid solution in each iteration the algorithm tries to improve the fitness/quality of it (e.g. Hill Climber Seeded with random permutation in TSP) 
+
+## Improvement Heuristic - Basic Algorithm
+```python3
+def improve(init_solution):
+    cur_solution = init_solution
+    while not termination_condition:
+        temp_solution = modify_solution(cur_solution)
+        if fitness(temp_solution) > fitness(cur_solution):
+            cur_solution = temp_solution
+    else:
+        return cur_solution
+
+def modify_solution(solution):
+""" Improvement Operator/ Neighborhood Function
+This function modifies the passed solution to a solution that is close in the search space. Implementation is problem specific
+"""
+    pass
+```
+
+### Possible functions for modify_solution(s)
+
+#### Basic node modifications
+
+```python3
+# example for TSP with 6 city tour
+solution = [0,1,2,3,4,5]
+
+def node_exchange(solution):
+    """ Select two random nodes and swap (both) their edges """
+    idx_node_1 = random.randint(0,len(solution)-1)
+    idx_node_2 = random.randint(0,len(solution)-1)
+    if idx_node_1 == idx_node_2:
+        return node_exchange(solution)
+    else:
+        solution[idx_node_1], solution[idx_node_2] = solution[idx_node_2], solution[idx_node_1]
+
+
+def node_insertion(solution):
+    """ Remove a random node and insert it at a different position """
+    n = len(solution)
+    node = solution.pop(random.randint(0, n-1))
+    solution.insert(random.randint(0,n-2), node)
+
+
+```
+
+### k-Opt Heuristic
+
+#### 2 Opt Heuristic: 
+
+- Step: performs a single 2-opt step by swapping city i and j and reversing solution[i:j]
+
+```python3
+# assume tsp is symmetric
+def two_opt_step(solution, i, k):
+    idx = 0
+    new_sol = list(solution)
+    while i+idx < k:
+        new_sol[i+idx],new_sol[k-idx] = new_sol[k-idx],new_sol[i+idx]
+        idx += 1
+    return new_sol
+
+```    
+- Full 2-opt local search algorithm: Performs all possible two_opt_steps and returns the shortest resulting solution
+
+```python3
+def two_opt_local_search(solution,distance_function):
+    cur_sol = solution
+    cur_dist = distance_function(cur_sol)
+    n = len(solution)
+    for i in range(n-1):
+        for j in range(i+1,n):
+            step = two_opt_step(cur_sol,i,j)
+            step_dist = distance_function(step)
+            if step_dist < cur_dist:
+                cur_sol = list(step)
+                cur_dist = step_dist
+    return cur_sol
+```
+
+#### Generalized k-Opt Heuristic
+- Examines some or all nCk subsets of edges (n=numCities; k=kOpt)
+- For 100 cities and 3-Opt: 100C3 =   161.700
+- For 100 cities and 4-Opt: 100C4 = 3.921.225
+- Complexity of subsets: O(n^k)
+- Number of steps to perform grows exponentially which leads to large computation times for kopt with larger k or n
+- Possible solution: Dont examine all nCk subsets instead use following heuristics:
+  - Random neighbour: Random kOpt step
+  - Next improvement: Perform steps until improvement is found
+  - Best improvement: Perform m steps and update to the best solution found
+- Problem 1: A priori very difficult to tell which heuristic will perform best
+- Problem 2: Curse of locality
+  - for small k the search horizon is often too small to escape local optima, increasing k is highly limited by the exponential growth in computation time
+
+
+### No Free Lunch Theorem - Wolpert & Macready 1997
+- Which algorithm is best in general?
+- Over all optimization problems the probability to reach an objective quality solution after m steps is the same
+- For TSP we can find an algorithm A that works better than algorithm B. At the same time we can find/construct an optimization problem for which B will perform equally better than A
+- "Algorithm A is better than B " -> only possible for a specific problem not in general
+- Algorithm A will perform better than B on TSP if it is designed on problem specific knowledge/assumptions/exploits
+
+
+## Basic heuristic algorithms
+
+### Gradient Descent/Ascent
+
+
+#### Requirements:
+
+1. Real valued optimization problems: D is element of RealNumbers
+2. Objective function is differentiable
+- Gradient: Differential operator that calculates for f the direction of the steepest ascent for a point x*
+  
+#### Parameters for gd/ga
+
+- step width
+- number of maximum iterations
+- convergence criteria
+- progress criteria
+
+
+#### Stepsize
+
+- Critical choice in selection of step size: If too large algorithm wont converge on an optima, if to small algorithm will be slow, inefficient and easily trapped by local optima
+-  Adaptive stepsize can reduce this problem by dynamically adjustments based on the current area of the search space 
+-  Implementation example:
+   -  If f(x* + stepsize) > f(x*): Try again with bigger stepsize
+   -  Else: try again with smaller stepsize
+
+
+### Problems
+1. Outcome depends strongly on the initial solution passed to the algorithm
+2. Topology of the search space has a huge influence on success (usually blackbox)
+3. A priori no knowledge of parameters like e.g. step size
+4. Conflict between neighborhood size and computational effort
+5. Strong tendency to get stuck in local optima early
+
+
+### Alternatives to GA/GD
+- GA/GD is not applicable if optimization includes of discrete components?
+  - Switch to Hill Climber algorithm which uses the same idea for combinatorial optimization problems
+- GA/GD is not applicable because objective function  is not differtiable?
+  - Steepest Descent: Use random sampling of neighbouring solutions instead of computing the gradient
+
+
+## Hill Cimber
+
+```python3
+def hill_climber(
+    init_sol:"Solution",
+    get_neighbor_sol:Callable,
+    objective_fun:Callable,
+    max_iterations:int
+) -> "Solution":
+    cur_sol = init_sol
+    cur_score = objective_fun(cur_sol)
+    for it in range(max_iterations):
+        temp_sol = get_neighbor_sol(cur_sol)
+        if objective_fun(temp_sol) > cur_score:
+            cur_sol = temp_sol
+            cur_score = objective_fun(cur_sol)
+    else:
+        return cur_sol
+
+```
+
+## Metaheuristics
+- Group of heuristics that are used as top level strategies which use other heuristics to achieve a goal
+- Used on a wide variety of problems with constraints on time/memory (e.g. TSP) and/or insufficient problem-specific information/knowledge
+- Metaheuristics guide the search process and are mainly independent of the specific (local) search procedures they use
+- Main tasks:
+  - 1. Explore the global search space: Search a wide variety of areas without getting stuck in local optima early
+  - 2. Exploit the local seach space: Search the local area of a given solution for improvements
+- Examples:
+  - Population-based metaheuristics:
+    - Evolutionary Algorithms
+      - Genetic algorithm
+      - Genetic programming
+      - Evolutionary strategies
+    - Particle swarm optimization
+    - Ant colony optimization
+  - Simulated Annealing
+  - Tabu search
+  - Random Search
+  - Local search variations
+
+
+### Random sampling/search
+- Simple exploration-only metaheuristic which randomly generates solutions and returns the best one found
+- If given enough time it will find the optimal solution but it is inefficient
+
+```python3
+def random_search(max_rounds:int):
+    best_solution = random_solution()
+    cur_round = 0
+    while cur_round < max_rounds:
+        cur_round += 1
+        solution = random_solution()
+        if score(solution) > score(best_solution):
+            best__solution = solution
+    else:
+        return best_solution
+
+```
+
+
+### Iterated local search
+- Local search heuristics are highly dependend on the initial solution that is passed, iterated local search tries to exploit this by running repeated local searches on multiple randomly sampled initial solutions
+- metaheuristic: different local search procedures can be used in iterated local search
+
+
+```python3
+def iterated_local_search(runs):
+    best_solution = random_solution()
+    for _ in range(runs):
+        solution = local_search_algorithm(random_solution())
+        if score(solution) > score(best_solution):
+            best_solution = solution
+    return best_solution
+```
+
+
+## Metropolis-style algorithms
+- Background: Hill Climber/Gradient Descent style algorithms are likely to get stuck in local optima which they can not escape 
+- Idea: Allow the algorithm to accept solutions of a lower quality in some circumstances
+- Related algorithms: Simulated Annealing, Treshold Accepting, Great Deluge, Record-to-record Travel
+- Stochastic algorithm: If a worse solution is accepted is determined by using random numbers
+- The lower the quality difference between cur_solution and new_solution the higher the chance of accepting
+- Important rule: Always archive the best solution found because it can be rejected by the algorithm
+  
+
+
+### Basic metropolis algorithm
+- fixed temperature 
+
+```python3
+def metropolis(temperature, numRounds):
+
+    cur_solution = random_solution()
+    cur_score = score(cur_solution)
+
+    best_solution, best_score = cur_solution, cur_score
+
+    for round in range(numRounds):
+        temp_solution = modify_solution(best_solution)
+        score_new = score(temp_solution)
+
+        if (score_new > cur_score):
+            cur_solution, cur_score = temp_solution, score_new
+
+            if cur_score > best_score:
+                best_solution, best_score = cur_solution, cur_score
+
+        elif (random.random() <= exp(-((score_new - cur__score)/temperature))))
+            cur_solution = temp_solution
+            cur_score = score_new
+
+    else:
+        return best_solution
+
+```
+
+
+### Simulated annealing algorithm
+- Decreasing temperature:
+  - High temperature: Global exploration of the search space since the chance to accept worse solutions is high
+  - Low temperature: Local exploitation phase since the chance of accepting worse solutions is much lower
+- The choice of different cooling functions can further control which phases should be more dominant
+  - linear cooling
+  - quadratic cooling
+  - etc...
+  
+
+```python3
+def simulated_annealing(min_temperature, max_temperature, numRounds):
+
+    cur_solution = random_solution()
+    cur_score = score(cur_solution)
+
+    best_solution, best_score = cur_solution, cur_score
+    temperature = max_temperature
+
+
+    while temperature > min_temperature:
+
+        cool_down_temperature(temperature)
+
+        temp_solution = modify_solution(best_solution)
+        score_new = score(temp_solution)
+
+        if (score_new > cur_score):
+            cur_solution, cur_score = temp_solution, score_new
+
+            if cur_score > best_score:
+                best_solution, best_score = cur_solution, cur_score
+
+        elif (random.random() <= exp(-((score_new - cur__score)/temperature))))
+            cur_solution = temp_solution
+            cur_score = score_new
+
+  else:
+      return best_solution
+
+```
+
+### Accept probability in metropolis/simulated annealing
+- accept worse solution if rand[0,1] <= 
+  - e^(-( (f(x´)  - f(x)) / Temperature)) for Minimization
+  - e^(-( (-f(x´) + f(x)) / Temperature)) for Maximization
+- Probability to accept decreases with:
+  - increase of f(x') - f(x)
+  - decrease of termperature
+- If temperature == 0           -> local search algorithm
+- if temperature == infinity    -> random search algorithm
+
+
+#### Setting parameters
+- Initial temperature: Rule of thumb use a value so that ~3% of moves get rejected
+- Cooling function: Quadratic, linear, ... 
+- Initial solution: Random solution, solution from other algorithm (e.g. gready algorithm like next neighbour)
+
+#### Extensions
+- Non-monotonic cooling functions: Temperature gets reheated occasionaly - Switch between explore/exploit phases
+- Dynamic cooling functions: Only decrease temperature if no improvements are made after n rounds
+- Parallelization: Run multiple instances to decrease the strong influence of the starting solution
+
+
+### Treshold Accepting algorithm
+- Similiar idea to metropolis/sa but without a temperature variable influencing the probability
+- Define a parameter threshold, accept worst solutions if:
+  - |f(x')  - f(x)|  <=  threshold
+- Dynamic behaviour is achieved by decreasing threshold after each iteration/ if no improvements after n rounds
+
+```python3
+# example for maximization
+def treshold_acceptance(
+    threshold,
+    init_solution,
+    termination_condition,
+    modification_operator
+    ):
+    cur_solution, best_solution = init_solution, init_solution
+
+    while not termination_condition:
+        new_solution = modification_operator(cur_solution)
+
+        if score(new_solution) > score(cur_solution):
+            cur_solution = new_solution
+            if score(cur_solution) > score(best_solution):
+                best_solution = cur_solution
+
+        elif score(new_solution) - score(cur_solution) >= threshold:
+            cur_solution = new_solution
+
+        decrease_threshold(threshold)
+
+    else:
+        return cur_solution
+
+```
+
+
+### The great Deluge algorithm
+- Similiar idea to treshold accepting
+- Define a parameter w for water level, accept solutions as long as they are better than the water level
+- Water level get increased each iteration, the demands for accepting a new solutions increases with the water level
+- The increase of w is controled by another parameter r for rain intensity (=works similiar as stepsize in other heuristics)
+
+
+```python3
+# example for maximization
+def the_great_deluge(
+    water_level,
+    rain_iteration,
+    init_solution,
+    termination_condition,
+    modification_operator
+    ):
+    cur_solution, best_solution = init_solution, init_solution
+
+    while not termination_condition:
+        new_solution = modification_operator(cur_solution)
+
+        if score(new_solution) > score(cur_solution):
+            cur_solution = new_solution
+
+            if score(cur_solution) > score(best_solution):
+                best_solution = cur_solution
+
+        elif score(new_solution) > water_level:
+            cur_solution = new_solution
+
+        water_level += rain_interation
+
+    else:
+        return cur_solution
+
+```
+
+### Record-to-record Travel algorithm
+- Modification of the great deluge algorithm, combines the variable for water_level with the best found solution so far
+- Accepts a worse solution if: f(x') >= f(x*) - water_level, with:
+  - f(x') -> score of current solution
+  - f(x*) -> score of best solution found so far
+
+```python3
+# example for maximization
+def record_to_record(
+    water_level,
+    rain_iteration,
+    init_solution,
+    termination_condition,
+    modification_operator
+    ):
+    cur_solution, best_solution = init_solution, init_solution
+
+    while not termination_condition:
+        new_solution = modification_operator(cur_solution)
+        if score(new_solution) > score(cur_solution):
+            cur_solution = new_solution
+
+            if score(cur_solution) > score(best_solution):
+                best_solution = cur_solution
+
+        elif score(new_solution) > score(best_solution) - water_level:
+            cur_solution = new_solution
+            
+        water_level += rain_interation
+
+    else:
+        return cur_solution
+```
+
+
+## Conclusion
+- All optimization algorithms in this document are fundamentally based on the concept of gradient descent and/or hill climbing and use local search methods
+  - 1. Using single solutions (instead of populations)
+  - 2. Are tracing the search space by slightly modifying the current solution
+- Main difficulties are:
+  - 1. Getting trapped/ escaping local optima
+  - 2. adjusting parameters a priori
+  - 3. Outcome is highly dependend on the initial solution that start the algorithm
+- Strategies to overcome those difficulties are:
+  - 1. (Dynamically) Adjusting modification_operator() 
+  - 2. Accepting solutions with worse scores (stochastically and/or based on parameters)
+  - 3. Randomization of the modification_operator()
+  - 4. Switching between exploration and exploitation phases
+  - 5. Using memory to archive best solutions and return to those if algorithm cant 
+  - 6. Running multiple searches (in parallel) to overcome the influence of initial solution
+  - 7. Initializing the algorithm with solutions from other (simpler) heuristics (e.g. gready heuristics)
+  - 8. improve for a user defined number of iterations
+- Main reason for poor performance? Badly parameterized!
+  - Investigate the reason of poor performance by:
+    - 1. gathering statistics
+    - 2. thinking through the individual instructions
+    - 3. adapting algorithm to the specific structure/challange of the optimization problem
+
+
+## Evolutionary Computation
+- Learning from nature - Two main strategies:
+- 1. Bionics: Mimick behaviour/design from concrete instances found in nature
+- 2. Evolutionary computation: Mimick nature's design process itself
+- Concept: Optimization is based on darwinian evolution - Selection, adaptation and reproduction
+- Pros:
+- No domain knowledge required (but can be incorporated if available)
+- incomplete information/models can be handled
+- Metaheuristic can be applied to problems from a very wide spectrum
+- usually very fast improvement of best/average fitness
+- usually better perfromance than simple search algorithms
+- Performance can be dramastically improved if problem specific operators are added to the seach (e.g. 2-Opt as local search for TSPs)
+- Cons:
+- After fast initial improvements EAs can take a long time to reach optima (often it is beneficial to do multiple shorter runs than a single long run)
+- Performance is usually better with problem-specific algorithms (e.g. branch&bound for TSP)
+- No guarantee that solutions found are a global optimum
+
+
+### Terminology
+- Genes: A particular property(e.g. colour, independet variable)
+- Chromosome: Collection of genes
+- Genotype: Collection of chromosomes that represent our encoded solution 
+- Phenotype: Real representation of a solution 
+- Fitness function: Objective function which we want to maximize for
+- Population: Collection of all current individuals
+- Diversity of population: Number of different fitness-values/chromosomes/phenotypes inside the population
+
+
+### Operators
+
+### Cross-over/Recombination
+- Genes/Chromosomes are inherited from parent individuals to their offspring
+- Child solutions are created by mixing genes from all parent solutions
+- No new properties are passed on, only recombination of existing properties
+- Global search horizon - Recombination mainly explores the search space and is most beneficial in the initial search phase
+- Stochastic nature - Cross-over rate and pivot point are usually determined by random numbers
+
+### Mutation
+- Represents copy errors during the breeding process
+- Stochastic nature - new properties/genetics are determines by random numbers
+- Local search method - Neighbouring solutions are exploitet by making small changes in the chromosome
+- Increases genetic diversity of the population
+
+#### Mutation vs. Recombination
+- Usually both kind of operators are used in basic evolutionary algorithms
+- Different importance based on specific problem and kind of EA
+- Evolutionary strategies: Focus on mutation
+- Genetic programming: Focus soley on crossover
+
+### Selection
+- Selection determines which solutions are able to reproduce and generate offspring for the next generation
+- By defining the selection operator one also defines the direction of the search algorithm
+- Main principle: Survival of the fittest - Individuals with a high fitness score are more likely to pass their genes on to the next generation
+- Selection pressure automatically balances between exploration and exploitation
+- Fitness: Real valued evaluation function/objective function which shall be maximized. Basis of all selection operators
+- Two selection operators are necessary:
+- 1. Breading/parent selection: Which individuals are choosen to produce offspring and thus share their genetic code?
+  - Tournement Selection: Randomly pick n individuals and select the one with highest fitness
+  - Fitness weighted selection: Randomly pick individuals with probability p_i based on f(x_i)
+- 2. Survivor selection: Which individuals are choosen for the next generation?
+  - Deterministic Fitness based selection: Rank population for fitness and select best individuals (+ strategy)
+  - Deterministic Age based selection: Only children can be selected for the next generation, parents are deleted after breading (, strategy)
+  - Elitism: Combination in which the best n individuals are always passed into the next generation followed by mu-n individuals from offspring population
+
+
+### Termination condition
+- Multiple possible ways to determine when to terminate search:
+- 1. Maximum number of generations 
+- 2. Reached predefined level of fitness
+- 3. Decreased level of diversity
+- 4. No improvements in best and/or average fitness after n rounds
+- 5. Time limit reached
+
+
+## Generic Evolutionary algorithm
+
+```python3
+def EA(mu:int, lamba:int, max_generations:int) -> "Chromosome": 
+
+""" mu = size of parent population, lambda = size of breeding population """
+
+  cur_generation = 0
+  main_population = initialize_population(size=mu)
+
+  while cur_generation < max_generations:
+
+      cur_generation += 1
+
+      breading_population = select_breading_population(main_population, size=lambda)
+
+      offspring_population = generate_offspring_population(
+          breading_population,
+          recombination_operator,
+          mutation_operator,
+          select_breading_operator
+          )
+
+      main_population = select_new_main_population(
+          breading_population,
+          offspring_population,
+          select_next_generation_operator
+          )
+
+      # based on select_next_generation_operator() it may be necessary to also create an archive population (e.g. if comma strategy is used)
+  
+  else:
+      return select_best_individual(main_population)
+
+```
+
+
+### Genotype & Phenotype
+- Solutions are represented by its Phenotype, Phenotypes are encoded in the Genotype/Chromosomes
+- Solutions are elements of Phenotype-space
+- Encoding of solutions are elements of Genotype-space
+- Prerequisite for finding global optima: Every possible solution can be represented in genotype space
+
+## In Detail - Encoding
+- How to encode candidate solutions? Problem-specific challenge!
+
+### Guiding principles 1
+- Similiar phenotypes should be represented by similiar genotypes
+- Small changes of a particular gene should suffice to construct similiar phenotypes, if this isnt the case optima can only be reached by changing big parts of the genome
+- Example: Hamming cliffs in binary representation of real numbers
+- Optimize f(x1, x2, ..., xn) with xi is Element of Real numbers
+- Setting: xi in intervall [a, b] with precision epsilon; xi is represented as binary number z
+- For: 
+- epsilon = 10^-6
+- intervall = [-1, 2]           -> length = 3
+- 3 * 10^-6 = 3000000             -> necessary number of ints to represent
+- ceil(log(3000000, 2)) = 22      -> 22 Bits are required to represent floats from [-1,2] with precision of 10^(-6)
+- Problem: If we represent the values for x in regular binary code the transition from some values to the next possible value requires to change a significant amount of bits, the general rule for good encoding is not followed
+- Example:
+- 0...0111    -> encoding current value 
+- 0...1000    -> encoding current value + 0.000001
+- Hamming Distance = 4  -> to inkrement the current value by the smallest possible step the genetic algorithm has to change 4 Bits
+- To overcome the problem of hamming cliffs in genetic algorithms that use binary strings, the binary encoding should use Gray code instead of regular binary code
+- Gray Code: Alternative binary encoding with the property, that inkrementing/decrementing always changes exactly 1 Bit
+
+### Guiding pronciple 2
+- Similary encoded phenotypes should have similiar fitness  -> Reduce the effect of Epistasis 
+- In biology the change of epistatic gene ("stopping gene") can modify/supress the effect of several other genes
+- In EAs the effect on fitness of changing a single gene may also be dependent on the value of several other genes  -> We should prefer encoding which minimize the epistatic effect as much as possible
+- Example of TSP:
+1. Permutation-based encoding   -> Low epistasis 
+  - Swapping 2 cities of the permutation list has a comparably lower effect on tour length since the change is mainly local
+  - Effect on fitness should be low
+2. List/ memory based encoding  -> High epistasis
+  - Changing on gene can modify the whole, global tour
+  - Effect on fitness can be drastically
+- If the encoding has high epistasis the mutation/crossover operators can drastically change the phenotype and the algorithm will behave similiar to a random search
+- With low epistasis the search is able to be much more precise/directed and will there for be better/faster at finding optima
+- Epistasis is dependend on the problem itself aswell as on the choosen encoding, since we can only control the encoding we should try to minimize it as much as possible
+
+
+### Guiding principle 3
+- If possible, the operators used in EA should only produce solutions that are valid and inside the search space
+- Leaving the search space if:
+- No meaningful interpretation of a genotype is possible
+- Basic requirements arent fullfilled (e.g. Round trip doesnt include all cities)
+- Fitness function isnt possible to evaluate a solution
+- How to enforce this principle?
+1. Choose operators that guarantee that solutions always stay valid and are element of the search space
+2. Use repair mechanisms if 1. isnt guaranteed
+3. Use penalty terms that decrease fitness for invalid solutions if neither 1. or 2. is given
+
+
+## In Detail - Selection
+
+### Principle of Selection
+- Individuals/solutions with better fitness values have better chances of creating children
+- Mechanism behind -> Selection pressure
+- How strong should selection pressure be to return optimal solution?
+  - Small selection pressure will increase the spread of candidate solutions all around the search space -> increase exploration
+  - Strong selection pressure will increase local optimization at a specific area of the search space and converge to an optimum -> Increase exploitation
+- Best strategy for setting selection pressure: Dynamically adjusting over the search process -> Start with low selection pressure (-> exploration) and increase over time (-> exploitation) 
+
+
+### Computing a Metric for Seletion pressure
+- Variables:
+  1. Time to takeover: How many generations until all individuals are identical
+  2. Selection intensity: (Average fitness before selection - Average fitness after selection) / Standard deviation fitness before selection
+- Prerequisite: Normal distributed fitness values
+- Critic: Most often not applicable on general optimization problem
+
+
+### Selection Operators
+
+#### Roulette Wheel Selection/ Fitness-proportionate Selection
+- Select individuals with probability based on their relative fitness to the population
+- relative Fitness for individual i: Fitness individual i / aggregated Fitness of all Individuals of the population 
+- Relative fitness is used as selection probability
+- Prerequisite: 
+  1. Fitness values may not be negative
+  2. Maximization problem 
+- Characterization: 
+  1. Solutions with high relative fitness can dominate the population in a short time
+  2. strong tendency for crowding/ low genetic diversity
+  3. fast convergence on an optimum
+- Selection intensity -> std_dev_fitness_population / avr_fitness_population
+  - -> Selection pressure will decrease over time which is the opposite of what an optimal EA would require
+  - This can issue can be adjusting the fitness function by using linear-dynamic or sigma - scaling techniques for which additional parameters need to be adjusted. Scaling techniques compute dynamically adjusted fitness values to controll selection pressure in a more favourable way. Alternativley a time dependant adjustment or the Boltzmann-Selection (Idea of metropolis algorithm) can be used as well.
+
+
+#### Rank-based Selection
+- Each individual is evaluated and assigned a rank according to their fitness
+- Assign a probability distribution over the ranks- the lower the less likely to be selected
+- Roulette Wheel is used for the rank distribution instead of individuals themselves
+- Dominance problem is reduced in comparison to standard roulette wheel
+- Computational effort is increased for sorting and ranking
+
+
+#### Tournament Selection
+- Draw k individuals with 2 <= k <= PopulationSize
+- Individual with best fitness score is selected for reproduction
+- all participants of the tournament stay inside the main population and can be drawn and selected again after each round
+- Advantages:
+  - Dominance problem is reduced 
+  - Selection pressure can be controlled by the tournament size k
+  - Process can easily be run in parallel
+
+#### Elitism
+- For most selection operators there is no guarantee that the best candidate solutions are passed into the next generation, this can be archieved by using elitism in addition
+- To keep the best k solutions inside the main population, the k best solutions can be placed in the next generation regardless of the selection process
+- Important: Elite should still be part of the regular selection process for further improvements
+
+
+
+#### Deterministic crowding
+- To reduce the crowding of solutions and increase diversity, additional deterministic crowding can be added into the algorithm
+- Idea: Generated offspring replaces individuals inside the main population that are close inside the search space
+- To implement this, a distance metric has to be computed (e.g. Hamming Distance for binary numbers)
+- Another possibility is to group each child solution with the most related parent solution and then select the better one for the next generation
+
+
+#### Sharing
+- Another method to reduce crowding
+- Fitness of solutions is reduced if it is in a crowded area of the search space
+- Requires a weighting function and a distance metric
+
+### Variation Operators
+
+### Mutation Operators
+- Small changes of the chromosome mainly used for exploitation
+- Rule of thumb: Change as little as possible to allow a directed local search instead of random search
+
+```python3
+# Used for chromosomes that are encoded in binary, in place
+def binary_mutation(chromosome:List[bool], mutation_rate:float) -> None:
+  assert (0 < mutation_rate <= 1)
+  for idx, gene in enumerate(chromosome):
+    # flip each bit with p = mutation_rate
+    if random.random() <= mutation_rate:
+      chromosome[idx] = not gene
+
+
+# used for chromosomes encoded with real valued numbers
+def gaussian_mutation(
+  chromosome:List[float],
+  mutation_rate:float,
+  stepsize:float
+  ) -> None:
+  assert (0 < mutation_rate <= 1)
+  for idx, gene in enumerate(chromosome):
+    # add normal distributed, random number to each gene (mu=0, sigma=stepsize)
+    chromosome[idx] += random.gauss(0,stepsize)
+
+```
+
+- In gaussian mutation the value of sigma (=stepsize) has a large influence on success, if small it emphazises exploitation, if large it instead does mainly exploration  (dynamic adjustments are possible)
+- In general binary mutation operators are more suited for exploring large parts of the seach space while gaussian mutation works best in exploiting the local area around a solution
+- Setting mutation rate? Since we want to only make small local changes to the chromosome a good strategy is to set it to mutation_rate = 1 / len(chromosome)
+
+#### Possible mutation operators
+- Standard mutation: Assign a new random value (in valid range) to a gene that is mutated
+- Pair swap mutation: Swap two elements
+- Shift mutation: Shift a set of 2+ genes inside the chromosome
+- Arbitrary mutation: Shuffle the array slice between i and j
+- Inversion mutation: Invert the array slice between i and j 
+
+### Crossover Operators
+- Input are two chromosomes and Output is a new chromosome that is created by combining the genes from its parents
+
+#### n- point Chross-over
+- Idea: Randomly select n pivot points and create the offspring by setting its chromosome as a combination of n+1 sub chromosomes alternating between mother and father
+- If more than 2 parents are used for a chross-over operation, the concept can be used by doing the diagonal crossover (e.g. for 3 parents and n=2 3 children chromosomes are reurned)
+- Problem: Positional Bias - Gene-Pairs that are far from each other have a lower chance of being passed to the child as gene-pairs that are closer to another
+  - Example: 1-Point Crossover
+  - 1-2-3-4-5   -> Probability to inherit 1-.-.-.-5 is lower
+  - 3-4-5-1-2   -> Probability to inherit 4-5       is higher  
+
+#### Uniform Cross-over
+- Idea: For each gene, randomly select if it is inherited by the father or mother solution
+- Number of crossovers is random      -> [0 <= n <= len(chromosome)-1]
+- Uniform Order-Based Crossover (Variation): Decide for each position if it is kept or removed, for removed genes insert the kept genes from the other parent solution in its original order
+- Problem: Distributional Bias - The chance of inheriting k genes from Solution A is not equal for all k in [0,len(solution)-1]
+  - Example:
+  - 0-1-2-3-4-5-6  -> Mother solution
+  - P(k) -> Probability to inherit k genes from Solution A:
+    - P(k=0) = 0.015625       -> Unlikely for small k
+    - P(k=1) = 0.09375
+    - P(k=2) = 0.234375
+    - P(k=3) = 0.3125         -> Most likely for (len(solution)-1 / 2)
+    - P(k=4) = 0.234375
+    - P(k=5) = 0.09375
+    - P(k=6) = 0.015625       -> Unlikely for large k
+
+#### Shuffle Cross-over
+- Idea: Before doing a one point crossover, shuffle the whole chromosome
+- Perform crossover on the shuffled chromosome
+- Unmix the chromosome, to do this an additional array of indices is necessary
+- Benefit: Positional bias of regular 1 point crossover is removed through the shuffling process
+- One of the most recommended mutation operators
+
+### Biases on Cross-over Operators
+- Positional Bias: The probability of two genes being passed on still connected is dependant on their position, prominent in n-point crossover without prior shuffling
+  - Two genes are seperated (end up in different offspring) if a crossover point is choosen between them, the bigger the distance between these two genes is the bigger the probability of seperation is
+- Distributional Bias: If  the  probability  that  a  certain  number  of  genes  is  exchanged  between  the parent chromosomes is not the same for all possible numbers of genes 
+
+
+### Self Adapting Algorithms
+- Assumption: Mutation operator should always change the chromosome as little as possible -> Always true?
+  - Mutation operator is never optimal for the whole search if it is set as constant
+  - The quality of a given mutation operator depends on the current relative fitness level of a given solution
+  - Solutions that are already close to an optimum are on average better improved by operators that make small, local changes to the chromosome
+  - Solutions that are far away from an optimum are better improved by using mutation operators with a higher degree of randomization
+- Ergo: Mutation operator can be adjusted based on the relative fitness score of a solution
+- Strategies (based on gaussian mutation operator):
+  1. Predefined Adaptation: Stepsize of a mutation operator is reduced after n rounds
+  2. Adaptive Adaptation: Implement a rule based on the developement of fitness improvements
+  3. Self-Adaptive Adaptation: Each solution has its own operator which is part of the evolutionary search itself
+
+```python3
+
+def predefined_adaptation(step_size:float, modifying_parameter:float):
+    """ Stepsize for gaussian mutation is reduced after each generation """
+    assert 0 < modifying_factor < 1
+    return (step_size * modifying_parameter)
+
+def adaptive_adaptation(
+    step_size:float,
+    success_rate:float,
+    theshold:float,
+    modifying_parameter:float
+):
+    """ Stepsize for gaussian mutation is modified based on previous success of mutations """
+    assert modyfying_parameter > 1
+    if success_rate > treshold:
+        return (step_size * modyfying_parameter)
+    elif success_rate > treshold:
+        return (step_size / modyfying_parameter)
+    else:
+        return step_size
+
+# Self-Adaptive Adaptation can be implemented as an additional member variable for example
+class Solution:
+    ...
+    self.stepsize = parent.stepsize + random.gaussian(0,sigma) 
+    ...
+
+```
+
+## Variation Operators - Summary
+- Operators that may appear to be unsuitable (e.g. because of high hamming distances) can be very successfull depending on the optimization-problem
+- Problem-specific knowledge can and should be incorporated into the selection/creation/implementation of variation operators
+- Biases (positional and distributional) can negativle impact the search by constraining certain paths in the search space
+-  Quality of a given Operator depends on the current phase of the search, dynamic adjustments can benefit the quality of results dramatically
+-  Mutation parameters can be included in the evolutionary search and be part of the optimization itself 
+
+
+## Evolutionary Strategies
+- Meta-Heuristic to optimize numerical (real valued) problems
+- Chromosome is a vector of n floats
+- Objective Function f maps n - real valued arguments to a real valued Output (e.g. find xi, yi for which f(xi,yi) = 0)
+- Focus: Mutation instead of Crossover
+
+### Mutation in ES
+- Chomosome is a vector s of length n:
+    - s = [s1,s2,....,sn]
+- To mutate we add a random vector r of length n to the chromosome:
+    - r = [r1,r2,....,rn]
+        - ri is a a random, normal-distributed value with expected value = 0 (independent of idx)
+        - and std_dev = sigma (represents the steps size, can be independent or dependent of idx and/or generation)
+- s(t+1) = s(t) + r(t) where t is number of generations
+
+### Selection in ES
+- Deterministic: Strict elite principle is used - Selection isnt stochastic/probabilistic (like e.g. tournement selection in GA)
+    - Only the best solutions are selected for the next generation
+- Parameters:
+    1. mu:      Number of parent individuals per generation
+    2. lambda:  number of offspring individuals generated per generation
+- Two main selection-strategies:
+    1. Plus Strategy: Select mu individuals from the whole pool of solutions                [usually: mu > lambda]
+        - Pro: Best solutions will always survive
+        - Con: More difficult to escape suboptimal local optima
+    2. Comma Strategy: Select mu individuals only from the current generations children    [necessary: lambda > mu]
+        - Pro: Better chance to escape local optima
+        - Con: Best solutions can be "lost" if all children are worse -> need to use archive population
+    3. Combination of Plus/Minus - Beneficial to switch one or multiple times between both strategies
+        
+
+#### Selection Example
+- 1 + 1 Strategy-ES
+
+```python3
+def ea(max_iterations:int, ...) -> "Solution":
+    ...
+    cur_solution = random_solution()
+    cur_generation = 0
+    ...
+    while cur_generation != max_generations:
+
+        child_solution = mutated(cur_solution)
+
+        if fitness(child_solution) >= fitness(cur_solution):
+            cur_solution = child_solution
+
+        cur_generation += 1
+    else:
+    ....return cur_solution
+```
+- In the case of 1+1 we have a similiar algorithm to gradient descent/ hill climber (difference: gd always updates solution)
+- If we increase mu, we get a search algorithm that acts like a parallel run of mu gradient descent algorithms - This eliminates the sensibility to the effect of picking the initial, randomized starting solution
+
+
+
+### Optimizing the evolutionary mechanism itself
+- ES can also optimize additional parameters besides basic control variables
+    1. Mutation rate
+        - How many genes are mutated in offspring solutions?
+    2. Mutation Step-Width
+        - Adapting the std_dev of each mutation to optimize between exploration & exploitation phases
+    3. Lambda & Mu:
+        - generate more/less offspring per generation to increase genetic variability and speed of the algorithm
+    4. Number of genes in a chromosome
+        - e.g. adding additional plates in engine model by inventors
+
+
+### Example: Global variance adaptation
+- Variance is represented by a global value for all individuals of the population
+- Count the number of fitness improvements per generation
+- heuristic:  ratio = num_improved_children / children; optimal_ration=0.2; alpha (>1) 
+    - if    ratio < optimal_ration:    global_var /= alpha   [ => decrease stepsize]
+    - elif  ratio > optimal_ration:    global_var *= alpha   [ => increase stepsize]  
+
+
+### Example: Local variance/m-rate adaption
+- Each solution has a local value for the mutation parameters which represent additional genetic information (although no direct influence on solution's fitness)
+- Idea: Depending on the position inside the search space different parameters will be more succesfull
+- Evolution will favour and select solutions with m-rate/variance best fitting for its genome
+- Example implementation of local variance adaptation (Gaussian-Mutation)
+    - Update a solutions mutation variance based on random, normal-distributed numbers, a popular method is to have a chromosome factor (N(0,1)) and n individual gene factors (N_i(0,1)))
+    - For each control variable a unique mutation behaviour is stochastically determined
+    - Complex self optimization methods like this are usually good for very large search spaces/ large chromosomes, for smaller problems they usually add more overhead than benefits
+- Plus or Comma? Both!
+    - Solutions have a selection advantage by decreasing the mutation stepsize to very small values which lead to very small increases in fitness (common problem for continous search)
+    - Plus strategy works very good in the exploring phase but tends to quickly get stuck in local optima
+    - Changing to the comma strategy at this stage will increase the chance of getting further significant improvements by forcing the population to increase genetic diversity 
+
+
+## Summary ES
+- Very powerful optimization heuristic for continous problems
+- Key Idea: Make Parameters of the evolutionary mechanism part of the evolution itself 
+- In the simple 1+1 Strategy ES works very similiar to gradient descent, if mu/sigma are increased it acts like multiple GA's in parallel
+- Heuristics: 
+    - mu/lambda between 1/5 to 1/7
+    - Global Variance adaptation ratio: 1/5
+    
+## Genetic Programming
+
+### Concept
+- Evolution is applied to computer programs that computes an output for its input
+- Searching for a program that matches the behaviour we want to archieve
+- Programms are represented by expression trees that can be parsed
+- Some practical applications include:
+    1. Controlling functions for technical devices
+    2. Designing functions
+    3. Search functions
+    4. Algebraic expressions
+
+
+### Encoding of Solutions
+- Chromosomes are a symbolic representations of a program
+- Important Difference: No fixed legth of a chromosome
+- Two main components are required:
+  1. F -> Set of function and operator symbols
+     1. Example for boolean goal program: AND, OR, NOT, ...
+     2. Example for numerical goal program: +,-,*,/,... 
+  - Important: Operators must be safe to use in all combinations to avoid a crashing program, e.g. division by zero must be catched and defined if it can occur
+  - Difficulty: Including the right operators for allowing to find a good solution-program
+  2. T -> Set of terminal symbols (variables and constants for input/output)
+     1. Example:Real valued numbers, True, False
+    - > Optional Idea of ADF (automatically defined and reused functions)
+    - Known programs that proofed to be useful for similiar problems can also be included as element of T, the idea is to initially provide subprograms which might be beneficial to reach our goal program faster/more efficient
+- Candidate solutions/chromosomes are expressions of a combinations of F and T (and maybe Brackets)
+- Implementation: Programs are implemented as (recursive) parsing trees represented by a symbolic expression 
+- Genotype/Chromosome: Symbolic expression of a programm (usually in infox notation) -> +(1, *(2,6))
+- Phenotype: Tree structure
+
+
+## Evolutionary Search
+
+### Initialization
+- GP specific Parameters:
+    1. Maximal height of a parsing tree OR
+    2. Maximal number of Nodes in a parsing tree
+- Population is initialized with n random expressions using one of the following algorithms
+    1. Grow Method: Recursive Algorithm that creates Trees of irregular shape drawing randomly from F OR T OR (F AND T) depending on the current Node and maximal allowed height. Calls itself recursivle if element from F is inserted for a Node
+    2. Full Method: Recursive Algorithm that creates perfectly balanced parsing trees, if the current depth is not the maximum depth it draws randomly from F and else it draws randomly from T (only leaves are elements from T, all other nodes are drawn from F)
+    3. Rand Half & Half algorithm: Combination of 1 and 2, creates a population that is made up of mu/2 full grown trees and mu/2 irregular grown trees
+- Population Size is usually very large (~10.000) and number of generations until convergence is small (~10) (exactly the opposite of ga)
+
+### Evaluation
+- Evaluate each individuals fitness by computing the program
+  - Learning Boolean example: Ratio of correct Outputs to Input
+  - Numerical example: Sum of squared errors for Outputs in relation to optimal results of a regression
+
+### Selection
+- Selection: Each of the general Selection strategies can be used in genetic programmin (e.g. Roulette-wheel, Tourenment-Selection, ...)
+
+### Variation
+- Variation operators: Usually only Crossover Operator is used in genetic programming, Mutation is optional
+- In GA Crossover is performed based on the genotype/chromosome, e.g. n point crossover on the permutation based encoding
+- In GP crossover is performed directly on the phenotype (=tree structure)
+- Crossover: Take a random node from each parent node and create offspring as a combination of those - The whole subtree with the node as root is exchanged and not just the single node!
+- Crossover is much more powerfull in GP than in GA! Eventhough no mutation is used, crossover can create programs that are in very distinct areas of the search space
+- Since crossover can create very diverified offspring soltions there is usually no need to introduce additional variation by mutation
+  
+
+### Introns & Editing
+- Often times output solutions are very bloated and contain unnecessary and redundant expressions which complicate the interpretations
+- Programs can often be simplified without changing their fitness
+- Editing during the evolutionary search should still be avoided since it will decrease the diversity of genetic material
+- Preferred method: If necessary edit the final solution for better readability
+- Introns: Currently useless part of the chromosome that doent affect the functionality of a program, it still can be used in crossover and create better solutions
+- Usually the size of programs grows with each generation
+-  Strategies to reduce bloat:
+   -  Crossover operators that intelligently reduce bloat
+   -  punish larger programms
+   -  prefer shorter programs to longer programs if the are evaluated with the same fitness
+   
+   
+## Ant Colony Optimization Algorithm (=ACO)
+
+### Basic Idea
+- Individual ants mark their path to food sources with pheromones, shorter paths can be travelled more frequently and therefore collect more pheromones. The more pheromones are placed on a given path, the more likely are other ants to travel the same path. Over time the path length to food sources are minimized
+- Origin: Double Bridge Experiment
+
+
+### Basic assumptions
+1. Short paths are labeled with more pheromones than long paths for a given duration
+2. Ants chooce their path randomly but prefer paths with higher pheromone concentration
+3. Ants can also vary the amount of pheromones they place on a path, routes to better food sources can be marked this way aswell
+
+
+### Difference to EA or PSO
+- In EA or PSO the individuals of our population represent solutions, this is not the case for ACO
+- The solution is represented by the trail of pheromones itself and not by individual ants 
+- ACO has only one main solution which the algorithm is optimizing
+
+
+### Stigmergy - Principle
+- The basic principle of ACO is stigmergy, the ants are communicating indirectly by interacting with their environment
+- Stigmergy: Individuals manipulate their environment to communicate with other individuals of their colony
+- global behaviour adapts to local information
+
+
+### Important conclusions from Double-Bridge Experiment
+- All paths must be available from the start or ants will be mislead on the initialy available paths no matter the distance
+- Ants mark their path in both directions (nest->food and food->nest)
+
+
+## Implementation of artificial Ants
+- Optimization has to be formulated as a search for an optimal path inside a weighted graph
+1. Problem: Self-intensifying circles -> Ants gets stuck in a circle and cant break out of it because pheromone concentration continously increases (happens in nature as well)
+   1. Solution: Pheromones get placed only after an ant has completed a full tour
+2. Problem: Avoid early convergence to local optima in the beginning phase of the search algorithm
+   1. Solution: Implement an evaporation of pheromones over each iteration 
+3. Additional Improvements/Extensions:
+   1. Amount of pheromones can be dependent on the quality of a solution (higher pheromones for better fitness)
+   2. Using heuristics when determining the the initial graph
+
+
+## Conditions for using ACO Algorithm
+1. Combinatorial Optimization problem, usually a weighted graph
+
+
+## Implementation for TSP
+- Using distance matrix and additional pheromone matrix of the same dimensions
+- Initialize pheromone matrix with constant (usually 0) 
+- The completition of a tour (=Hamiltonian Path, each vertice is visited exactly once) is marked inside the pheromone matrix, ants pick each steps randomly but prefer steps with higher pheromone concentration
+
+
+
+## Particle Swarm Optimization Algorithms
+
+
+### Swarm Intelligence
+- PSO and ACO are both based on the principle, that simple individuals with limited capabilities can evolve complex solutions by cooperating in large groups
+- Individuals are not controlled by a central mechanism, the swarm behaviour is achieved by information exchange between individuals 
+- Inspirations:
+	1. ACO: Socials insects like ants, termites, bees
+	2. PSO: Fish or Bird-swarms
+
+
+### Population-based vs. Swarm-based Algorithms
+- Population-based algorithms:
+	- each individual is a candidate solution
+	- optimization is mainly based on the recombination of gens from the population and the selection of parents
+- Particle-Swarm algorithms:
+	- each individual is a candidate solution
+	- optimization is based on the aggregation of single solutions, the individuals inside the swarm exchange informations and adapt to it
+- Ant-Colony algorithm:
+	- Individuals do not represent solutions for the optimization
+	- information exchange is only happening by manipulation of the global environment (stigmergy/ extended phenotype)
+	- the environment itself represents the solution (one solution that is constantly modified during optimization)
+	
+
+## PSO - Basics
+- Used for continuos optimization problems only
+- Combines the principle of gradient descent with population-based algorithms: Each candidate solution searches its local environment but is also affected by the aggregated swarm behaviour
+- each individual is represented by its position x_i and a velocity vector v_i (velocity represents the step size/mutation rate)
+
+
+## Velocity Vector
+- velocity represents the step size / mutation rate
+- x_i(t+1) = x_i(t) + v_i(t)
+- -> The position of a solution is updated based on the velocity of solution
+
+
+## Compute Velocity - Main mechanism of the PSO
+- The velocity of a solution is based on three parametets:
+	1. alpha - inertia (decreases with each iteration t) 			-> similiar to temperature in simulated annealing, explore first and exploit later
+	2. beta1 - cognitive influence (randomly selected in each iteration)	-> each individual is influenced by the best solution it found by itself
+	3. beta2 - social influence (randomly selected in each iteration)	-> each individual is influenced by  the best solution found by the whole swarm
+- v_i(t+1) = alpha * v_i(t) + beta1 * [x_i(local)(t) - x_i(t)] + beta2 * [x(global)(t) - x_i(t)]
+- x_i(local)(t) -> local memory of the best solution found by a individual
+- x(global)(t)  -> global swarm memory of the best solution visited by any of the swarm individuals
+  
+## Possible extensions for PSO
+1. Reduction of the search space D: Particles far away get "bounced" back if the reach the boundaries of the reduced search space
+2. Avoid clustering of the particles:
+	- instead of a global swarm memory it is possible to use a local optimum of neighbouring particles (generate multiple clusters instead of a single one)
+	- punish clustering, add random number to controll for inertia
+3. Dynamically adjust parameters, e.g. remove particles far away from current optima 
+
+
+
+## Multiobjective Optimization Evolutionary Algorithms (MOEA)
+- Real world optimization often require to optimize on multiple criteria
+- Example: Selecting an optimal (electronic) writing device
+  - Objectives:
+    1. Maximize Mobility
+    2. Maximize Comfort
+  - Select a Desktop PC vs. Smartphone?
+-  If Device A is better in both objectives than Device B its easy to select since A dominates B
+- How to decide if A is better in mobility and B is better in comfort? Pareto-Optimality!
+
+### Pareto Optimum
+- Pareto-optimal Solution: A Solution is pareto-optimal if its not possible to improve one objective without reducing at least one other objective
+- A set of pareto-optimal solutions are mutually non-dominat/non comparable
+- Domination Criteria:
+  - A solution that is not dominated by any other current solution is pareto-optimal
+  - Element A weakly dominates Element B if for all objectives i in [1,..,n] f(A_i) is not worse than f(B_i) and for i in one of [1,..,n-1] objectives f(A_i) is better than f(B_i)
+    - Weak dominance is transitiv: If A weakly dominates B and B weakly dominates C than A also weakly dominates C
+  - Element A dominates Element B if for every objective i in [1,..,n] f(A_i) >  f(B_i)
+  - Element A and B are non-dominated solutions if neither A (weakly) dominates B nor B (weakly) dominates A
+- The pareto-optimal solutions form a front inside the search space 
+- Building Pareto optimal/ non-dominated Sets: Select all non-dominated Solutions for a set and remove them from the population, repeat until all solutions are removed from the population. Rank the sets in order
+
+### Challenges of multiobjective Optimization
+- Depending on the specific problem it should be checked if it's possible to transform a multiobjective problem into a single-objective problem to avoid these challenges
+- Challenges:
+    1. Maintain Diversity inside the population
+    2. Rules for Selection/Maintaining nondominated solutions which can easily be lost
+    3. Directing the search via mating selection
+
+
+## Strategies to optimize Multi-Objective Problems
+
+### Weighted Sum strategy - Transform to single criterion Optimization
+- Find a metric that combines all objectives into a single objective function
+- Parameters are used to determine the importance of different objectives
+- Problem: How to find the proper problem-specific parameters? Requires problem-specific Knowledge and is often very subjective
+
+
+### Population based Algorithms
+- Well suited class of algorithms for MO-Optimization since solutions can be found in a single run of the algorithm
+- Returns a population of (pareto-optimal) candidate solutions from which we can choose the best matching
+- Important: Operators need to be modified to work properly on MO-O
+
+
+#### Vega - Vector evaluated genetic algorithm
+- First generation of MOEAs
+1. Initialize n subpopulations for all n objectives
+2. Each population optimizes for 1 objective
+3. After n generations, shuffle all solutions and reassign to them to one of the subpopulations
+- Pro: Simple and easy to implement, low computational effort
+- Con: Final solutions will tend to be very unbalanced since they are optimized primarily on a single objective
+
+#### Pareto-based ranking algorithm
+- Second generation of MOEAs
+- Generally better results than Algorithms from generation 1
+- Basic idea:
+  - Solutions are grouped in non-dominated Sets (=subpopulation of mutual non-dominated solutions)
+  - Fitness Sharing is used to distribute solutions widely across the search space(Crowding Metric punished fitness of clusters)
+  - Often an achive population is used to remember non-dominated solutions, new populations always include some solutions from the achive population (=elitism)
+- Common metrics in pareto-based ranking:
+  - Dominance Count of Individual A: How many individuals of the population are dominated by A?
+  - Dominance Rank of Individual A: 1 + Number of individuals that dominate A
+  - Dominance Depth of non-dominated Set A: How many of the non-dominated sets are dominating A?
+  - Example of NSGA-2: Non-dominated Sorting Algorithm 2
+
+

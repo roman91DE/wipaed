@@ -1,0 +1,31 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for roman at 2021-12-29 17:05:42 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@webpage{ms,
+	author = {Microsoft-Corporation},
+	date-added = {2021-12-29 17:03:03 +0100},
+	date-modified = {2021-12-29 17:05:05 +0100},
+	lastchecked = {29.12.2021},
+	month = {12},
+	title = {Sverweis-Funktion},
+	url = {https://support.microsoft.com/de-de/office/sverweis-funktion-0bbc8083-26fe-4963-8ab8-93a18ad188a1},
+	urldate = {12.05.2021},
+	year = {2021}}
+
+@article{JA,
+	author = {K{\"o}lner Wirtschaftsfachschule f{\"u}r theoretische und angewandte Betriebswirtschaft GmbH, Wifa-Gruppe},
+	date-added = {2021-12-02 19:17:39 +0100},
+	date-modified = {2021-12-02 19:19:53 +0100},
+	journal = {bundesanzeiger.de},
+	title = {Jahresabschluss zum Gesch{\"a}ftsjahr vom 01.01.2020 bis zum 31.12.2020},
+	year = {2021}}
+
+
+

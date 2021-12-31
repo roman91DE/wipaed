@@ -1,0 +1,289 @@
+---
+title: |
+  <center>Praktikumsbericht</center>
+  <center>M.Sc. Wirtschaftspädagogik</center>
+  <center>Johannes Gutenberg Universität Mainz</center>
+  <center>Wintersemester 2021/2022</center>
+  |
+lang: de-DE
+date: "12/20/2022"
+output:
+  pdf_document: default
+  
+subtitle: |
+  <center>Roman Höhn</center>
+  <center>Matrikelnummer 2712497</center>
+  <center>Kölner Wirtschaftsfachschule für theoretische und angewandte Betriebswirtschaft - Wifa-Gruppe - GmbH</center>
+  |
+fontsize: 11pt
+toc: yes
+toc_depth: 1
+bibliography: bib/ref.bib
+include-before: '`\newpage{}`{=latex}'
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+\newpage
+
+# 1. Erfahrungsbereich Unternehmen/Institution und Beruf
+
+
+## 1.1 Betiebliche Aufbau- und Ablauforganisation
+
+Der Betrieb Kölner Wirtschaftsfachschule GmbH ist ein Lerndienstleister, der deutschlandweit an aktuell 16 Standorten Dienstleistungen im Bereich der Aus- und Weiterbildung anbietet.
+Das Angebot an Weiterbildungsmöglichkeiten umfasst dabei insbesondere kaufmännische Umschulungen,die Vorbereitung auf IHK-Zertifikatsprüfungen, Microsoft Office Kurse, Datev/Lexware Weiterbildungen sowie berufliche Coachings.\  
+
+Das Unternehmen hat seinen Hauptsitz inklusive seiner Zentralverwaltung in Bonn und beschäftigt im Jahr 2020 durchschnittlich 117 Mitarbeiter^[Aus Gründen der besseren Lesbarkeit wird im Text verallgemeinernd das generische Maskulinum verwendet. Diese Formulierungen umfassen gleichermaßen weibliche und männliche Personen; alle sind damit selbstverständlich gleichberechtigt angesprochen.]. Nach § 256 HGB ist das Unternehmen als kleine Kapitalgesellschaft einzustufen[@JA].\  
+
+Das Unterweisungspraktikum hat an dem Schulungsstandort Mainz des Unternehmens stattgefunden.
+Der Standort ist für die eigenständige Akquise von Neukunden sowie die Planung, Überwachung und Durchführung der angebotenen Weiterbildungsdienstleistungen verantwortlich.
+An dem Standort waren zum Zeitpunkt des Unterweisungspraktikums sechs Mitarbeiter beschäftigt, diese unterteilen sich in eine Standortleitung mit primär administrativen Aufgaben, kaufmännische Fachdozenten, systemische Berufscoaches sowie eine Verwaltungskraft. Betriebliche Hilfsprozesse wie beispielsweise die Finanzbuchführung, das Controlling oder die Beschaffung werden durch die Zentralverwaltung des Unternehmens übernommen und zählen daher nicht zu den Aufgaben des Mainzer Standorts.\  
+
+Das Unternehmen besitzt eine Zertifizierung nach der Akkreditierungs- und Zulassungsverordnung Arbeitsförderung (kurz AZAV) und ist damit ein zugelassener Bildungsträger für die Einlösung von Bildungsgutscheine.
+Das Kerngeschäft des Unternehmens liegt in der Einlösung dieser Bildungsgutscheine wodurch eine enge Kooperation mit den Agenturen für Arbeit und lokalen Jobcentern entsteht. 
+Ein weiterer Geschäftsbereich liegt in der beruflichen Rehabilitation im Rahmen des Angebots der deutschen Rentenversicherung.
+Personen mit einem Anspruch auf diese Leistung, können die Weiterbildungsangebote der Kölner Wirtschaftsfachschule belegen um eine Integration/ Rehabilitation zurück in den Arbeitsmarkt zu ermöglichen. 
+Auch in Kooperation mit den Berufsgenossenschaften werden vergleichbare Weiterbildungsmaßnahmen angeboten.\    
+
+## 1.2 Betriebliche Handlungsalternativen
+
+Der Betrieb ist ein privatwirtschaftliches Unternehmen mit dem primären Ziel der Gewinnerwirtschaftung durch die Erbringung von Dienstleistungen im Aus- und Weiterbildungssektor. Die ökonomischen Ziele des Unternehmens stehen oftmals in einem konfliktären Verhältnis zu den pädagogischen Erkenntnissen, die ich im Lauf meiner Ausbildung in der Wirtschaftspädagogik gewonnen habe.
+
+Exemplarisch möchte ich diesen Zielkonflikt an dem Beispiel eines alltäglichen Kundenberatungsgespräch beschreiben:
+Bei der Kontaktaufnahme von Interessenten führen wir telefonische eine kurze Erstberatung durch, wir erfragen dabei wie die aktuelle Arbeitssituation der Person ist, welche Ausbildung(en) bereits vorliegen und für welche Weiterbildungen sich die Person interessiert.
+Oftmals ergibt sich bereits aus diesem kurzen Interview heraus, dass der Interessent für die Weiterbildung keine guten Voraussetzungen besitzt, Gründe dafür können beispielsweise fehlende Erfahrung mit kaufmännischen Tätigkeiten, das Nichtvorhandensein des empfohlenen Schulabschlusses oder unzureichende Kenntnisse der deutschen Sprache sein.
+Eine weitere wichtige Information, die wir erfragen, ist ob der Interessen bereits eine Form eines Aus- und Weiterbildungsgutscheins vorliegend hat, falls dies nicht gegeben ist, müssen wir den Interessenten freundlich darauf hinweisen, dass wir erst bei dessen Vorliegen eine ausführlichere Beratung mit ihm durchführen können.\  
+
+Im dem Fall, dass der Kunde zwar einen entsprechenden Bildungsgutschein besitzt aber eigentlich nicht für die anvisierte Weiterbildungsmaßnahme geeignet ist, werden wir durch die betrieblichen Vorgaben implizit dazu aufgefordert, trotz allem ein ausführliches Beratungsgespräch zu terminieren um den potentiellen Auftrag zu akquirieren.
+Diese Weiterverfolgung einer Beratungsanfrage steht in einem gewissen Maße in einem Koflikt mit den pädagogischen/sozialen Leitlinien die wir in unserer Rolle als Fachdozenten eigentlich befolgen sollten, aus dieser Perspektive sollte in einer solchen Situation eigentlich auf alternative, besser geeignete, Weiterbildungsmaßnahmen und deren Träger verwiesen werden. 
+Für den Kunden kann dieses Verhalten letztendlich in einer suboptimalen Situation resultieren, er wird in eine Weiterbildung vermitteln, in der er keine guten Erfolgsaussichten hat und mittel- bis langfristig wird seine berufliche und persönliche Weiterentwicklung dadurch eventuell nicht optimal gefördert.
+Die pädagogische Aufgabe der bestmöglichen, individuellen Beratung, Betreuung und Ausbildung von einem potentiellen Neukunden kann in einer solchen Situation aufgrund der Notwendigkeit der betrieblichen Profitmaximierung nicht in der idealtypischen Form erledigt werden.
+
+Eine mögliche Handlungsalternative in dieser und vergleichbaren Situiationen, dem Konflikt zwischen Auftragsgewinnung und einer optimalen Kundenbetreuung, könnte es sein, dass wir vor der endgültigen Annahme eines Auftrags häufiger Gebrauch von Eignungstests machen. 
+Für bestimmte Weiterbildungen sind diese bereits von den ausstellenden Institutionen der Bildungsgutscheine vorgesehen, für die Umschulung zum Industriekaufmann muss beispielsweise ein kaufmännischer Eignungstest im Vorhinein geschrieben und bestanden werden. 
+Meiner Ansicht nach, könnten obligatorische Einstufungs- und Eignungstests für sämtliche Weiterbildungsmaßnahmen die konfliktären Spannungen zwischen der gewünschten Auftragsakquise und der aus Kundensicht bestmöglichsten Betreuung in ein harmonischeren Einklang bringen.
+
+
+
+## 1.3 Betriebliche Anforderungen und Kompetenzen
+
+
+Mein Aufgabenbereich im Betrieb umfasste im Schwerpunkt die folgenden Bereiche:
+
+- Erstberatung von potentiellen Neukunden
+- Betreuung von Kunden im Rahmen ihrer Weiterbildungsmaßnahmen
+- Planung, Durchführung und Evaluation von online Unterrichtseinheiten
+- Unterstützung von Kunden beim Bewerbungsprozess
+
+Die professionelle Bewältigung dieser Aufgaben erfordert meiner Erfahrung nach ein vielseitiges Portfolio an fachlicher Expertise, didaktischer Fähigkeiten sowie eines guten Zeitmanagements.
+Im folgenden möchte ich die Anforderungen anhand dieser drei Kategorien beschreiben.\  
+
+### Fachliche Expertise
+
+Meine Hauptrolle im Betrieb ist die eines Fachdozenten für kaufmännische Umschulungen, EDV gestütztes Office Management sowie der Finanzbuchhaltung.
+Bereits der Unterrichtsstoff für kaufmännische Umschulungen (Kaufleute für Büromanagement, Industriekaufleute, Personaldienstleistungskaufleute und Fachinformatiker) ist sehr umfangreich und erfordert gute Grundkenntnisse der Betriebswirtschaftslehre, des Handelgesetzbuches und der modernen Datenverarbeitung.
+Zusätzlich bieten wir Vertiefungsweiterbildungen für die Lohn und Gehaltsbuchhaltung sowie die Finanzbuchhaltung an, beide Bereiche erfordern umfassende Kenntnisse sowohl in den theoretischen Hintergründen als auch in der praktischen EDV gestützen Anwendung mit dem Programm Datev.\  
+
+Aufgrund des weit aufgestellten Portfolios an Themen, ist es meiner Erfahrung nach unerlässlich, dass ein Fachdozent hohe Kompetenz bei der Recherche von Informationen hat.
+Die weit gestreuten Themen zu denen zahlreiche Fragen gestellt werden, entziehen sich zu einem gewissen Anteil meiner eigenen Fachkenntnisse.
+Für den Fall, dass ein Teilnehmer eine solche Frage stellt und ich nicht in der Lage bin diese direkt zu beantworten, ist es eine wichtige Fähigkeit, fachlich korrekte Antworten mit Hilfe von geeigneter Literatur oder der Online Recherche zeitnah zu ermitteln.\  
+  
+Eine weite Aufgabe im Betrieb ist es, sämtliche Kursteilnehmer aktiv bei der Bewerbung für Arbeits- und Praktikumsplätze zu unterstützen, das umfasst das gemeinsame Überarbeiten oder Neuerstellen von Bewerbungsunterlagen, Unterstützung bei der Stellenrecherche sowie die Vorbereitung auf Bewerbungsgespräche und mögliche Einstellungstests.
+Auch in diesem Aufgabenbereich ist fachliche Expertise notwendig, relevant ist dabei eine gute Kenntniss von gängigen Verfahren der Personalauswahl, Best Practices bei der Erstellung von Bewerbungsunterlagen und die Vertrautheit mit den Gegebenheiten des lokalen Arbeitsmarkt.\  
+  
+
+Als letzten bedeutenden Bereich der fachliche Expertise benötigte man in der Rolle des Fachdozenten sehr gute Kenntnisse im Umgang mit Computern, Software und Netzwerken. 
+Zum Zeitpunk des betrieblichen Praktikums hat die Betreuung der Kunden zum Großteil auf elektronischem Weg über Remote Desktop Serverlösungen stattgefunden. 
+Eine häufige Aufgabe war es in diesem Zusammenhang, diverse Computer und Internet Probleme von Kunden zu lösen und technische Lösungen für die Arbeit aus dem Homeoffice zu implementieren. Aufgrund der stark variierenden technischen Ausstattung auf Seite der Kunden, insbesondere verschiedener Betriebssysteme, und der großen Vielfalt an Software die vom Unternehmen angeboten wird, bestand hier ein hoher Bedarf an Fachkenntnissen und technischem Verständnis.\  
+
+
+### Didaktische Fähigkeiten
+
+Das Schulungskonzept des Unternehmens unterscheidet sich in einigen Aspekten von den üblichen Lern- und Lehrmethoden die an öffentlichen Berufsschulen angewendet werden. 
+Weiterbildungteilnehmer lernen nach einem sogenannten modularen Konzept selbstverantwortlich und zu großen Anteilen selbstständig mit umfassenden Schulungsunterlagen die von Seiten der Kölner Wirtschaftsfachschule verfasst und bereitgestellt werden. 
+Die Unterrichtsform des Frontalunterrichts im Plenum wird als ergänzender Anteil in dem modularen Konzept eingesetzt, dieser findet in Form von etwa 60 minütigen Workshops für jeden Themenbereich 1-2 mal pro Woche statt um wichtige Aspekte des Schulungsstoffs zu betonen.\  
+
+Um den Lernerfolg der Teilnehmer zu gewährleisten, sind didaktische Fähigkeiten unerlässlich. Die Planung, Durchführung und Evaluation von Workshops erfordert dabei neben der fachlichen Expertise auch gute Kenntnisse von didaktischen Methoden, die Fähigkeit das angestrebte Wissen für die Teilnehmer fassbar zu machen sowie den Einsatz von unterschiedlichen Unterrichtsformen zur Aktivierung der Teilnehmer. 
+Aufgrund der Tatsache, dass zum Zeitpunkt des Praktikums ein Präsensunterricht aufgrund des Hygieneschutzgesetztes am Schulungsstandort nicht möglich war, wurden alle Workshops als digitale Veranstaltungen über die eine online Plattform abgehalten. 
+Die Durchführung der Workshops wurde dazu zu einer neuen Herausforderung, viele der im Laufe des Studiums erlernten pädagogischen Methoden mussten unter diesen ungewohnten Bedingungen angepasst, neu erprobt und modifiziert werden.\  
+
+### Zeitmanagement
+
+Eine zusätzliche Herausforderung im Betrieb ist schlicht die zeitliche Koordination, zum Zeitpunkt des Praktikums waren insgesamt 41 Teilnehmer in den unterschiedlichen Weiterbildungsangeboten eingeschrieben.
+Neben der fachlichen Betreuung fallen dabei regelmäßig auch verwaltungstechnische Aufgaben an, beispielsweise müssen Wochenberichte überprüft und in ein digitales Zeiterfassungssystem übertragen werden. Ein weiterer zeitintensiver Aspekt der Arbeitsplatzes sind Lernerfolgskontrollen, in diesem Zusammenhang müssen in regelmäßigen Abständen Prüfungen ausgegeben und anschließend korrigiert werden.\  
+
+Meiner Erfahrung nach besteht ein wichtiger Aspekt der betrieblichen Arbeit darin, seine Arbeitszeit so einzuteilen, dass alle Bereiche ausreichend gewürdigt werden. 
+Als Hilfestellung verwenden wir im Betrieb ein Microsoft Outlook basiertes System des Zeitmanagements in dem wir bereits mehrere Schulungen absolviert haben. 
+Termine werden von uns in einen synchonisierten Kalender eingetragen, Routine-Aufgaben werden als Serientermine mit Erinnerungsfunktion eingepflegt und Kundenanfragen werden nach einem Priorisierungssystem an die entsprechenden Ansprechpartner weitergeleitet. 
+Trotz des Einsatzes dieses bewährten Zeitmanagementsystems ist die Arbeitslast stellenweise aufgrund des geringen Personaleinsatzes im Betrieb nicht in allen Aspekten zu bewältigen.\  
+
+
+# 2. Erfahrungsbereich Kommunikation und Interaktion
+
+Im Folgenden wird Aufgabenpunkt 2.2 des Leitfadens zum Unterweisungspraktikum beschrieben
+
+## 2.2 Erfolgreiche Faktoren kollegialer Zusammenarbeit
+
+### Problemsituation und Hintergrund
+
+Im Rahmen des Hygieneschutzgesetzes und den entsprechenden Bund- und Landesverordnungen mussten viele betriebliche Prozesse im Verlauf der Sars-Cov 2 Pandemie angepasst und modifiziert werden, diese Umstellung hat auf der Ebene der kollegialen Zusammenarbeit neue innerbetriebliche Herausforderungen und Konflikte hervorgebracht.\  
+
+Eine besondere Herausforderung bestand darin, dass die angebotenen Schulungen von einer lokalen Organisation auf ein zentralisiertes, standortübergreifendes Modell umgestellt werden sollten. 
+Vor dem Inkrafttreten der entsprechenden Auflagen, hat das Schulungszentrum an dem ich eingesetzt war, ebenso wie die andern Stnadorte, selbstständig Unterrichtspläne aufgestellt, terminiert, durchgeführt und evaluiert. 
+Um Synergieeffekte zu nutzen und ein weitreichendes Schulungsangebot anbieten zu können, hat die Geschäftsleitung als Reaktion auf die Einstellung des Präsensbetriebs ein zentralisiertes System erarbeitet, die Fachdozenten der insgesamt 16 Standorte sollten sich demnach untereinander so koordinieren, dass Kurse zukünftig standortübergreifend angeboten werden.\  
+
+Bei der Neueinführung dieses Systems kam es innerhalb kürzester Zeit dazu, dass das Angebot an Online Kursen stark zurückgegangen ist und den Teilnehmern der Weiterbildungskurse ein mangelhaftes Angebot zur Verfügung gestellt wurde.
+Das grundlegende Problem war, dass keine klaren Verantwortungsbereiche benannt wurden, es also unklar war, welche Mitarbeiter welche Fachbereiche abdecken sollten und wer die zeitliche Koordination der Unterweisungseinheiten zu steuern hatte.
+Eine weitere Ursache für diese Fehlentwicklung war meines Erachtens der Umstand, dass Mitarbeiter des Betriebs über lange Zeit autark und eigenständig gearbeitet haben und dementsprechend nur sehr schlecht standortübergreifend vernetzt waren. 
+Aufgrund der mangelnden Vernetzung konnte in Folge nur schwer ermittelt werden, welcher Mitarbeiter Kompetenzen und geeignete Unterrichtsmaterialen für die Übernahme eines Themenbereichs besitzt.\  
+
+Die aufgeführten Ursachen, mangelnde innerbetriebliche Vernetzung und Austausch zwischen Kollegen, sowie die unorganisierte Implementierung eines neuen, zentralisierten Arbeitsmodells verletzten meiner Ansicht nach zwei elementar wichtige Bedingungen, die für eine gute kollegiale Zusammenarbeit notwendig sind.\  
+
+Damit kollegiale Zusammenarbeit langfristig erfolgreich verlaufen kann, ist eine klare Voraussetzung, dass die Aufgabenbereiche für jede betriebliche Stelle möglichst präzise definiert werden und dass diese Aufgabenbereiche dem Kollegium bekannt ist.
+In dem beschriebenen Falle, wurde diese Bedingung nicht ausreichend umgesetzt, als Folge entstand eine Form von Moral Hazard, die einzelnen Kollegen reduzieren individuellen Arbeitseinsatz mit der Hoffnung, dass andere Kollegen diesen Arbeitseinsatz stattdessen erbringen, da ein Großteil der Kollegen so handelt, kommt es bald zu einer abnehmenden Produktivität.\  
+
+Eine weitere Voraussetzung für kollegiale Kooperation ist natürlich, dass Kollegen sich untereinander kennen lernen, kooperieren und in einem kommunikativen Austausch stehen.
+Da diese Voraussetzung zwischen den einzelnen betrieblichen Standorten nur sehr rudimentär erfüllt waren, ist die eingetretene, mangelhafte Kooperation keine Überraschung.\  
+
+### Optimierungsmaßnahmen
+
+Die beschriebene Problemsituation wurde durch die Geschäftsleitung innerhalb weniger Wochen erkannt und durch, meiner Ansicht nach gut gewählte, Gegenmaßnahmen bekämpft.
+
+Als erste Maßnahme wurde veranlasst, dass alle relevanten Mitarbeiter, sich zukünftig zu einem festen, wöchentlichen Termin zusammenfinden sollen. 
+Der Termin wird seitdem genutzt, um offene Fragen und Probleme zu besprechen, eine bessere Bekanntschaft zwischen den Mitarbeitern zu schaffen und um die Koordination von Terminen und Verantwortungen gemeinsam zu erörtern.
+
+Eine weitere Gegenmaßnahmen war, dass innerhalb des Unternehmens eine "Skill Matrix" an das Lehrpersonal ausgeteilt wurde, diese entspricht einem Formular, in dem jeder Mitarbeiter seine Kernkompetenzen und Bereitschaft zur Übernahme von Aufgabenbereichen einträgt. 
+Auf Basis dieses Assesments wurden anschließend eine Aufteilung der Verantwortungen vorgenommen, jeder Mitarbeiter hat einen fest zugeordneten Aufgabenbereich in dem er verpflichtet ist für ein angemessenes Lerhangebot zu sorgen.
+Auch für die Koordination, Terminierung und technischen Support wurden in diesem Zug feste Ansprechpartner ernannt.
+
+
+# 3. Betriebliche Unterweisung
+
+## 3.1 Thema der Unterweisung
+
+Die beschriebene Unterweisung hatte das Ziel den Teilnehmern die Arbeit mit Verweis-Funktionen in dem Tabellenkalkulationsprogramm Microsoft Excel 2016 beizubringen.
+Im allgemeinen sind Verweise, im englischen als Look-Ups bezeichnet, ein zentrales Konzept der elektronischen Datenverarbeitung. Verweisfunktionen werden bei der Arbeit mit relationalen Datenbanken immer dann benötigt, wenn zu einem Suchkriterium innerhalb einer Datenbank ein dazugehöriges Datenfeld ermittelt werden muss. 
+Bei der Arbeit mit Tabellenkalkulationssoftware stellt die Kenntnis und Anwendungssicherheit dieser Kategorie von Funktionen eine elementare Fähigkeit dar.\  
+
+### Anwendungsbeispiel einer Verweisfunktion:
+
+Für eine gegebene Datenbank **D**:
+
+| ID  | Vorname   | Nachname  | Studiengang  |
+| --- | ---       | ---       | ---          |
+| A1  | Anton     | Müller    | BWL          |
+| B2  | Beate     | Maier     | Jura         |
+| C3  | Christian | Schneider | Maschinenbau |
+| ... | ...       | ...       | ...          |
+
+
+Durchsucht die Verweisunktion **f** die Datenbank D nach einem als Parameter übergebenen Suchkriterium und gibt als Ergebnis einen gesuchten Wert zurück.\  
+
+Beispielanwendung in MS Excel 2016
+*Finde den Studiengang für den Datensatz mit ID == A1*
+
+```
+=SVERWEIS("A1", D, 3, 1)  
+``` 
+
+
+Die Unterweisung richtet sich an Umschüler im Ausbildungsberuf Kaufleute für Bueromanagement und findet im Rahmen einer Prüfungsvorbereitung auf deren anstehende Zwischenprüfung statt. 
+Die Anwendung von Verweisfunktionen ist für diese Zielgruppe prüfungsrelevant und bereitet erfahrungsgemäß vielen Prüflingen große Schwierigkeiten.\  
+
+Die Unterweisung findet in einem digitalen Format über die Plattform Microsoft Teams statt. 
+Die Plattform ermöglicht es mir per Livestream in dem relevanten Programm zu arbeiten, Präsentationsfolien zu nutzen und außerdem vorbereitete Übungsaufgaben direkt über ein in die Plattform integriertes Interface an die Schulungsteilnehmer auszuteilen. 
+Für die Unterweisung steht mir ein Zeitrahmen von 60 Minuten zur Verfügung.\  
+
+Die Unterweisung wird standortübergreifend angeboten, neben den mir bekannten Teilnehmern unseres Schulungszentrums werden also zum Großteil auch Hörer von anderen Schulungszentren anwesend sein. 
+Aufgrund dieser Tatsache ist mir bei der Planung a priori nicht bekannt, wie viele Teilnehmer anwesend sein werden und wie genau der allgemeine Wissensstand und die Zusammensetzung der Gruppe aussieht.\  
+
+
+## 3.2 Pädagogische Merkmale der Adressaten
+
+
+### Gruppenzusammensetzung: 
+
+Die Adressaten der Unterweisung sind eine Gruppe von ca. 40-50 Umschülern im Ausbildungsberuf Kaufmann für Büromanagement. 
+Gruppen von Umschülern weisen erfahrungsgemäß eine hohe Diversität im Bezug auf ihre Zusammensetzung auf, die Alterspanne der Teilnehmer reicht dabei für gewöhnlich von 20 bis 60 Jahren und liegt im Durchschnitt schätzungsweise bei 35 Jahren. 
+Erwartungsgemäß wird sich die Gruppe zu einem Großteil aus weiblichen Teilnehmern zusammensetzten, da der Ausbildungsberuf sehr viel häufiger von Frauen gewählt wird als von Männern. 
+Der Anteil an Teilnehmern mit Migrationshintergrund ist bei der Kölner Wirtschaftsfachschule mit 30-40% vergleichweise hoch, für die Teilnahme an einer Umschulungsmaßnahme wird jedoch im Vorfeld eine Prüfung der Deutschkenntnisse durchgeführt, auf sprachlicher Ebene sind deshalb keinelei Verständnisprobleme zu erwarten.\  
+
+
+### Kenntnissstand und Vorwissen: 
+
+Eine besondere Schwierigkeit liegt für mich als Dozent in dem stark variierenden Grad an Vorkenntnissen der Teilnehmer, teilweise haben diese schon jahrelange berufliche Vorerfahrung während andere Teile der Gruppe keinerlei Vorerfahrung mit dem Themenberich EDV/Tabellenkalkulation haben.\  
+
+Bei meiner Unterrichtsplanung gehe ich davon aus, dass die Teilnehmer bereits grundlegende Kenntnisse in der Bedienung des Tabellenkalkulationsprogramm Microsoft Excel haben. 
+Im Vorfeld meiner Unterweisung wurden bereits zahlreiche Kurse zu dem Programm angeboten, die Erwartung ist daher meines Erachtens nach in diesem Kontext plausibel.\  
+
+Neben dem programm-spezifischen Vorwissen spielt für das Thema der Unterweisung auch das mathematisch - und logische Verständnis eine wichtige Rolle.
+Erfahrungsgemäß liegt hier auch die Hauptschwierigkeiten bei der Wissensvermittlung des Themas. 
+Die Arbeit mit Verweis Funktionen erfordert im speziellen ein Verständnis von algorithmischer Problemlösung, das gewünschtes Ergebnis wird dadurch erzielt, dass durch das Programm ein fest definierte Anzahl von Instruktionen abgearbeitet wird. 
+Der Großteil der Schulungsteilnehmer hat einen Schulabschluss auf Haupt- oder Realschulniveau und damit keine oder nur stark begrenzte Erfahrungen mit dieser Kategorie von Aufgaben gesammelt.\     
+
+
+### Interesse und Motivation: 
+
+Die Teilnehmer der Unterweisung nehmen auf freiwilliger Basis teil weshalb eine hohe Eigenmotivation von mir erwartet wird. 
+Das die Teilnehmer außerdem kurz vor ihrer Zwischenprüfung stehen, einhegehend mit Prüfungsstress und Nervösität, verstärkt das Interesse der Teilnehmer an dem Thema wahrscheinlich zusätzlich da ein direkter Nutzen für Sie ersichtlich ist. \  
+
+
+## 3.3 Didaktisch-methodische Vorgehensweise
+
+Die Unterweisungseinheit wurde von mir im Vorhinein zeitlich mit Hilfe eines Verlaufsplans strukturiert.\  
+
+
+**Unterweisungsphase**  |  **Dauer (min.)**  |  **Inhalt**  |  **Umsetzung**
+ ---                | ---                 |   ---    |   ---
+ **Einleitung**         |         5           | *Relevanz des Themas eingeordnet, Vorführung eines Anwendungsfalls - Verweis Funktionen*  | Demonstration anhand einer Musteraufgabe im Plenum
+**Instruktionsphase**   |         15           | *Vorstellung der Funktionssyntax anhand einer Visualisierung, Unterschiede zwischen S und VVerweisen anhand von Beispielen erklärt, Eingehen auf häufige Fehler bei der Anwendung* | Präsentation unter Zuhilfenahme von Videos und vorbereiteten Excel Sheets
+**Arbeitsphase** |  20  | *Ausgabe und Bearbeitung von vorbereiteten Übungsaufgaben an Schulungsteilnehmer, Teilnehmer werden in kleine Gruppen eingeteilt und über Microsoft Teams in  Gruppenräume verteilt*  | Gruppenarbeitsphase, Besuch der einzelnen Gruppen um Fortschritt zu überwachen und eventuelle Fragen zu klären
+**Besprechungsphase**  | 15 | *Freiwillige Teilnehmer werden dazu aufgefordert ihre Lösungen vorzustellen und offene Fragen können gestellt werden, Tipps und Schwierigkeiten bei der Bearbeitung werden diskutiert* | Präsentation und Diskussion im Plenum
+**Ergebnissicherung** | 5  | *Wiederholung der wichtigsten Aspekte im Umgang mit Verweis Funktionen, Bereitstellung von weiteren Ressourcen und Übungsaufgaben für Teilnehmer, die weiterhin Schwerigkeiten im Umgang mit dem Thema haben*  | Präsentation im Plenum
+
+
+Eine besondere Herausforderung in der Vermittlung des Themas liegt in der notwendigen Abstraktionsfähigkeit, Anwender müssen für die korrekte Lösung einer Verweis Aufgabe ein Verständnis dafür haben, nach welchen logischen Regeln die betrachteten Funktionen arbeiten. Um das Thema für die Teilnehmer in der Einleitungsphase fassbar zu machen, habe ich meinen Anwendungsfall praxisnah gewählt um die Relevanz des Themas im täglichen Berufsalltag zu demonstrieren. 
+
+Da es sich bei Microsoft Excel um kommerzielle Software mit einem reichen Angebot an Lern- und Lehrmethoden handelt, habe ich meine Instruktionsphase schematisch und inhaltlich an der offiziellen Microsoft Dokumentation zu dem Thema orientiert.[@ms] 
+Die gewählten Anwendungsbeispiele sind leicht abgewandelte Formen aus der offiziellen Dokumentation und die didaktische Vorgehensweise wurde von mir ebenfalls als Vorbild für meine eigene Präsentation gewählt.
+
+
+### Kritische Reflektion
+
+Zum Abschluss einer Online Unterweisung führen wir standardmäßig eine Online Befragung mit allen Teilnehmern durch, dazu werden von der Kölner Wirtschaftsfachschule eigens entwickelte Fragebögen bereitgestellt.
+Nach der Auswertung dieser Ergebnisse waren die Teilnehmer mit der angebotenen Unterweisung in den folgeden Kernpunkten im Durchschnitt insgesamt zufrieden:
+
+1. Praxisnähe und Relevanz des Themas: 1,26
+2. Klarheit und Struktur des Unterrichtseinheit: 1,73
+3. Eingehen auf individuelle Fragen und Schwierigkeiten: 1,13
+4. Interaktive Gestaltung: 1,13
+5. Technische Umsetzung: 1,31
+
+> *Bewertung basierend auf Items die mit Schulnoten bewertet werden, Durchschnittsergebnisse von 38 Befragungsteilnehmern*
+
+Das positive Feedback der Teilnehmer ist aus meiner Perspektive zwar ein guter Indikator, trotz allem bin ich mit meiner Unterweisungseinheit nur eingeschränkt zufrieden.\  
+
+
+Eine besondere Schwierigkeit besteht für mich, insbesondere bei der Durchführung von Online Unterweisungen, in der Aktivierung von allen Teilnehmern. In der beschriebenen Unterweisungseinheit hat sich primär eine kleine Gruppe von Zuhörern aktiv beteiligt, der größere Anteil der Zuhörer war zwar trotz (digitaler) Anwesenheit nicht in den Plenumsdiskussionen und interaktiven Phasen aktiv.\  
+
+Eine zusätzliche Herausforderung bei der Abhaltung von digitalen Unterweisungseinheiten besteht für mich darin, dass man nur sehr schwer den Grad der Involvierung der Zuhörerschaft und deren Feedback in der Rolle des Dozenten wahrnimmt. 
+Bei der Erklärung von Themen, habe ich in Präsensunterweisungen beispielsweise die Möglichkeit anhand der Mimik und Verhaltensweisen der Zuhörer abzuschätzen, ob diese meinen Erklärungen folgen können, das Fehlen dieses direkten Feedbacks bereitet mir persönlich große Schwierigkeiten. 
+Eingeschränktes Feedback führt bei mir dazu, dass ich oft nicht einschätzen kann, ob meine Erklärungen zu langatmig und/oder zu langweilig sind und die Zuhörer unterfordern oder ob genau das Gegenteil der Fall ist.\ 
+
+Für zukünftige digitale Unterweisungseinheiten plane ich, die Methode der Gruppenarbeitsphasen daher stärker einzusetzten. Die Einteilung der Zuhörer in separate Arbeitsgruppen und das anschließende Betreuen auf Gruppenbasis hat in der beschriebenen Unterweisungseinheit stark zu Interaktion und Beteiligung beigetragen.
+Die Hörer werden mit dieser Technik aktiv in das Unterweisungsgeschehen eingebunden, unter den besonderen Umständen der Homeoffice-basierten Unterweisung halte ich diesen Aspekt für besonders hilfreich.\  
+
+In Rücksprache mit unserem betrieblichen Ansprechpartner für habe ich für zukünftige Unterweisungseinheiten außerdem den Hinweis bekommen, dass meine Unterweisungseinheiten inhaltlich oft zu umfangreich angesetzt sind. 
+Seine Empfehlung ist es, dass ich für eine 60 minütige Unterweisung in Zukunft lieber den Umfang an Themen zu Gunsten einer intensiveren Behandlung reduzieren sollte was ich für eine sehr wertvolle und angemessene Rückmeldung halte.\  
+
+\newpage 
+
+## Literaturverzeichnis
+
+
+
