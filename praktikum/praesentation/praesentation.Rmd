@@ -1,0 +1,61 @@
+---
+title: "Betriebspraktikum - M.Sc. Wirtschaftspädagogik" 
+subtitle: "Kölner Wirtschaftsfachschule - Wifa Gruppe - GmbH"
+author: "Roman Hoehn"
+date: "1/6/2022"
+organization: "Johannes-Gutenberg Universität Mainz"
+fontsize: 10pt
+language:
+  label:
+    toc: 'Inhaltsverzeichnis'
+output:
+  powerpoint_presentation:
+        reference_doc: template/tempate-red.pptx
+        slide_level: 2
+        toc: true
+        toc_depth: 2
+        number_sections: true
+csl: style/british-journal-of-educational-psychology.csl
+bibliography: bib/ref.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Unternehmensvorstellung
+
+![Kölner Wirtschaftsfachschule - Logo](pics/wifa_logo.png)
+
+## Eckdaten 
+
+* A
+* B
+* C
+
+
+## Geschäftsbereiche
+
+1. 1
+2. 2
+3. 3
+
+
+## Aufbauorganisation
+
+* 0
+* 1
+* 2
+
+
+
+# Betriebliche Handlungsalternativen
+
+
+## Ökonomische Zielkonflikte
+
+was ist daaas?
+
+# Literaturverzeichnis
