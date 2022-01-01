@@ -4,14 +4,8 @@
 %
 \documentclass[
   10pt,
-  ngerman,
   ignorenonframetext,
 ]{beamer}
-\title{AGG - Allgemeines Gleichbehandlungsgesetz}
-\subtitle{Seminar: Personalauswahl WiSe 21/22}
-\author{Roman Hoehn}
-\date{01/03/2022}
-
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
@@ -171,19 +165,23 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-\ifXeTeX
-  % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
-  \usepackage{polyglossia}
-  \setmainlanguage[]{german}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
 \else
-  \usepackage[main=ngerman]{babel}
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{ngerman}
 % get rid of language-specific shorthands (see #6817):
 \let\LanguageShortHands\languageshorthands
 \def\languageshorthands#1{}
-\fi
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+
+\title{AGG - Allgemeines Gleichbehandlungsgesetz}
+\subtitle{Seminar: Personalauswahl WiSe 21/22}
+\author{Roman Hoehn}
+\date{01/03/2022}
 
 \begin{document}
 \frame{\titlepage}
@@ -198,8 +196,7 @@
 \begin{figure}
 \centering
 \includegraphics{plots/fig1.png}
-\caption{Wordcloud
-de.wikipedia.org/wiki/Allgemeines\_Gleichbehandlungsgesetz}
+\caption{Wordcloud}
 \end{figure}
 \end{frame}
 
@@ -391,10 +388,10 @@ Die benachteiligte Person erfährt eine weniger günstige Behandlung im
 \protect\hypertarget{mittelbare-benachteiligung}{}
 Vorschriften, Kriterien oder Verfahren \textbf{könnten} eine Person
 benachteiligen (\protect\hyperlink{ref-agg}{\emph{AGG}, 2006}, Paragraph
-3, Satz 2)
+3, Satz 2)~
 
-Es ist notwendig, dass die Benachteiligung aufgrund eines oder mehreren
-der geschützten Charakteristika aus Paragraph 1 auftreten.
+\textbf{Notwendige Bedingung}: Benachteiligung aufgrund eines oder
+mehreren der geschützten Charakteristika aus Paragraph 1 auftreten.
 \end{block}
 \end{frame}
 
@@ -466,9 +463,9 @@ abgelehnt.
 \begin{block}{Fall 2}
 \protect\hypertarget{fall-2}{}
 Eine Bewerberin mit Legasthenie wird bei der Auswahl für eine
-Lektoratsstelle aufgrund ihrer Einschränkung ausgeschlossen.
+Lektoratsstelle aufgrund ihrer Einschränkung ausgeschlossen.~
 
-\emph{Zulässig oder Verstoß gegen das AGG ?}
+\emph{Ihre Einschätzung: Zulässig oder Verstoß gegen das AGG ?}
 \end{block}
 \end{frame}
 
@@ -731,8 +728,8 @@ Die Dokumentation sollte folgende Punkte umfassen:
   Nach welchen Kriterien wurden eingehende Bewerbungen evaluiert?
 \item
   Archivierung von Kopien aller eingegangenen Bewerbungen (potentielle
-  Beweismittel)\footnote<.->{Orginale dürfen nach Ablehung des Bewerbers
-    nichts archiviert werden.}
+  Beweismittel)\footnote<.->{Orginale dürfen nach der Ablehung des
+    Bewerbers nicht archiviert werden.}
 \item
   Protokollierung von Bewerbungsgesprächen
 \end{enumerate}
@@ -742,15 +739,20 @@ einer Frist von 2 Monaten geltend machen. Für Bewerbungsunterlagen
 gelten daher vergleichsweise kurze Aufbewahrungszeiten.
 \end{frame}
 
-\begin{frame}[fragile]{Dokumentationsempfehlung (3/3)}
+\begin{frame}{Dokumentationsempfehlung (3/3)}
 \protect\hypertarget{dokumentationsempfehlung-33}{}
 \textbf{Besondere sorgfältige Dokumentation muss bei dem Ausschluss von
 Bewerbern aus dem Auswahlverfahren erfolgen}:
 
-\begin{verbatim}
-* Auf welcher Entscheidungsgrundlage ist der Teilnehmer ausgeschlossen worden?
-* In welcher Phase des Verfahrens ist der Teilnehmer ausgeschlossen worden?
-\end{verbatim}
+\begin{itemize}
+\tightlist
+\item
+  Auf welcher Entscheidungsgrundlage ist der Teilnehmer ausgeschlossen
+  worden?
+\item
+  In welcher Phase des Verfahrens ist der Teilnehmer ausgeschlossen
+  worden?
+\end{itemize}
 
 (\protect\hyperlink{ref-ihk_wsb}{Scheibig, B., o.~J.})
 \end{frame}
@@ -764,9 +766,9 @@ Bewerbern aus dem Auswahlverfahren erfolgen}:
   Auftragsnehmer, Auszubildenden sowie Bewerber und ehemalige
   Beschäftigte
 \item
-  Durch das AGG geschützte Merkmale umfassen: - Rasse \& ethnischer
-  Herkunft, - Geschlechts \& sexuelle Identität, - Religion,
-  Weltanschauung, - Alter \& Behinderungen.
+  Durch das AGG geschützte Merkmale umfassen: Rasse, ethnischer
+  Herkunft, Geschlecht, sexuelle Identität, Religion, Weltanschauung,
+  Alter und Behinderungen.
 \item
   Verstöße gegen das AGG können sowohl mittelbar als auch unmittelbar
   geschehen

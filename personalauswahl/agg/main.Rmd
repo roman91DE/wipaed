@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Rechtliche Grundlagen
 
-![Wordcloud de.wikipedia.org/wiki/Allgemeines_Gleichbehandlungsgesetz](plots/fig1.png)
+![Wordcloud](plots/fig1.png)
 
 
 
@@ -129,16 +129,17 @@ Gesetztesziel: Verhinderung und Beseitigung von (arbeitsrechtlichen) Benachteili
 
 ## Formen der Benachteiligung (2/3)
 
-### Unmittelbare Benachteiligung 
+### Unmittelbare Benachteiligung
   
 Die benachteiligte Person erfährt eine weniger günstige Behandlung im **Vergleich** zu anderen Personen. [@agg, Paragraph 3, Satz 1]
 
 
 ### Mittelbare Benachteiligung
   
-Vorschriften, Kriterien oder Verfahren **könnten** eine Person benachteiligen [@agg, Paragraph 3, Satz 2]
+Vorschriften, Kriterien oder Verfahren **könnten** eine Person benachteiligen [@agg, Paragraph 3, Satz 2]\  
 
-Es ist notwendig, dass die Benachteiligung aufgrund eines oder mehreren der geschützten Charakteristika aus Paragraph 1 auftreten.
+
+**Notwendige Bedingung**: Benachteiligung aufgrund eines oder mehreren der geschützten Charakteristika aus Paragraph 1 auftreten.
 
 
 
@@ -181,9 +182,9 @@ Ein katholischer Bewerber wird im Auswahlverfahren um die Stelle für die Leitun
 
 ### Fall 2 
 
-Eine Bewerberin mit Legasthenie wird bei der Auswahl für eine Lektoratsstelle aufgrund ihrer Einschränkung ausgeschlossen.
+Eine Bewerberin mit Legasthenie wird bei der Auswahl für eine Lektoratsstelle aufgrund ihrer Einschränkung ausgeschlossen.\  
 
-*Zulässig oder Verstoß gegen das AGG ?*
+*Ihre Einschätzung: Zulässig oder Verstoß gegen das AGG ?*
 
 
 # Arbeitsrechtliche Umsetzung
@@ -336,15 +337,15 @@ Die Dokumentation sollte folgende Punkte umfassen:
 
 Anmerkung: Bewerber müssen ihre Ansprüche bei AGG Verstößen innerhalb einer Frist von 2 Monaten geltend machen. Für Bewerbungsunterlagen gelten daher vergleichsweise kurze Aufbewahrungszeiten.
 
-[^1]:Orginale dürfen nach Ablehung des Bewerbers nichts archiviert werden.
+[^1]:Orginale dürfen nach der Ablehung des Bewerbers nicht archiviert werden.
 
 
 ## Dokumentationsempfehlung (3/3)
 
 **Besondere sorgfältige Dokumentation muss bei dem Ausschluss von Bewerbern aus dem Auswahlverfahren erfolgen**:
 
-    * Auf welcher Entscheidungsgrundlage ist der Teilnehmer ausgeschlossen worden?
-    * In welcher Phase des Verfahrens ist der Teilnehmer ausgeschlossen worden?
+* Auf welcher Entscheidungsgrundlage ist der Teilnehmer ausgeschlossen worden?
+* In welcher Phase des Verfahrens ist der Teilnehmer ausgeschlossen worden?
 
 [@ihk_wsb]
 
@@ -352,11 +353,7 @@ Anmerkung: Bewerber müssen ihre Ansprüche bei AGG Verstößen innerhalb einer 
 ## Take Home Message
 
   1. Das AGG schützt im arbeitsrechtlichen Kontext Arbeitnehmer, Auftragsnehmer, Auszubildenden sowie Bewerber und ehemalige Beschäftigte
-  2. Durch das AGG geschützte Merkmale umfassen:
-    - Rasse & ethnischer Herkunft,
-    - Geschlechts & sexuelle Identität,
-    - Religion, Weltanschauung,
-    - Alter & Behinderungen.
+  2. Durch das AGG geschützte Merkmale umfassen: Rasse, ethnischer Herkunft, Geschlecht, sexuelle Identität, Religion, Weltanschauung, Alter und Behinderungen.
   3. Verstöße gegen das AGG können sowohl mittelbar als auch unmittelbar geschehen
   4. Ungleichbehandlungen sind zulässig, sofern Sie beruflich gerechtfertig sind oder dem Nachteilsausgleich dienen
   5. Personalwerbung: Starke Sorgfalt und juristische / personalpolitische Expertise bei der Formulierung
