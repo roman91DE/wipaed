@@ -25,14 +25,14 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-# Unternehmensvorstellung
+# Erfahrungsbereich Unternehmen und Beruf
 
 ![Kölner Wirtschaftsfachschule - Logo](pics/wifa_logo.png)
 
-## Eckdaten 
+## Unternehmensprofil 
 
-* Anbieter von Aus- und Weiterbildungsdienstleistungen
-* Deutschlandweite 16 Schulungszentren
+* Privater Anbieter von Aus- und Weiterbildungsdienstleistungen
+* Deutschlandweite 16 Schulungszentren mit ca. 120 festen Mitarbeitern
 * Offizieler Bildungspartner von u.a.:
     1. Microsoft Corporation
     2. DATEV Software & Consulting
@@ -44,17 +44,35 @@ knitr::opts_chunk$set(echo = FALSE)
 1. AVGS - Staatlich finanzierte Arbeitsvermittlung und/oder Arbeitserhaltungsmaßnahmen
 2. Berufliche Rehabilitation, insbesondere als Träger für die deutsche Rentenversicherung
 3. Berufsbegleitende Weiterbildungen im Rahmen der Personalentwicklung("near the job") 
-4. 
 
-## Aufbauorganisation
 
-* 0
-* 1
-* 2
+## Aus-und Weiterbildungsportfolio
+
+* Umschulungen in insgesamt 8 statlich anerkannten Ausbildungsberufen
+* Berufliche Teilqualifikationen (MS Office und Datev)
+* Kooperationspartner für IHK Zertifizierungsprüfungen
+
+
+## Aufbauorgaisation und Unternehmensstruktur
+
+* Vor 2020: Dezentralisiertes Struktur, weitgehenst autarke Verwaltung der Standorte unter Dachverwaltung
+* Seit 2020: Strategische Neuorientierung aufgrund der neuen Rahmenbedingungen der Sars-Cov 2 Epidemie
+
+
+## Betriebliche Handlungsalternativen
+
+* Privatwirtschaftlich, d.h. primär profitorientierte Ausrichtung des Unternehmens
+* Zielkonflikt zu pädagogischen/sozialen Verantwortung?
+* Primäre (innerbetriebliche) Erfolgskennzahl: Arbeitsvermittlungsquote!
+
+
+
+## Betriebliche 
 
 
 
 # Betriebliche Handlungsalternativen
+
 
 
 ## Ökonomische Zielkonflikte
