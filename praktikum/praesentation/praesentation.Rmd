@@ -10,7 +10,7 @@ language:
     toc: 'Inhaltsverzeichnis'
 output:
   powerpoint_presentation:
-        reference_doc: template/tempate-red.pptx
+        # reference_doc: template/tempate-red.pptx
         slide_level: 2
         toc: true
         toc_depth: 2
@@ -31,17 +31,20 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Eckdaten 
 
-* A
-* B
-* C
+* Anbieter von Aus- und Weiterbildungsdienstleistungen
+* Deutschlandweite 16 Schulungszentren
+* Offizieler Bildungspartner von u.a.:
+    1. Microsoft Corporation
+    2. DATEV Software & Consulting
+    3. FSGU Akademie
 
 
 ## Geschäftsbereiche
 
-1. 1
-2. 2
-3. 3
-
+1. AVGS - Staatlich finanzierte Arbeitsvermittlung und/oder Arbeitserhaltungsmaßnahmen
+2. Berufliche Rehabilitation, insbesondere als Träger für die deutsche Rentenversicherung
+3. Berufsbegleitende Weiterbildungen im Rahmen der Personalentwicklung("near the job") 
+4. 
 
 ## Aufbauorganisation
 

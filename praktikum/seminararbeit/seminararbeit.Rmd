@@ -45,10 +45,11 @@ Der Standort ist für die eigenständige Akquise von Neukunden sowie die Planung
 An dem Standort waren zum Zeitpunkt des Unterweisungspraktikums sechs Mitarbeiter beschäftigt, diese unterteilen sich in eine Standortleitung mit primär administrativen Aufgaben, kaufmännische Fachdozenten, systemische Berufscoaches sowie eine Verwaltungskraft. Betriebliche Hilfsprozesse wie beispielsweise die Finanzbuchführung, das Controlling oder die Beschaffung werden durch die Zentralverwaltung des Unternehmens übernommen und zählen daher nicht zu den Aufgaben des Mainzer Standorts.\  
 
 Das Unternehmen besitzt eine Zertifizierung nach der Akkreditierungs- und Zulassungsverordnung Arbeitsförderung (kurz AZAV) und ist damit ein zugelassener Bildungsträger für die Einlösung von Bildungsgutscheine.
-Das Kerngeschäft des Unternehmens liegt in der Einlösung dieser Bildungsgutscheine wodurch eine enge Kooperation mit den Agenturen für Arbeit und lokalen Jobcentern entsteht. 
+Das Kerngeschäft des Unternehmens liegt in der Einlösung dieser Bildungsgutscheine, insbesondere sogenannter Aktivierungs- und Vermittlungsgutscheinen, wodurch eine enge Kooperation mit den Agenturen für Arbeit und lokalen Jobcentern entsteht. 
 Ein weiterer Geschäftsbereich liegt in der beruflichen Rehabilitation im Rahmen des Angebots der deutschen Rentenversicherung.
 Personen mit einem Anspruch auf diese Leistung, können die Weiterbildungsangebote der Kölner Wirtschaftsfachschule belegen um eine Integration/ Rehabilitation zurück in den Arbeitsmarkt zu ermöglichen. 
-Auch in Kooperation mit den Berufsgenossenschaften werden vergleichbare Weiterbildungsmaßnahmen angeboten.\    
+Auch in Kooperation mit den Berufsgenossenschaften werden vergleichbare Weiterbildungsmaßnahmen angeboten.
+Als letzten Geschäftsbereich bietet das Unternehmen außerdem berufbegleitende Weiterbildungen im Kontext der betrieblichen Personalentwicklung an (vgl. "near the job training").\     
 
 ## 1.2 Betriebliche Handlungsalternativen
 
@@ -206,7 +207,7 @@ Aufgrund dieser Tatsache ist mir bei der Planung a priori nicht bekannt, wie vie
 ## 3.2 Pädagogische Merkmale der Adressaten
 
 
-### Gruppenzusammensetzung: 
+### Gruppenzusammensetzung
 
 Die Adressaten der Unterweisung sind eine Gruppe von ca. 40-50 Umschülern im Ausbildungsberuf Kaufmann für Büromanagement. 
 Gruppen von Umschülern weisen erfahrungsgemäß eine hohe Diversität im Bezug auf ihre Zusammensetzung auf, die Alterspanne der Teilnehmer reicht dabei für gewöhnlich von 20 bis 60 Jahren und liegt im Durchschnitt schätzungsweise bei 35 Jahren. 
@@ -214,7 +215,7 @@ Erwartungsgemäß wird sich die Gruppe zu einem Großteil aus weiblichen Teilneh
 Der Anteil an Teilnehmern mit Migrationshintergrund ist bei der Kölner Wirtschaftsfachschule mit 30-40% vergleichweise hoch, für die Teilnahme an einer Umschulungsmaßnahme wird jedoch im Vorfeld eine Prüfung der Deutschkenntnisse durchgeführt, auf sprachlicher Ebene sind deshalb keinelei Verständnisprobleme zu erwarten.\  
 
 
-### Kenntnissstand und Vorwissen: 
+### Kenntnissstand und Vorwissen
 
 Eine besondere Schwierigkeit liegt für mich als Dozent in dem stark variierenden Grad an Vorkenntnissen der Teilnehmer, teilweise haben diese schon jahrelange berufliche Vorerfahrung während andere Teile der Gruppe keinerlei Vorerfahrung mit dem Themenberich EDV/Tabellenkalkulation haben.\  
 
@@ -227,7 +228,7 @@ Die Arbeit mit Verweis Funktionen erfordert im speziellen ein Verständnis von a
 Der Großteil der Schulungsteilnehmer hat einen Schulabschluss auf Haupt- oder Realschulniveau und damit keine oder nur stark begrenzte Erfahrungen mit dieser Kategorie von Aufgaben gesammelt.\     
 
 
-### Interesse und Motivation: 
+### Interesse und Motivation
 
 Die Teilnehmer der Unterweisung nehmen auf freiwilliger Basis teil weshalb eine hohe Eigenmotivation von mir erwartet wird. 
 Das die Teilnehmer außerdem kurz vor ihrer Zwischenprüfung stehen, einhegehend mit Prüfungsstress und Nervösität, verstärkt das Interesse der Teilnehmer an dem Thema wahrscheinlich zusätzlich da ein direkter Nutzen für Sie ersichtlich ist. \  
@@ -258,10 +259,10 @@ Die gewählten Anwendungsbeispiele sind leicht abgewandelte Formen aus der offiz
 Zum Abschluss einer Online Unterweisung führen wir standardmäßig eine Online Befragung mit allen Teilnehmern durch, dazu werden von der Kölner Wirtschaftsfachschule eigens entwickelte Fragebögen bereitgestellt.
 Nach der Auswertung dieser Ergebnisse waren die Teilnehmer mit der angebotenen Unterweisung in den folgeden Kernpunkten im Durchschnitt insgesamt zufrieden:
 
-1. Praxisnähe und Relevanz des Themas: 1,26
+1. Praxisnähe und Relevanz des Themas: 1,36
 2. Klarheit und Struktur des Unterrichtseinheit: 1,73
 3. Eingehen auf individuelle Fragen und Schwierigkeiten: 1,13
-4. Interaktive Gestaltung: 1,13
+4. Interaktive Gestaltung: 2,03
 5. Technische Umsetzung: 1,31
 
 > *Bewertung basierend auf Items die mit Schulnoten bewertet werden, Durchschnittsergebnisse von 38 Befragungsteilnehmern*
@@ -278,7 +279,7 @@ Eingeschränktes Feedback führt bei mir dazu, dass ich oft nicht einschätzen k
 Für zukünftige digitale Unterweisungseinheiten plane ich, die Methode der Gruppenarbeitsphasen daher stärker einzusetzten. Die Einteilung der Zuhörer in separate Arbeitsgruppen und das anschließende Betreuen auf Gruppenbasis hat in der beschriebenen Unterweisungseinheit stark zu Interaktion und Beteiligung beigetragen.
 Die Hörer werden mit dieser Technik aktiv in das Unterweisungsgeschehen eingebunden, unter den besonderen Umständen der Homeoffice-basierten Unterweisung halte ich diesen Aspekt für besonders hilfreich.\  
 
-In Rücksprache mit unserem betrieblichen Ansprechpartner für habe ich für zukünftige Unterweisungseinheiten außerdem den Hinweis bekommen, dass meine Unterweisungseinheiten inhaltlich oft zu umfangreich angesetzt sind. 
+In Rücksprache mit unserem betrieblichen Ansprechpartner für das Qualitätsmanagement in Aus- und Weiterbildung habe ich für zukünftige Unterweisungseinheiten außerdem den Hinweis bekommen, dass meine Unterweisungseinheiten inhaltlich oft zu umfangreich angesetzt sind. 
 Seine Empfehlung ist es, dass ich für eine 60 minütige Unterweisung in Zukunft lieber den Umfang an Themen zu Gunsten einer intensiveren Behandlung reduzieren sollte was ich für eine sehr wertvolle und angemessene Rückmeldung halte.\  
 
 \newpage 
