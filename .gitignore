@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+*.pptx*
+praktikum/praesentation/praesentation.pptx
+praktikum/praesentation/.~lock.praesentation.pptx#
