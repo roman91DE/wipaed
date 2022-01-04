@@ -13,8 +13,16 @@ output:
         # reference_doc: template/tempate-red.pptx
         slide_level: 2
         toc: true
-        toc_depth: 2
+        toc_depth: 1
         number_sections: true
+  # beamer_presentation:
+  #   theme: "Szeged"
+  #   colortheme: "beaver"
+  #   fonttheme: "default"
+  #   slide_level: 2
+  #   keep_tex: true
+  #   toc: TRUE
+  #   toc_depth: 1
 csl: style/british-journal-of-educational-psychology.csl
 bibliography: bib/ref.bib
 link-citations: yes
@@ -64,19 +72,83 @@ knitr::opts_chunk$set(echo = FALSE)
 * Privatwirtschaftlich, d.h. primär profitorientierte Ausrichtung des Unternehmens
 * Zielkonflikt zu pädagogischen/sozialen Verantwortung?
 * Primäre (innerbetriebliche) Erfolgskennzahl: Arbeitsvermittlungsquote!
+  * Anreiz zur Vermittlung in Niedriglohnsektor und Zeitarbeitsverhältnisse
+  * Keine nachhaltig/langfristige Ausrichtung
+  * Gesamtökonomischer Effekt fragwürdig  
 
 
+## Betriebliche Anforderungen
 
-## Betriebliche 
-
+* Fachliche Expertise
+* Didaktische/Pädagogische Fähigkeiten
+* Zeitmanagement
 
 
 # Betriebliche Handlungsalternativen
 
 
+## Ausgangssituation
 
-## Ökonomische Zielkonflikte
+* Betrieb im Wandel: Erarbeitung eines digitalen Schulungskonzepts
+* **Vorher**: Standorte arbeiten stark autonom:
+  1. Erarbeitung eigener Unterrichts/Unterweisungskonzepte
+  2. Wenig Kontakt zu anderen Geschäftsstellen
+  3. Fokus auf individuelle Betreuung
+* **Zielvorgabe**: Standortübergreifende Zusammenarbeit bei der Erstellung eines digitalen Unterrichtsangebots
 
-was ist daaas?
 
-# Literaturverzeichnis
+## Schwierigkeiten
+
+* Auftrag der Geschäftsleitung zur Umstellung ohne genaue Ziel- und Rahmenvorgaben
+* Mangelhafte Kommunikation- und Vernetzung zwischen Geschäftsstellen
+* Keine Erfahrung in der digitalen Unterrichtsgestaltung
+* Moral Hazard: "Die anderen machen das schon..."
+
+## Lösungsvorschlage
+
+Welche Maßnahmen könnte die Geschäftsleitung ergreifen um das Problem
+* in der **akuten** Lage,
+* **präventiv** für zukünftige Projekte
+zu lösen?
+
+## Betriebliche Lösungsvorschläge
+
+* Einführung eines wöchentlichen Meetings aller Beteiligten
+* Führung einer Skillmatrix: Erfassung von individuellen Kernkompetenzen
+* Ernennung von Ansprechpartnern und Verantwortlichen 
+
+# Unterweisungseinheit
+
+## Inhalt
+
+* Zielgruppe: Kaufmännische Umschüler
+* Thema: Verweis Funktionen in Microsoft Excel
+* Rahmenbedingungen: Online über Microsoft Teams
+
+
+## Vorgehensweise
+
+* Erstellung eines Zeitplans
+* Vorbereitung von interaktiven Übungsaufgaben
+* Einbezug von Visualisierungstools
+
+
+## Schwierigkeiten
+
+* Fehlendes Feedback bei Online Unterweisungen
+* Aktivierung der Teilnehmer zur Teilnahme?
+  1. Gruppenarbeitsphasen einsetzten?
+  2. Vermehrter Einsatz von Online Tools?
+  3. Ausweichen auf Video Formate?
+
+
+## Ihre Meinung
+
+Nach mehreren Semestern Erfahrungen mit Online Seminaren/Vorlesungen:
+
+* welche Methoden halten Sie für sinnvoll?
+* Welche Methoden gefallen Ihnen nicht?
+* was macht eine gute Online Schulung aus?
+
+
+
