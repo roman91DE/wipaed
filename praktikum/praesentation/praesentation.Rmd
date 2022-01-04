@@ -14,7 +14,7 @@ output:
         slide_level: 2
         toc: true
         toc_depth: 1
-        number_sections: true
+        number_sections: False
   # beamer_presentation:
   #   theme: "Szeged"
   #   colortheme: "beaver"
@@ -107,8 +107,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Lösungsvorschlage
 
 Welche Maßnahmen könnte die Geschäftsleitung ergreifen um das Problem
+
 * in der **akuten** Lage,
 * **präventiv** für zukünftige Projekte
+
 zu lösen?
 
 ## Betriebliche Lösungsvorschläge
