@@ -9,20 +9,19 @@ language:
   label:
     toc: 'Inhaltsverzeichnis'
 output:
-  powerpoint_presentation:
-        # reference_doc: template/tempate-red.pptx
-        slide_level: 2
-        toc: true
-        toc_depth: 1
-        number_sections: False
-  # beamer_presentation:
-  #   theme: "Szeged"
-  #   colortheme: "beaver"
-  #   fonttheme: "default"
-  #   slide_level: 2
-  #   keep_tex: true
-  #   toc: TRUE
-  #   toc_depth: 1
+  # powerpoint_presentation:
+  #       # reference_doc: template/tempate-red.pptx
+  #       slide_level: 2
+  #       toc: true
+  #       toc_depth: 1
+  #       number_sections: False
+  beamer_presentation:
+    theme: "Szeged"
+    colortheme: "beaver"
+    fonttheme: "default"
+    slide_level: 2
+    keep_tex: true
+    toc: true
 csl: style/british-journal-of-educational-psychology.csl
 bibliography: bib/ref.bib
 link-citations: yes

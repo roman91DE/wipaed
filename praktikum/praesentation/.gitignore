@@ -1,6 +1,7 @@
 *.pptx
 !Foliensatz_Hoehn.pptx
 *.pdf
+!Foliensatz_Hoehn_beamer.pdf
 .DS_Store
 
 
