@@ -6,7 +6,7 @@ title: |
   <center>Wintersemester 2021/2022</center>
   |
 lang: de-DE
-date: "12/20/2022"
+date: "06.01.2022"
 output:
   pdf_document: default
   
@@ -145,7 +145,7 @@ Im Folgenden wird Aufgabenpunkt 2.2 des Leitfadens zum Unterweisungspraktikum be
 Im Rahmen des Hygieneschutzgesetzes und den entsprechenden Bund- und Landesverordnungen mussten viele betriebliche Prozesse im Verlauf der Sars-Cov 2 Pandemie angepasst und modifiziert werden, diese Umstellung hat auf der Ebene der kollegialen Zusammenarbeit neue innerbetriebliche Herausforderungen und Konflikte hervorgebracht.\  
 
 Eine besondere Herausforderung bestand darin, dass die angebotenen Schulungen von einer lokalen Organisation auf ein zentralisiertes, standortübergreifendes Modell umgestellt werden sollten. 
-Vor dem Inkrafttreten der entsprechenden Auflagen, hat das Schulungszentrum an dem ich eingesetzt war, ebenso wie die andern Stnadorte, selbstständig Unterrichtspläne aufgestellt, terminiert, durchgeführt und evaluiert. 
+Vor dem Inkrafttreten der entsprechenden Auflagen, hat das Schulungszentrum an dem ich eingesetzt war, ebenso wie die andern Standorte, selbstständig Unterrichtspläne aufgestellt, terminiert, durchgeführt und evaluiert. 
 Um Synergieeffekte zu nutzen und ein weitreichendes Schulungsangebot anbieten zu können, hat die Geschäftsleitung als Reaktion auf die Einstellung des Präsensbetriebs ein zentralisiertes System erarbeitet, die Fachdozenten der insgesamt 16 Standorte sollten sich demnach untereinander so koordinieren, dass Kurse zukünftig standortübergreifend angeboten werden.\  
 
 Bei der Neueinführung dieses Systems kam es innerhalb kürzester Zeit dazu, dass das Angebot an Online Kursen stark zurückgegangen ist und den Teilnehmern der Weiterbildungskurse ein mangelhaftes Angebot zur Verfügung gestellt wurde.
