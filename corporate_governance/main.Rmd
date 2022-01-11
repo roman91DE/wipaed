@@ -3189,6 +3189,11 @@ Determinanten der **Kompetenzprofile** einzelner Mitglieder des AR
 -   Nicht jedes AR Mitglied muss alle Kompetenzen aufweisen, es geht
     immer um die Gesamtzusammensetzung des AR
 
+## TODO
+
+Mit Folie 222 im neuen Skript abgleichen und ggf. aktualisieren
+
+
 Unabhängigkeit des AR
 ---------------------
 
@@ -3203,6 +3208,9 @@ Rechtmäßigkeit, Ordnungsmäßigkeit und Wirtschaftlichkeit
 Interesse der Gesamtgesellschaft
 
 **Rechtliche Vorgaben zur Unabhängigkeit gemäß AktG**
+
+Unabhängigkeit wird insbesondere anhand der institutionelle Trennung
+definiert:
 
 1.  Vorstandsamt und Aufsichtsratsamt innerhalb der gleichen
     Gesellschaft ist nicht möglich
