@@ -34,7 +34,7 @@ Ziel: Sensibilisierung für die eigene Empfänglichkeit für unbewusste Beeinflu
 
 
 
-### Auswahl aktueller Forschungserkenntnisse
+## Auswahl aktueller Forschungserkenntnisse
 
 Meta-Analyse: 28 Studien am US Arbeitsmarkt:
 
@@ -74,8 +74,8 @@ Keine Ungleichbehandlung der Teilnehmer auf Grundlage von:
 
 
 
-[^1]:https://www.wirtschaftspsychologie-aktuell.de/magazin/implicit-biases-mindern-chancengleichheit-bei-personalauswahl/179/
+[^1]:wirtschaftspsychologie-aktuell.de - implicit Biases mindern Chancengleichheit bei Personalauswahl, abgerufen am 16.01.22
 
-[^2]: The persistence of racial discrimination in hiring Lincoln Quillian, Devah Pager, Ole Hexel, Arnfinn H. Midtbøen (https://doi.org/10.1073/pnas.1706255114)
+[^2]: The persistence of racial discrimination in hiring, Quillian et. al., 2017
 
-[^3]: Discrimination against Female Migrants Wearing Headscarves, Doris Weichselbaumer, 2016
+[^3]: Discrimination against Female Migrants Wearing Headscarves, Weichselbaumer, 2016
