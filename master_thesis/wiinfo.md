@@ -42,6 +42,7 @@ Generalisierungsverhalten in Genetischer Programmierun
 * Evolutionäre Algorithmen und Computational Intelligence Verfahren
 * Verbindungen zum Bereich Finance und Trade?
     - Portfolio Zusammenstellung?
+* multikriterielle optimierungsverfahren
 
 
 
