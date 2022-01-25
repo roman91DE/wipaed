@@ -4,6 +4,13 @@
 
 Erstgespräch mit David Wittenberg, Seminarplatz und Betreuung Masterarbeit sind möglich und wir haben beides quasi schon vereinbart.
 
+## Stichworte zum Einlesen
+
+* Framework GP: https://deap.readthedocs.io/en/master/tutorials/advanced/gp.html
+* Transformer Architecture
+* GP Literature
+* Neural Network Basics
+
 
 ## Bewerbung Seminararbeit
 
