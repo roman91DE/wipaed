@@ -45,8 +45,6 @@ Generalisierungsverhalten in Genetischer Programmierun
 * multikriterielle optimierungsverfahren
 
 
-
-
 # Fragen
 
 * Start Anmelungsphase für Forschungs/Masterseminar?
