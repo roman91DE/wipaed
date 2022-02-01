@@ -1,144 +1,195 @@
 ---
+title: Corperate Governance deutscher Unternehmen 
+author: Roman Hoehn
 output:
-  html_document: default
+  pdf_document:
+  toc: True
 ---
-[]{#anchor}Grundlagen der Prinzipal Agenten Beziehung und Corporate Governance
-==============================================================================
 
-Prinzipal beauftrag Agenten mit der Ausführung einer Aufgabe, die mit
-der Gewährung von Entscheidungskompetenz verbunden ist
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Corperate Governance deutscher Unternehmen
+
+
+## Grundlagen der Corporate Governance
+
+
+### Prinzipal Agenten Theorie und Corporate Governance
+
+Ausgangssituation: Prinzipal beauftrag Agenten mit der Ausführung einer Aufgabe, die mit der Gewährung von Entscheidungskompetenz verbunden ist
+
+> Prinzipal: Beauftragung des Agenten auf Vertrauensbasis
+> Agent: Versprechen der Aufgabenerfüllung gegenüber dem Prinzipal
 
 Warum Gewährung von Entscheidungskompetenz durch Prinzipal?
+1. Agent ist Spezialist, nicht Prinzipal! Zu genaue Vorgaben durch Prinzipal können seinen Erfolg negativ beeinträchtigen
+2. Komplexität der Vertragsgestaltung bei zu genauen Vorgaben
 
--   Agent ist Spezialist, nicht Prinzipal! Zu genaue Vorgaben durch
-    Prinzipal können seinen Erfolg negativ beeinträchtigen
--   Komplexität der Vertragsgestaltung bei zu genauen Vorgaben
+Vorteile: 
+* Prinzipal muss keine detaillierten Fachkenntnisse über Themenbereich haben
+* Spezialisierte Agenten können für verschiedene Aufgaben eingesetzt werden
 
-Die Erteilung von Entscheidungskompetenz erfordert jedoch zwingend
-Vertrauen von Prinzipal zu Agenten, dieses kann durch den Agenten
-ausgenutzt/ enttäuscht werden
 
-P&A Beziehungen (Beispiele)
----------------------------
+Die Erteilung von Entscheidungskompetenz erfordert jedoch zwingend Vertrauen von Prinzipal zu Agenten, dieses kann durch den Agenten ausgenutzt/enttäuscht werden.
+Ohne Entscheidungskompetenz, wird der Agent in seinen Handlungsspielraum stark eigeschränkt, eine genaue vertragliche Spezifikation ist aufgrund des hohen Aufwands und mangelndem Fachverständnis der Prinzipals oft nicht möglich.
 
-Autobesitzer zu Werkstatt
+Beispiele für P&A Beziehungen:
 
-Patient zu Arzt
+* Autobesitzer zu Werkstatt
+* Patient zu Arzt
+* Aktionäre zu Vorstand
 
-Aktionäre zu Vorstand
 
-Prinzipal: Beauftragung (auf Vertrauensbasis)
+#### Prinzipal Agenten Probleme bei Kapitalgesellschaften
 
-Agent: Versprechen der Aufgabenerfüllung
+Kapitalgesellschaften kennzeichnen sich primär durch die Trennung von Kapitalaufbringung und der Unternehmensleitung
 
-Prinzipal Agenten Probleme bei Kapitalgesellschaften
-----------------------------------------------------
+Kapitalaufbringung: Aktionäre legen Mittel unternehmerisch an, ohne dabei selbst unternehmerisch tätig zu werden
 
-Kapitalgesellschaften kennzeichnen sich primär durch die Trennung von
-Kapitalaufbringung und der Unternehmensleitung
+Rechte der Aktionäre: Stimmrecht auf Gesellschaftsversammlung, Gewinnausschüttungen gemäß Gesellschafterbeschluss, Anteil am Liquidationserlös bei Auflösung der Gesellschaft
 
-Kapitalaufbringung: Aktionäre legen Mittel unternehmerisch an, ohne
-dabei selbst unternehmerisch tätig zu werden
+Unternehmensleitung/ Vorstand: Können unternehmerisch tätig sein, ohne dabei direkt Kapital für das Unternehmen einzubringen
 
-Rechte der Aktionäre: Stimmrecht auf Gesellschaftsversammlung,
-Gewinnausschüttungen gemäß Gesellschafterbeschluss, Anteil am
-Liquidationserlös bei Auflösung der Gesellschaft
+Vorteile der Trennung von Kapitalaufbringung und Unternehmensleitung?
 
-Unternehmensleitung/ Vorstand: Können unternehmerisch tätig sein, ohne
-dabei direkt Kapital für das Unternehmen einzubringen
+Kapitalaufbringung: Aktionäre/ Anteilseigner können durch Diversifikationsstrategien effektiv unternehmerisch tätig sein/ Mittel anlegen ohne dabei selbst direkt unternehmerisch tätig zu werden
 
-Vorteile der Trennung von Kapitalaufbringung und Unternehmensleitung
---------------------------------------------------------------------
+Vorstände: Durch die fehlende Voraussetzung der Kapitalaufbringung kann bei der Auswahl von Vorständen auf einen größeren Pool von potentiellen Kandidaten zurückgegriffen werden, die Befähigung zur Übernahme der Unternehmensleitung ist nicht von den individuellen finanziellen Kapazitäten der Anwärter abhängig.
 
-Kapitalaufbringung: Aktionäre/ Anteilseigner können durch
-Diversifikationsstrategien effektiv unternehmerisch tätig sein/ Mittel
-anlegen (ohne dabei selbst direkt unternehmerisch tätig zu werden)
+Vergleich der Gesellschaftsformen:
 
-Vorstände: Durch die fehlende Voraussetzung der Kapitalaufbringung kann
-bei der Auswahl von Vorständen auf einen größeren Pool von potentiellen
-Kandidaten zurückgegriffen werden
-
-Vergleich der Gesellschaftsformen
----------------------------------
-
-  -------------------------------------------- --------------------------------------------
-  Gesellschaftsformen                          
-  Personengesellschaften (OHG, KG, PartnerG)   Kapitalgesellschaften (GmbH, AG, KGaA, SE)
-  Eigentümergeführte Gesellschaften            Trennung von Kapital und Geschäftsführung
-  Grundsätzlich keine Haftungsbeschränkungen   Grundsätzlich beschränkte Haftung
-  Weitgehend dispositives Recht\* (HGB)        Weitgehens zwingendes Recht (GmbHG, AktG)
+  Gesellschaftsformen
+  Personengesellschaften (OHG, KG, PartnerG) | Kapitalgesellschaften (GmbH, AG, KGaA, SE)
+  ---                                        | ---
+  Eigentümergeführte Gesellschaften          | Trennung von Kapital und Geschäftsführung
+  ---                                        | ---
+  Grundsätzlich keine Haftungsbeschränkungen | Grundsätzlich beschränkte Haftung
+  ---                                        | ---
+  Weitgehend dispositives Recht(HGB)[^1]      | Weitgehens zwingendes Recht (GmbHG, AktG)
   -------------------------------------------- --------------------------------------------
 
-\*Dispositives Recht: Nachgiebiges Recht, Rechtsvorschriften können
+[^1]: Nachgiebiges Recht, Rechtsvorschriften können
 durch Vereinbarungen abgeändert werden. HGB Reglungen über
 Handelsgeschäfte sind zum Großteil dem dispositiven Recht zuzuordnen.
 
-Die Rolle des Vorstands als Agent
----------------------------------
+Personengesellschaften besitzten auf elementarer Ebene keine P&A Beziehung, da Unternehmensleitung und Finanzierung auf den gleichen Personenkreis fällt.
 
-Grundproblem: Gelingt es dem Prinzipal einen optimalen Agenten
-(=Vorstand) auszuwählen?
+Die Rolle des Vorstands als Agent:
 
--   Informationsasymmetrie: Prinzipal kann die Eigenschaften des Agenten
-    nicht optimal/ vollständig beobachten
--   Interessenskonflikt: Agent hat Anreize sich als optimalen Kandidaten
-    zu präsentieren (auch wenn er es nicht ist)
+Grundproblem: Gelingt es dem Prinzipal (=Kapitalanlegern) einen optimalen Agenten (=Vorstand) auszuwählen?
+
+-   Informationsasymmetrie: Prinzipal kann die Eigenschaften des Agenten nicht optimal/ vollständig beobachten
+-   Interessenskonflikt: Agent hat Anreize sich als optimalen Kandidaten zu präsentieren da seine Nutzenfunktion maßgeblich von seiner individuellen Entlohnung abhängt
 
 Folgen des Grundproblems
 
 1.  Adverse Selektion
 2.  Moral Hazard
 
-**Adverse Selektion**: Der Prinzipal ist aufgrund des Grundproblems nur
-noch dazu bereit eine durchschnittliche Qualität der Bewerber zu
-bezahlen. Aufgrund des niedrigen Durchschnittpreises scheiden
-hochqualifizierte/ sehr gut geeignete Agenten aus dem Auswahlpool aus.
+#### Adverse Selektion
 
-Prinzipale antizipieren die beschriebene Entwicklung wodurch die
-Zahlungsbereitschaft weiter sinkt, über Zeit verbleiben nur noch
-schlecht geeignete Agenten bzw. keine Agenten im Bewerberpool.
+Der Prinzipal ist aufgrund des Grundproblems der Informationsasymmetrie nur noch dazu bereit eine durchschnittliche Qualität der Bewerber zu bezahlen. Aufgrund des niedrigen Durchschnittpreises scheiden hochqualifizierte/ sehr gut geeignete Agenten aus dem Auswahlpool aus.
 
-**Adverse Selektion ist eine negative Auslese, gute Agenten werden vom
-Markt vertrieben!**
+Prinzipale antizipieren die beschriebene Entwicklung wodurch die Zahlungsbereitschaft weiter sinkt, über Zeit verbleiben nur noch schlecht geeignete Agenten bzw. keine Agenten im Bewerberpool.
+
+**Adverse Selektion ist eine negative Auslese, gute Agenten werden vom Markt vertrieben!**
 
 Wie lässt sich adverse Selektion verhindern?
---------------------------------------------
 
 Zwei Möglichkeiten:
 
-**Informationsasymmetrien reduzieren**/ abbauen durch Signaling durch
-Agenten (z.B. Hochschulabschluss oder Arbeitszeugnisse) oder Screenings
+**Informationsasymmetrien reduzieren**
+* Signaling durch Agenten (z.B. Hochschulabschluss oder Arbeitszeugnisse) oder Screenings
 des Agenten durch den Prinzipal (z.B. Assesment Center, Arbeitsprobe)
 
-Screening: Anstrengungen des Prinzipals zur besseren Einschätzung des
-Agenten
+> Screening: Anstrengungen des Prinzipals zur besseren Einschätzung des Agenten
+> Signaling: Anstrengungen des Agenten, um seine wahren Eigenschaften glaubwürdig an Prinzipal zu vermitteln
 
-Signaling: Anstrengungen des Agenten, um seine wahren Eigenschaften
-glaubwürdig an Prinzipal zu vermitteln
+Sowohl Screening als auch Signaling sind nur dann effizient, wenn schlechte Agenten die Eigenschaften von guten Agenten nicht ohne größeren Aufwand imitieren können
 
-  Sowohl Screening als auch Signaling sind nur dann effizient, wenn
-schlechte Agenten die Eigenschaften von guten Agenten nicht ohne
-größeren Aufwand imitieren können
+**Interessenskonflikte reduzieren**
+Vertragsgestaltung/ Self Selection, der Agent offenbart seine eigenen Eigenschaften durch die Vertragsauswahl, nur ein geeigneter Agent ist z.B. dazu bereit eine erfolgsabhängige Vergütung anzunehmen (alternativ die Gewährleistung bei Schlechterfüllung)
 
-**Interessenskonflikte reduzieren**: Vertragsgestaltung/ Self Selection,
-der Agent offenbart seine eigenen Eigenschaften durch die
-Vertragsauswahl, nur ein geeigneter Agent ist z.B. dazu bereit eine
-erfolgsabhängige Vergütung anzunehmen (alternativ die Gewährleistung bei
-Schlechterfüllung)
+#### Rechenbeispiel
 
-**Rechenbeispiel**:
+Auswahl zwischen Agenten A und B
 
-Agenten A und B
-
-Agent A bringt Prinzipal bei Beauftragung einen brutto Nutzen von 400,
-Agent B 200
+Agent A bringt Prinzipal bei Beauftragung einen brutto Nutzen von 400, Agent B 200
 
 Mindestvergütung von Agent A: 350
 
 Mindestvergütung von Agent B: 200
 
-Ohne Informationsasymmetrien (=Prinzipal kann zwischen A und B
-unterscheiden)
+##### Vollständige Information
+
+```{python}
+
+agents = {
+    "A": {
+      "Bruttonutzen": 400,
+      "Mindestverguetung": 350
+      },
+    "B": {
+      "Bruttonutzen": 200,
+      "Mindestverguetung": 200
+      }
+  }
+
+def total_information(agents):
+  selection = None
+  for agent in agents.keys():
+    tmp = agents[agent]["Bruttonutzen"] - agents[agent]["Mindestverguetung"]
+    print(f"""Netto Nutzen Prinzipal bei Beauftragung von Agent {agent}: {tmp}""")
+    if selection is None:
+      selection = agent
+    elif tmp > agents[selection]["Bruttonutzen"] - agents[selection]["Mindestverguetung"]:
+      selection = agent
+  print(f"Auswahl der Prinzipals: Agent {selection}")
+
+total_information(agents)
+
+```
+
+##### Unvollständige Information
+
+```{python}
+agents = {
+    "A": {
+      "Bruttonutzen": 400,
+      "Mindestverguetung": 350
+      },
+    "B": {
+      "Bruttonutzen": 200,
+      "Mindestverguetung": 200
+      }
+  }
+
+def zahlungsbereitschaft(agents):
+  tmp = 0
+  for agent in (agents.keys()):
+    tmp += agents[agent]["Bruttonutzen"]
+  return (tmp / len(agents))
+  
+  
+def hidden_information(agents):
+    while len(agents) > 0:
+      zb = zahlungsbereitschaft(agents)
+      for agent in agents.keys():
+        if zb < agents[agent]["Mindestverguetung"]:
+          print(f"Agent {agent} wird vom Markt verdrängt")
+          agents.pop(agent)
+          return hidden_information(agents)
+        else:
+            print(f"Agent {agent} ist der letzte verbleibende Agent am Markt!")
+            return
+
+hidden_information(agents)
+```
+
+
+Ohne Informationsasymmetrien (=Prinzipal kann zwischen A und B unterscheiden)
 
 Beauftragung von A
 
@@ -3455,14 +3506,10 @@ Abschlussprüfer und falls notwendig auch Sonderprüfern
 **Billigung (=Meinungsäußerungen der HV): **Entlastung von Vorstand und
 AR, Votum über Vergütungsystem
 
-**Stimmrechte**: 1 Stimme pro Aktie, grundsätzlich einfache Mehrheit
-jedoch qualifizierte Mehrheit (ab 75%) für Satzungsänderungen, Vorstand
-ist verpflichtet zur Umsetzung, Wahloptionen je nach Thema durch AR
-und/oder Vorstand
+**Stimmrechte**: 1 Stimme pro Aktie, grundsätzlich einfache Mehrheit jedoch qualifizierte Mehrheit (ab 75%) für Satzungsänderungen, Vorstand ist verpflichtet zur Umsetzung, Wahloptionen je nach Thema durch AR oder Vorstand
 
-1.  Die Hauptversammlung beinhaltet eine **Diskussion der
-    Tagesordnungspunkte**, Aktionäre besitzen dabei ein **Rede- und
-    Auskunftsrecht**. **Vorstand hat Fragen zu beantworten** unter der
+1.  Die Hauptversammlung beinhaltet eine **Diskussion der Tagesordnungspunkte**, Aktionäre besitzen dabei ein **Rede- und
+    Auskunftsrecht. Vorstand hat Fragen zu beantworten** unter der
     Bedingung, dass diese mit dem entsprechenden **Tagesordnungspunkt
     zusammenhängen** und dass das **Unternehmen keinen Schaden durch die
     Beantwortung erleidet**. Aktionäre können außerdem **Gegenanträge
