@@ -189,36 +189,32 @@ hidden_information(agents)
 ```
 
 
-Ohne Informationsasymmetrien (=Prinzipal kann zwischen A und B unterscheiden)
+**Ohne Informationsasymmetrien (=Prinzipal kann zwischen A und B unterscheiden)**
 
 Beauftragung von A
 
-U(A)=400 -- 350 = 50 (=Nettonutzen kann zwischen A und Prinzipal
-aufgeteilt werden)
+U(A)=400 -- 350 = 50 (=Nettonutzen kann zwischen A und Prinzipal aufgeteilt werden)
 
-U(B) = 200 -- 200 = 0   U(B)\< U(A)
+U(B) = 200 -- 200 = 0   
+U(B)\< U(A)
 
-Mit Informationsasymmetrien
+**Mit Informationsasymmetrien**
 
 Prinzipal bildet Erwartungsnutzen
 
 U(A/B) = 400/2 + 200/2 = 300
 
-  Maximale ZB des Prinzipals wird von Agenten antizipiert, da kleiner
-als Reservationslohn von Agent A verlässt dieser den Markt
+Maximale ZB des Prinzipals wird von Agenten antizipiert, da kleiner als Reservationslohn von Agent A verlässt dieser den Markt
 
 Prinzipal antizipiert wiederum
 
 U(B)= 200 -200 = 0
 
-Der Rückgang des Nettonutzens von 50 (vollständige Information) auf 0
-(unvollständige Information) entspricht den Agency Kosten i.H.v. 50
+Der Rückgang des Nettonutzens von 50 (vollständige Information) auf 0 (unvollständige Information) entspricht den Agency Kosten i.H.v. 50
 
-Moral Hazard
-------------
+### Moral Hazard
 
-Erbringt der ausgewählte Agent aus Sicht des Prinzipals einen optimalen
-Arbeitseinsatz?
+Erbringt der ausgewählte Agent aus Sicht des Prinzipals einen optimalen Arbeitseinsatz?
 
 Informationsasymmetrie: Prinzipal kann den Arbeitseinsatz des Agenten
 nicht perfekt beobachten
