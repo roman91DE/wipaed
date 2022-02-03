@@ -212,7 +212,7 @@ U(B)= 200 -200 = 0
 
 Der Rückgang des Nettonutzens von 50 (vollständige Information) auf 0 (unvollständige Information) entspricht den Agency Kosten i.H.v. 50
 
-### Moral Hazard
+#### Moral Hazard
 
 Erbringt der ausgewählte Agent aus Sicht des Prinzipals einen optimalen Arbeitseinsatz?
 
@@ -3562,3 +3562,90 @@ hohen mittelbaren, indirekten Einfluss
     Unternehmenskapitalisierung ab
 
 [^3]:  Kontrollierende Aktionäre sind zumindest Mehrheitsaktionäre
+
+
+## Governance in Public-Private Partnerships ans NGOs
+
+Main Topic: What are the challenges and differences of (Corperate) Governance in public sector organizations and NGOs?
+
+#### Governance in the public sector (p1)
+
+What is the public sector? 
+
+* Governmental controlled structures,
+* public utilities (e.g. public transportation services)
+* tax funded 
+
+What about public money?
+
+* mainly collected from taxes
+* little competitve pressure
+* large scale
+
+Why the need for CG in public sector?
+> ensure, that  organizations fulfill their job and purpose to the public that largely funds them
+
+Important elements in public sector governance include:
+
+1. internal structures (boards, sub-committees, ..)
+2. external accountability (financial budgets, reports, ..)
+3. code of conduct for members
+4. open and transparent to the public
+
+
+Differences to private sector Governance?
+
+* Private: 
+	1. Stakeholders as the main focus group for accountability
+	2. "classic" agency problem
+* public sector:
+	1. Agency problem with different properties, principals are very divers group made of  members of society
+	2. Who are the main people that public sector organizations should be accountable to?
+	3. Constanly changing environment (stupid slide)
+
+
+##### NPM Reforms of 1980s
+
+* New Public Management (=NPM) is a managemnt philosophy that is getting more adapted by publi organizations since the 1980. 
+* Aim: Enhance Efficiency, Productivity and Quality of public organizations
+* Focus: Market orientations and reforms to mirror the management and organization style of private sector companies
+
+
+#### Governance in NGOs
+
+What are NGOs?
+
+* non-profit organizations: surplus doesnt get paid to owners
+* varying sizes and power
+* seperate entities that are not part of the governmental structure
+* formal organizazions like companies, public sector entities etc
+
+Governance of NGOS?
+
+Similiar questions as in public sector organizations, 
+	1. Who are the shareholders?
+	2. how to measure accountability?
+
+
+Stake/Shareholders are very divers as :well:
+
+* Donors/ Funders
+* Staff and volunteers
+* regulators
+* governments
+* people that benefit from ngos direct actions
+* ...
+
+
+Measuring Success for NGOs ?
+
+* Difficult since the metric is outside of the organization (much easier for private companies)
+* Hard to collect and interpret data for accountability in many cases
+* Different metrics are used but flawd
+	* cost per total expenditure: how many percent of a donation are spend on aim, costs, ...
+	* SROI - Social Return on Investment: Estimates socials value generated dollar equivalent
+
+
+
+
+
