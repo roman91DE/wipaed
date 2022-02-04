@@ -1,15 +1,3 @@
----
-title: Corperate Governance deutscher Unternehmen 
-author: Roman Hoehn
-output: 
-  html_document: default
-  toc: True
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 # Corperate Governance deutscher Unternehmen
 
 
