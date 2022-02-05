@@ -1,3 +1,15 @@
+---
+title: Corperate Governance deutscher Unternehmen 
+author: Roman Hoehn
+output: 
+  html_document: default
+  toc: True
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 # Corperate Governance deutscher Unternehmen
 
 
@@ -89,7 +101,7 @@ Wie lässt sich adverse Selektion verhindern?
 Zwei Möglichkeiten:
 
 **Informationsasymmetrien reduzieren**
-* Signaling durch Agenten (z.B. Hochschulabschluss oder Arbeitszeugnisse) oder Screenings
+Signaling durch Agenten (z.B. Hochschulabschluss oder Arbeitszeugnisse) oder Screenings
 des Agenten durch den Prinzipal (z.B. Assesment Center, Arbeitsprobe)
 
 > Screening: Anstrengungen des Prinzipals zur besseren Einschätzung des Agenten
@@ -270,36 +282,27 @@ Prüfung ob Moral Hazard Probleme, falls vorhanden, durch Vertragsgestaltung und
 
 #### Rolle des Managers (=Vorstand/ Agent) nach Adam Smith
 
--   Manager trifft finanzielle Entscheidungen über Mittel, die er nicht
-    selbst investiert hat. Daraus resultierend kann man nicht davon
-    ausgehen, dass der Manager finanzielle Entscheidungen mit der
-    gleichen Sorgfalt trifft, die er bei eigenen finanziellen Mitteln
-    verwenden würde
+-   Manager trifft finanzielle Entscheidungen über Mittel, die er nicht selbst investiert hat. Daraus resultierend kann man nicht davon ausgehen, dass der Manager finanzielle Entscheidungen mit der gleichen Sorgfalt trifft, die er bei eigenen finanziellen Mitteln verwenden würde
 
-Aus dem Grundproblem der Prinzipal-Agenten Theorie (Adverse Selektion,
-Moral Hazard) ergibt sich für den Prinzipal die folgenden 3 Aufgaben
+Aus dem Grundproblem der Prinzipal-Agenten Theorie (Adverse Selektion, Moral Hazard) ergibt sich für den Prinzipal die folgenden 3 Aufgaben
 
--   Sorgfältige Auswahl von Agenten (=Vorstand)
--   Effektive Überwachung des Agenten (=Vorstand)
--   Kontrolle/ Steuerung des Agenten (=Vorstand) durch Anreizsetzung
+- Sorgfältige Auswahl von Agenten (=Vorstand)
+- Effektive Überwachung des Agenten (=Vorstand)
+- Kontrolle/ Steuerung des Agenten (=Vorstand) durch Anreizsetzung
 
 Wer handelt aber als Prinzipal? 
--------------------------------
 
--   Kleinaktionäre
--   Großaktionäre
--   Aufsichtsrat
--   Staat
+- Kleinaktionäre: 
+- Großaktionäre
+- Aufsichtsrat
+- Staat
 
-**Kleinaktionäre**: Aufgrund von mangelnden Informationsgrundlagen,
-Fachkompetenz und geringen Anreizen können Kleinaktionäre die Rolle des
+**Kleinaktionäre**: Aufgrund von mangelnden Informationsgrundlagen, Fachkompetenz und geringen Anreizen können Kleinaktionäre die Rolle des
 Prinzipals nicht oder nur sehr begrenzt ausüben.
 
--   Anteilsbesitz und Kontrolle fallen i.d.R. auseinander
+- Anteilsbesitz und Kontrolle fallen i.d.R. auseinander
 
-Bei fehlender Kontrolle des Agenten kann es schnell zu einer Situation
-kommen, in der der Vorstand sich selbst kontrolliert (=**managerial
-hegemony**)
+Bei fehlender Kontrolle des Agenten kann es schnell zu einer Situation kommen, in der der Vorstand sich selbst kontrolliert (=**managerial hegemony**)
 
 **Aufsichtsrat:**
 
@@ -309,430 +312,284 @@ Hat i.d.R.:
 -   Höhere Fachkompetenz
 -   Anreize können jedoch problematisch sein!
 
-Das Problem des AR ist jedoch, dass der AR selbst ein Agent im Auftrag
-der Aktionäre ist!
+Das Problem des AR ist jedoch, dass der AR selbst ein Agent im Auftrag der Aktionäre ist! Der AR unterliegt als Agent der Aktionäre selbst den Gefahren der Prinzipal Agenten Theorie! Moral Hazard und Adverse Selektion können die Arbeit des AR gefährden
 
-  Der AR unterliegt als Agent der Aktionäre selbst den Gefahren der
-Prinzipal Agenten Theorie!
+**Aufgaben des AR**
 
-  Moral Hazard und Adverse Selektion können die Arbeit des AR gefährden
+* Beauftragung des Vorstands
+* Aufgabenerfüllung (=Überwachung des Vorstands) für Aktionäre
 
-Aktionäre   Aufsichtsrat   Vorstand
-
--   Beauftragung
-
-Vorstand   Aufsichtsrat   Aktionäre
-
--   Versprechen der Auftragserfüllung
-
-Aufgaben des AR
-
-Beauftragung des Vorstands; Aufgabenerfüllung (=Überwachung des
-Vorstands) für Aktionäre
 
 **Großaktionäre als Überwachungsogan?**
 
 Prinzipiell besser geeignet als Kleinaktionäre, da
 
--   Höhere Motivation durch höhere Beteiligung und weniger
-    Diversifikation
--   Grundsätzlich gleiche Informationsansprüche aber häufig in engerem
-    Kontakt zu Vorstand
+-   Höhere Motivation durch höhere Beteiligung und weniger Diversifikation
+-   Grundsätzlich gleiche Informationsansprüche aber häufig in engerem Kontakt zu Vorstand
 -   Häufig auch mit besserer Fachkenntnis als Kleinaktionäre
 
-Was ist Corporate Governance?
------------------------------
+### Was ist Corporate Governance?
 
-Welche Mechanismen wirken auf den Vorstand, welche Kontrollsysteme gibt
-es im Rahmen der CG? Corporate Governance kann als ein System verstanden
-werden, dass Unternehmen mit Hilfe von mehreren Mechanismen überwacht
-und deren Führung beeinflusst
+Welche Mechanismen wirken auf den Vorstand, welche Kontrollsysteme gibt es im Rahmen der CG? 
 
-1.  Rechtliche Vorschriften, Kodizes und Normen
-2.  Wettbewerbskräfte
-3.  Stakeholder Einfluss (Kreditgeber, AN, Lieferanten, Kunden und
-    Öffentlichkeit)
-4.  Einfluss des AR [^2]
-5.  Einfluss der Aktionäre
-6.  Einfluss durch Vergütungssystem (durch AR und Anteilseigner
-    mitbestimmt)
-7.  Transparenz im Rahmen der Rechnungslegung, der Wirtschaftsprüfung,
-    der Arbeit von Finanzanalysten sowie der Berichterstattungen durch
-    Medien
+> Corporate Governance kann als ein System verstanden werden, dass Unternehmen mit Hilfe von mehreren Mechanismen überwacht und deren Führung beeinflusst
+
+1. Rechtliche Vorschriften, Kodizes und Normen
+2. Wettbewerbskräfte
+3. Stakeholder Einfluss (Kreditgeber, AN, Lieferanten, Kunden und Öffentlichkeit)
+4. Einfluss des AR [^2]
+5. Einfluss der Aktionäre
+6. Einfluss durch Vergütungssystem (durch AR und Anteilseigner mitbestimmt)
+7. Transparenz im Rahmen der Rechnungslegung, der Wirtschaftsprüfung, der Arbeit von Finanzanalysten sowie der Berichterstattungen durch Medien
 
 [^2]: Wahl des Aufsichtsrats bei AG und KGaA auf Hauptversammlung, bei GmbH
 auf der Gesellschaftsversammlung
 
 **Allgemeine Definition nach DCGK 2019:**
 
-„Unter Corporate Governance wird der rechtliche und faktische
-Ordnungsrahmen für die Leitung und
-
-Überwachung eines Unternehmens verstanden. „
+> „Unter Corporate Governance wird der rechtliche und faktische Ordnungsrahmen für die Leitung und Überwachung eines Unternehmens verstanden. „
 
 **Zweckgerichtete Definitionen:**
 
-„The ways in which suppliers of finance to corporations assure
-themselves of getting a return on their investment. "(Schleifer & Vishny
-1997)
+> „The ways in which suppliers of finance to corporations assure themselves of getting a return on their investment."
+(Schleifer & Vishny 1997)
 
-„Corporate Governance is the design of institutions that induce or force
-management to internalize the welfare of stakeholders. " (Tirole 2001)
+>„Corporate Governance is the design of institutions that induce or force management to internalize the welfare of stakeholders."
+(Tirole 2001)
 
-  Im Fokus steht, dass Agenten im Sinne der Prinzipale handeln!
+**Im Fokus steht, dass Agenten im Sinne der Prinzipale handeln!**
 
-Deutscher CG Kodex (=DCGK)
-==========================
+## Deutscher CG Kodex (=DCGK)
 
-Hintergrund: Hoher Bedarf an internationalem Kapital für deutsche
-Unternehmen in den 1990er Jahren; Schwierigkeiten der Kapitalbeschaffung
-durch deutsche Besonderheiten (z.B. betriebliche Mitbestimmung) und
-Unternehmensskandale (z.B. Flowtex) am internationalen Markt
+Hintergrund: Hoher Bedarf an internationalem Kapital für deutsche Unternehmen in den 1990er Jahren. Schwierigkeiten der Kapitalbeschaffung durch deutsche Besonderheiten (z.B. betriebliche Mitbestimmung) und Unternehmensskandale (z.B. Flowtex) am internationalen Markt
 
-  Veröffentlichung des DCGK im Jahre 2002 zur Schaffung von Vertrauen
-und Transparenz in deutsche börsennotierte Unternehmen
+Maßnahme: Veröffentlichung des DCGK im Jahre 2002 zur Schaffung von Vertrauen und Transparenz in deutsche börsennotierte Unternehmen
 
-Ziel des DCGK
+### Ziel des DCGK
 
-**Ziel**: Das System der Corporate Governance in Deutschland soll
-transparent und nachvollziehbar gemacht werden
+**Ziel**: Das System der Corporate Governance in Deutschland soll transparent und nachvollziehbar gemacht werden
 
-**Inhalt**: Grundsätze, Empfehlungen und Anregungen zur Leitung und
-Überwachung deutscher börsennotierter Gesellschaften, die national und
-international als Standards guter und verantwortungsvoller
-Unternehmensführung anerkannt sind
+**Inhalt**: Grundsätze, Empfehlungen und Anregungen zur Leitung und Überwachung deutscher börsennotierter Gesellschaften, die national und international als Standards guter und verantwortungsvoller Unternehmensführung anerkannt sind
 
-**Erklärtes Ziel**: Schaffung von Vertrauen durch Transparenz (bei
-Anlegern, Kunden, Belegschaft, Öffentlichkeit...)
+**Erklärtes Ziel**: Schaffung von Vertrauen durch Transparenz (bei Anlegern, Kunden, Belegschaft, Öffentlichkeit...)
 
-**Was macht des DCGK?** Wiedergabe von relevanten gesetzlichen
-Vorschriften, Entwicklung von Best-Practice Standards
+**Was macht des DCGK?** Wiedergabe von relevanten gesetzlichen Vorschriften, Entwicklung von Best-Practice Standards
 
- Prinzip: ***Transparenz*** schaffen, Verbesserung durch
-***Selbstregulierung*** und ***Flexibilisierung***
+ Prinzip: ***Transparenz*** schaffen, Verbesserung durch ***Selbstregulierung*** und ***Flexibilisierung***
 
-Wo muss Transparenz geschaffen werden? Überall dort Verhaltensspielräume
-bestehen und nicht bereits durch andere Umstände bestimmte
-Verhaltensweisen zu erwarten sind (z.B. durch Wettbewerbsdruck)
+Wo muss Transparenz geschaffen werden?
+
+Überall dort Verhaltensspielräume bestehen und nicht bereits durch andere Umstände bestimmte Verhaltensweisen zu erwarten sind (z.B. durch Wettbewerbsdruck)
 
 Idee: Wettbewerbsdruck?
 
- zu schwach
+* zu schwach
 
 Gesetzliche Reglungen?
 
-  fehlend/ vage
+* fehlend/ vage
 
 Gesellschaftliche Normen?
 
-  fehlend/ unklar
+* fehlend/ unklar
 
 Verhaltenskodizes!
 
-Beispiel
 
-Falls ein Unternehmen im Wettbewerb mit seiner Konkurrenz steht, wird es
-dadurch bereits zu einer optimalen Ressourcenallokation gedrängt. Eine
-Gesetzliche Reglung ist überflüssig
+#### Ablauf
 
-Ein Unternehmen, dass nicht im (vollständigen) Wettbewerb steht kann
-jedoch Freiräume ausnutzen, hier stellt sich die Frage ob gesetzliche
-Regulierungen notwendig sind? Gesetze müssen jedoch sparsam erlassen
-werden da hohe Belastung für das Justizsystem, auch ist es oft nicht
-möglich alle Entscheidungsfreiräume umfassend gesetzlich zu regulieren
+Falls ein Unternehmen im Wettbewerb mit seiner Konkurrenz steht, wird es dadurch bereits zu einer optimalen Ressourcenallokation gedrängt. Eine gesetzliche Reglung ist überflüssig
 
-Keine gesetzlichen Vorgaben? Gibt es etablierte gesellschaftliche
-Normen? Diese können ebenfalls Rückschlüsse auf das zu erwartende
-Verhalten geben (was ist sozial wünschenswertes Verhalten?)
+Ein Unternehmen, dass nicht im (vollständigen) Wettbewerb steht kann jedoch Freiräume ausnutzen, hier stellt sich die Frage ob gesetzliche Regulierungen notwendig sind? Gesetze müssen jedoch sparsam erlassen werden da sie eine hohe Belastung für das Justizsystem darstellen. Außerdem ist es oft nicht möglich alle Entscheidungsfreiräume umfassend gesetzlich zu regulieren
 
-Falls auf allen drei Ebenen Unklarheit herrscht, kann durch die
-Festlegung eines Verhaltenskodex Transparenz erschaffen werden. Wichtig
-ist, dass Transparenz über das Verhalten der Unternehmensleitung nur
-dann entsteht, wenn ein abweichendes Verhalten vom Kodex auch
-sanktioniert wird (Verstöße gegen DCGK werden i.d.R. mit Kursverlusten
-sanktioniert)
+Keine gesetzlichen Vorgaben? Gibt es etablierte gesellschaftliche Normen? Diese können ebenfalls Rückschlüsse auf das zu erwartende Verhalten geben (was ist sozial wünschenswertes Verhalten?)
 
-Beispiel: Altersbegrenzung von AR Mitgliedern
----------------------------------------------
+Falls auf allen drei Ebenen Unklarheit herrscht, kann durch die Festlegung eines Verhaltenskodex Transparenz erschaffen werden. Wichtig ist, dass Transparenz über das Verhalten der Unternehmensleitung nur dann entsteht, wenn ein abweichendes Verhalten vom Kodex auch sanktioniert wird (Verstöße gegen DCGK werden i.d.R. mit Kursverlusten sanktioniert)
 
--Wettbewerbsdruck besteht nicht (keine Wettbewerbsnachteile)
+#### Beispiel: Altersbegrenzung von AR Mitgliedern
 
--Gesetze nicht in Kraft, problematisch da spezifische Reglungen erlassen
-werden müssten für verschiedene Branchen/ Funktionen
+- Wettbewerbsdruck besteht nicht (keine Wettbewerbsnachteile)
 
--Gesellschaftliche Normen für einen maximales Alter eistieren ebenfalls
-nicht
+- Gesetze nicht in Kraft, problematisch da spezifische Reglungen erlassen werden müssten für verschiedene Branchen/ Funktionen
 
-  Die Erlassung eines Höchstalters für AR Mitglieder in einem
-Verhaltenskodex kann also das Vertrauen der Anleger/ Stakeholder durch
-Schaffung von Transparenz erhöhen (falls vertrauenswürdig und
-Sanktionierung von abweichendem Verhalten)
+- Gesellschaftliche Normen für einen maximales Alter existieren ebenfalls nicht
 
-Fazit: Kodizes können Unsicherheiten über zu erwartendes Verhalten durch
-die Schaffung von Transparenz reduzieren und somit Nutzen stiften. Damit
-dies gelingt, müssen Freiräume durch imperfekten Wettbewerb entstehen
-sowie klare gesetzliche oder soziale Reglungen nicht vorhanden sein.
+Die Erlassung eines Höchstalters für AR Mitglieder in einem Verhaltenskodex kann also das Vertrauen der Anleger/ Stakeholder durch Schaffung von Transparenz erhöhen (falls vertrauenswürdig und Sanktionierung von abweichendem Verhalten)
 
-  Durch die freiwillige Bindung an einen Kodex kann ein Unternehmen
-demnach Vertrauen der Anleger gewinnen
+Fazit: Kodizes können Unsicherheiten über zu erwartendes Verhalten durch die Schaffung von Transparenz reduzieren und somit Nutzen stiften. Damit dies gelingt, müssen Freiräume durch imperfekten Wettbewerb entstehen sowie klare gesetzliche oder soziale Reglungen nicht vorhanden sein.
 
-Anwendung: Nichtbeachtung einer DCGK Empfehlung?
-------------------------------------------------
+Durch die freiwillige Bindung an einen Kodex kann ein Unternehmen demnach Vertrauen der Anleger gewinnen
+
+### Anwendung: Nichtbeachtung einer DCGK Empfehlung?
 
 Situation: AG beachtet Empfehlung nicht
 
-Da das erklärte Ziel der DCGK Empfehlungen darin besteht, Vertrauen
-darüber zu schaffen, welches Verhalten Anleger von der
-Unternehmensleitung erwarten können, wird durch Nichtbeachtung die
-gewünschte Transparenz gemindert
+Da das erklärte Ziel der DCGK Empfehlungen darin besteht, Vertrauen darüber zu schaffen, welches Verhalten Anleger von der Unternehmensleitung erwarten können, wird durch Nichtbeachtung die gewünschte Transparenz gemindert
 
-Nichtbeachtung durch AG zeigt zusätzlich, dass das Unternehmen sich
-eventuell nicht an DCGK Empfehlungen gebunden fühlt, eventuell kann die
-Abweichung auch durch fehlende Angst vor Sanktionen begründet werden.
-Das Vertrauen der Anleger in eine zukünftige Beachtung der AG wird unter
-der Abweichung höchstwahrscheinlich leiden
+Nichtbeachtung durch AG zeigt zusätzlich, dass das Unternehmen sich eventuell nicht an DCGK Empfehlungen gebunden fühlt, eventuell kann die Abweichung auch durch fehlende Angst vor Sanktionen begründet werden. Das Vertrauen der Anleger in eine zukünftige Beachtung der AG wird unter der Abweichung höchstwahrscheinlich leiden
 
-Begründung für Abweichung? Falls diese plausibel und für die Anleger
-überzeugend begründet ist, hält sich der Vertrauensverlust
-möglicherweise in Grenzen bzw. bleibt aus. Die Begründung sollte daher
-genau untersucht werden!
+Begründung für Abweichung? Falls diese plausibel und für die Anleger überzeugend begründet ist, hält sich der Vertrauensverlust möglicherweise in Grenzen bzw. bleibt aus. Die Begründung sollte daher genau untersucht werden!
 
-Flexibilisierung
-----------------
+### Flexibilisierung
 
-Der DCGK soll es ermöglichen branchenspezifische bzw.
-unternehmensspezifische Besonderheiten zu berücksichtigen. Der Kodex
-erreicht die gewünschte **Flexibilität** durch die Möglichkeit der
-individuellen Ausgestaltung der Corporate Governance anhand von
-zusätzlichen freiwilligen Empfehlungen neben den regulären Empfehlungen
+Der DCGK soll es ermöglichen branchenspezifische bzw. unternehmensspezifische Besonderheiten zu berücksichtigen. Der Kodex erreicht die gewünschte **Flexibilität** durch die Möglichkeit der individuellen Ausgestaltung der Corporate Governance anhand von zusätzlichen freiwilligen Empfehlungen neben den regulären Empfehlungen
 
-Soll Vorschriften -- Empfehlungen
+> Soll Vorschriften: Empfehlungen
 
-Sollte Vorschriften -- Anregungen
+> Sollte Vorschriften: Anregungen
 
-  Das Ziel der Flexibilisierung anhand von Soll und Sollte Vorschriften
-steht jedoch durchaus im Kontrast zum eigentlichen Ziel des DCGK, der
-Schaffung von Vertrauen durch Transparenz. Eine Abweichung von
-freiwilligen Empfehlungen führt dazu, dass das Verhalten der
-Unternehmensführung schlechter eingeschätzt werden kann
+Das Ziel der Flexibilisierung anhand von Soll und Sollte Vorschriften steht jedoch durchaus im Kontrast zum eigentlichen Ziel des DCGK, der Schaffung von Vertrauen durch Transparenz. Eine Abweichung von freiwilligen Empfehlungen führt dazu, dass das Verhalten der Unternehmensführung schlechter eingeschätzt werden kann
 
-  Nicht Beachtung von DCGK Empfehlungen kann bei plausibler Begründung
-im Einklang mit dem Konzept der Flexibilisierung stehen!
+Nicht Beachtung von DCGK Empfehlungen kann bei plausibler Begründung im Einklang mit dem Konzept der Flexibilisierung stehen!
 
-Selbstregulierung
------------------
+### Selbstregulierung
 
 Ziel: Zur Selbstregulierung der deutschen Wirtschaft beitragen
 
-  Corporate Governance Praxis soll primär von Unternehmensvertretern und
-Stakeholdern entwickelt werden, der Gesetzgeber soll möglichst wenig
-eingreifen
+Corporate Governance Praxis soll primär von Unternehmensvertretern und Stakeholdern entwickelt werden, der Gesetzgeber soll möglichst wenig eingreifen
 
- Vermeidung des staatlichen Eingriffs durch erfolgreiche
-Selbstregulierung als Ziel
+Vermeidung des staatlichen Eingriffs durch erfolgreiche Selbstregulierung als Ziel
 
-Ausgangslage für gesetzliche Intervention bzw. Selbstregulierung ist
-i.d.R. zunehmender öffentlicher Druck auf eine spezifische Praxis (z.B.
-zu hohe Vorstands Gehälter)
+Ausgangslage für gesetzliche Intervention bzw. Selbstregulierung ist i.d.R. zunehmender öffentlicher Druck auf eine spezifische Praxis (z.B. zu hohe Vorstands Gehälter)
 
-  Die Kommission des DCGK soll in dieser Situation versuchen frühzeitig
-aktiv zu werden und den öffentlichen Druck durch die Erlassung von
-Empfehlungen zu entschärfen damit der Gesetzgeber nicht in Reaktion auf
-den öffentlichen Druck gesetzlich intervenieren muss
+Die Kommission des DCGK soll in dieser Situation versuchen frühzeitig aktiv zu werden und den öffentlichen Druck durch die Erlassung von Empfehlungen zu entschärfen damit der Gesetzgeber nicht in Reaktion auf den öffentlichen Druck gesetzlich intervenieren muss
 
 **Erfolgreiche Selbstregulation**
 
-Öffentlicher Druck   Erlassung von Soll Vorschrift   Unternehmen setzen
-Soll Vorschrift häufig um   Öffentlicher Druck nimmt wieder ab   Keine
-gesetzlichen Reglungen erforderlich
+1. Öffentlicher Druck 
+2. Erlassung von Soll Vorschrift   
+3. Unternehmen setzen Soll Vorschrift häufig um   
+4. Öffentlicher Druck nimmt wieder ab
+5. Keine gesetzlichen Reglungen erforderlich
 
 **Gescheiterte Selbstregulation**
 
- Nur begrenzte Umsetzung der Soll Vorschriften durch Unternehmen/
-Umsetzung erfolgt aber wird als zu schwach angesehen   Öffentlicher
-Druck nimmt nicht ab   Gesetzliche Intervention
+3. Nur begrenzte Umsetzung der Soll Vorschriften durch Unternehmen/
+4. Umsetzung erfolgt aber wird als zu schwach angesehen
+5. Öffentlicher Druck nimmt nicht ab   
+6. Gesetzliche Intervention
 
-Probleme: Soll Vorschriften können bei frühzeitiger Erlassung die
-Öffentlichkeit erst recht auf Problem aufmerksam machen, keine Abnahme
-des öffentlichen Drucks bei geringer Umsetzung durch Unternehmen oder
-als zu lasch empfundenen Soll Vorschriften
+Probleme: Soll Vorschriften können bei frühzeitiger Erlassung die Öffentlichkeit erst recht auf Problem aufmerksam machen, keine Abnahme des öffentlichen Drucks bei geringer Umsetzung durch Unternehmen oder als zu lasch empfundenen Soll Vorschriften
 
-Aufbau und Bedeutung des DCGK
-=============================
+### Aufbau und Bedeutung des DCGK
 
 Bestandteile des DCGK
 
--   Gesetzeswiedergabe;
--    Empfehlungen;
--    Anregungen
+1. Gesetzeswiedergabe
+2. Empfehlungen
+3. Anregungen
 
 Gesetzeswiedergabe
 
-Alle wesentlichen gesetzlichen Reglungen, die das System der deutschen
-Corporate Governance mitbestimmen, werden im DCGK in Form von
-Grundsätzen wiedergegeben.
+Alle wesentlichen gesetzlichen Reglungen, die das System der deutschen Corporate Governance mitbestimmen, werden im DCGK in Form von Grundsätzen wiedergegeben.
 
-Wesentliche Rechtsquelle: **Aktiengesetz** (zusätzlich GmbHG;
-SE-Ausführungsgesetz)
+Wesentliche Rechtsquelle:
+* **Aktiengesetz** (
+* GmbHG 
+* SE-Ausführungsgesetz
 
-Wesentliche Bestandteile: Rechte und Pflichten von Vorstand,
-Aufsichtsrat und Hauptversammlung
+Wesentliche Bestandteile: Rechte und Pflichten von Vorstand, Aufsichtsrat und Hauptversammlung
 
-  Wichtig: Geltungswirkung dieser Grundsätze ergibt sich einzig und
-allein aus dem Gesetzestext selbst, die Aufführung im DCGK dient
-lediglich der Wiedergabe
+> Wichtig: Geltungswirkung dieser Grundsätze ergibt sich einzig und allein aus dem Gesetzestext selbst, die Aufführung im DCGK dient lediglich der Wiedergabe
 
-Ziel: Transparente und nachvollziehbare Darstellung des deutschen CG
-Systems
+Ziel: Transparente und nachvollziehbare Darstellung des deutschen CG Systems
 
-Empfehlungen (=SOLL)
---------------------
+#### Empfehlungen (=SOLL)
 
-Wichtigster Bestandteil des DCGK, die knapp 100 Empfehlungen sind durch
-das Wort „**Soll"** gekennzeichnet
+Wichtigster Bestandteil des DCGK, die knapp 100 Empfehlungen sind durch das Wort „**Soll"** gekennzeichnet
 
-Es besteht prinzipiell keine Befolgungspflicht für Unternehmen, falls
-eine Empfehlung nicht umgesetzt wird, muss diese jedoch in der
-Entsprechenserklärung benannt und der Grund der Nichteinhaltung
-erläutert werden
+Es besteht prinzipiell keine Befolgungspflicht für Unternehmen, falls eine Empfehlung nicht umgesetzt wird, muss diese jedoch in der Entsprechenserklärung benannt und der Grund der Nichteinhaltung erläutert werden
 
-  „**Comply or Explain**" Prinzip
+> Comply or Explain Prinzip
 
-Keine Befolgungspflicht aber DCGK Empfehlungen gelten als **anerkannte
-nationale und internationale Standards guter und verantwortungsvoller
-Unternehmensführung**
+Keine Befolgungspflicht aber DCGK Empfehlungen gelten als **anerkannte nationale und internationale Standards guter und verantwortungsvoller Unternehmensführung**
 
-** Keine Rechtsnorm und kein Handelsbrauch nach HGB**
+> Keine Rechtsnorm und kein Handelsbrauch nach HGB
 
-Die Nichteinhaltung könnte als Verstoß gegen die allgemeine
-Sorgfaltspflicht von Vorstand und/oder Aufsichtsrat ausgelegt werden
-(insbesondere bei nicht Einhaltung einer Vielzahl von Empfehlungen)
+Die Nichteinhaltung könnte als Verstoß gegen die allgemeine Sorgfaltspflicht von Vorstand und/oder Aufsichtsrat ausgelegt werden (insbesondere bei nicht Einhaltung einer Vielzahl von Empfehlungen)
 
-  Kein automatischer Verstoß und Prüfung muss auf Einzelfallbasis
-erfolgen
+> Kein automatischer Verstoß und Prüfung muss auf Einzelfallbasis erfolgen
 
-**Gesetzliche Pflicht für Unternehmen**: In der Entsprechenserklärung
-muss jährlich erklärt werden, ob den Empfehlungen entsprochen wurde und
-falls Abweichungen bestehen warum diese nicht befolgt wurden
+**Gesetzliche Pflicht für Unternehmen**: In der Entsprechenserklärung muss jährlich erklärt werden, ob den Empfehlungen entsprochen wurde und falls Abweichungen bestehen warum diese nicht befolgt wurden
 
 *§161 AktG*
 
-*1)Vorstand und Aufsichtsrat der börsennotierten Gesellschaft erklären
-jährlich, dass den \[\...\] Empfehlungen der „Regierungskommission DCGK"
-entsprochen wurde und wird oder welche Empfehlungen nicht angewendet
-wurden oder werden und warum nicht. \[\...\] *
+1. Vorstand und Aufsichtsrat der börsennotierten Gesellschaft erklären jährlich, dass den ... Empfehlungen der „Regierungskommission DCGK" entsprochen wurde und wird oder welche Empfehlungen nicht angewendet wurden oder werden und warum nicht.
 
-*(2) Die Erklärung ist auf der Internetseite der Gesellschaft dauerhaft
-öffentlich zugänglich zu machen.*
+2. Die Erklärung ist auf der Internetseite der Gesellschaft dauerhaft öffentlich zugänglich zu machen.
 
 Beispiele für Empfehlungen (Auszug)
 
--   Unabhängigkeit des AR (Indikatoren, Empfehlungen zur Anzahl von
-    unabhängigen Mitgliedern)
--   Vorstandsvergütung (Festlegung von Ziel- und Maximalvergütungen,
-    Anteil der langfristigen variablen Vergütung)
--   Einrichtung von Compliance Management System
--   Erarbeitung von Kompetenzprofilen für AR Mitglieder
+- Unabhängigkeit des AR (Indikatoren, Empfehlungen zur Anzahl von unabhängigen Mitgliedern)
+- Vorstandsvergütung (Festlegung von Ziel- und Maximalvergütungen, Anteil der langfristigen variablen Vergütung)
+- Einrichtung von Compliance Management System
+- Erarbeitung von Kompetenzprofilen für AR Mitglieder
 
-Anregungen (=SOLLTE)
---------------------
+#### Anregungen (=SOLLTE)
 
-Anregungen werden im DCGK durch das Wort „**Sollte"** gekennzeichnet
-(weniger als 10 Anregungen aktuell enthalten)
+Anregungen werden im DCGK durch das Wort „**Sollte"** gekennzeichnet (weniger als 10 Anregungen aktuell enthalten)
 
-  Keine gesetzliche Pflicht bei Nichtbeachtung von Anregungen darüber in
-der Entsprechenserklärung zu berichten und ein Abweichen zu begründen
-(ebenfalls keine gesetzliche Pflicht zur Befolgung)
+Keine gesetzliche Pflicht bei Nichtbeachtung von Anregungen darüber in der Entsprechenserklärung zu berichten und ein Abweichen zu begründen (ebenfalls keine gesetzliche Pflicht zur Befolgung)
 
-Die Nichtbeachtung von Anregungen stellt keine Pflichtverletzung der
-leitenden Unternehmensorgane dar
+Die Nichtbeachtung von Anregungen stellt keine Pflichtverletzung der leitenden Unternehmensorgane dar
 
-Anwendung bei Nichtbeachtung
+##### Anwendung bei Nichtbeachtung
 
-  Es besteht keine gesetzliche Pflicht die Nichtbeachtung einer Anregung
-zu benennen und zu begründen, die Nichtbeachtung der Anregung selbst
-stellt ebenfalls keine Pflichtverletzung durch die Unternehmensorgane
-dar.
+Es besteht keine gesetzliche Pflicht die Nichtbeachtung einer Anregung zu benennen und zu begründen, die Nichtbeachtung der Anregung selbst stellt ebenfalls keine Pflichtverletzung durch die Unternehmensorgane dar.
 
 Beispiele für Anregungen
 
--   Anregungen zur Fixvergütung von AR Mitgliedern
--   Kommunikation des AR mit Investoren
--   Dauer der Hauptversammlung
+- Anregungen zur Fixvergütung von AR Mitgliedern
+- Kommunikation des AR mit Investoren
+- Dauer der Hauptversammlung
 
-Formulierung: „Der Aufsichtsratsvorsitzende sollte in angemessenem
-Rahmen bereit sein, mit Investoren über aufsichtsratsspezifische Themen
-Gespräche zu führen."
+Formulierung: „Der Aufsichtsratsvorsitzende sollte in angemessenem Rahmen bereit sein, mit Investoren über aufsichtsratsspezifische Themen Gespräche zu führen."
 
-Entwicklung von DCGK Vorschriften -- Reglungssetzung
-====================================================
+### Entwicklung von DCGK Vorschriften -- Reglungssetzung
 
-Regierungskommission des DCGK
------------------------------
+#### Regierungskommission des DCGK
 
-Der Vorsitzende wird durch das Bundesministerium für Justiz und
-Verbraucherschutz ernannt (erstmalig 2001), die Auswahl und Abberufung
-von neuen Kommissionsmitgliedern wird in der Kommission im Plenum
-diskutiert und anschließend vom Vorsitzenden an das BMJV weitergeleitet
+Der Vorsitzende wird durch das Bundesministerium für Justiz und Verbraucherschutz ernannt (erstmalig 2001), die Auswahl und Abberufung von neuen Kommissionsmitgliedern wird in der Kommission im Plenum diskutiert und anschließend vom Vorsitzenden an das BMJV weitergeleitet
 
 Kritik am Auswahlverfahren:
 
--   Die Auswahlkriterien für Mitglieder/ Vorsitzenden sind nicht
-    transparent (lediglich der berufliche Hintergrund ist vorgegeben,
-    siehe unten)
--   Die Auswahl wird nicht öffentlich begründet
--   Keine öffentliche Ausschreibung
+* Die Auswahlkriterien für Mitglieder/ Vorsitzenden sind nicht transparent (lediglich der berufliche Hintergrund ist vorgegeben (siehe unten)
+* Die Auswahl wird nicht öffentlich begründet
+* Keine öffentliche Ausschreibung
 
-  Problematisch da DCGK Empfehlungen rechtlich relevant sind
+> Problematisch da DCGK Empfehlungen rechtlich relevant sind
 
-Tätigkeitsdauer: 4 Jahre nach Berufung mit zweimaliger Möglichkeit zur
-Wiederbestellung (maximal 12 Jahre möglich)
+Tätigkeitsdauer: 4 Jahre nach Berufung mit zweimaliger Möglichkeit zur Wiederbestellung (maximal 12 Jahre möglich)
 
-Art der Tätigkeit: Persönliches Ehrenamt **ohne** Aufwandsentschädigung
-oder Honorar
+Art der Tätigkeit: Persönliches Ehrenamt **ohne** Aufwandsentschädigung oder Honorar
 
-Finanzierung der Kommission: Kosten für Reisen, Organisation, Verwaltung
-etc. wird durch das Deutsche Aktieninstitut e.V. getragen
+Finanzierung der Kommission: Kosten für Reisen, Organisation, Verwaltung etc. wird durch das Deutsche Aktieninstitut e.V. getragen
 
-Die Kommission (zwischen 10 und 15 Mitglieder) setzt sich aus
-**Vertretern** der folgenden Bereiche zusammen:
+Die Kommission (zwischen 10 und 15 Mitglieder) setzt sich aus **Vertretern** der folgenden Bereiche zusammen:
 
--   Vorständen und Aufsichtsräten kapitalmarktorientierter Unternehmen
-    (Großteil)
--   Institutionellen/ private Investoren
--   Rechts- und Wirtschaftswissenschaftler
--   Gewerkschaften
--   Wirtschaftsprüfer
+- Vorständen und Aufsichtsräten kapitalmarktorientierter Unternehmen (Großteil)
+- Institutionellen/ private Investoren
+- Rechts- und Wirtschaftswissenschaftler
+- Gewerkschaften
+- Wirtschaftsprüfer
 
-Aufgabe der Regierungskommission: Deutscher CG Kodex soll mit dem Ziel
-der Selbstregulierung ständig aktualisiert und weiterentwickelt werden
+Aufgabe der Regierungskommission: Deutscher CG Kodex soll mit dem Ziel der Selbstregulierung ständig aktualisiert und weiterentwickelt werden
 
-  Änderungen und Überprüfung auf jährlicher Basis
+Änderungen und Überprüfung auf jährlicher Basis
 
-Ergänzungen / Änderungen werden in einem öffentlichen
-Konsultationsverfahren erstellt, die Veröffentlichung geschieht durch
-das BMJV über den Bundesanzeiger (BMJV kann Veröffentlichung des DCGK
-nur als Ganzes ablehnen, einzelne Ergänzungen/ Aktualisierungen können
-nicht abgelehnt oder modifiziert werden)
+Ergänzungen / Änderungen werden in einem öffentlichen Konsultationsverfahren erstellt, die Veröffentlichung geschieht durch das BMJV über den Bundesanzeiger (BMJV kann Veröffentlichung des DCGK nur als Ganzes ablehnen, einzelne Ergänzungen/ Aktualisierungen können nicht abgelehnt oder modifiziert werden)
 
-Kritik: Konsultationsverfahren ist ebenfalls intransparent, schriftliche
-Stellungsnahmen können von Stakeholdern eingereicht werden, jedoch ist
-nicht klar ob und nach welchen Maßstäben diese berücksichtigt werden
+Kritik: Konsultationsverfahren ist ebenfalls intransparent, schriftliche Stellungsnahmen können von Stakeholdern eingereicht werden, jedoch ist nicht klar ob und nach welchen Maßstäben diese berücksichtigt werden
 
-Corporate Governance Berichterstattung
-======================================
+### Corporate Governance Berichterstattung
 
-Entsprechenserklärung
----------------------
+#### Entsprechenserklärung
 
-Pflicht zur Abgabe einer Entsprechenserklärung gilt für den Vorstand und
-den Aufsichtsrat jeder börsennotierten Gesellschaft in Deutschland  
-geregelt in §161 AktG
+Pflicht zur Abgabe einer Entsprechenserklärung gilt für den Vorstand und den Aufsichtsrat jeder börsennotierten Gesellschaft in Deutschland geregelt in §161 AktG
 
 § 161 Erklärung zum Corporate Governance Kodex
-==============================================
 
-(1**) Vorstand und Aufsichtsrat** der börsennotierten Gesellschaft
+1. Vorstand und Aufsichtsrat** der börsennotierten Gesellschaft
 **erklären jährlich**, dass den vom Bundesministerium der Justiz und für
 Verbraucherschutz im amtlichen Teil des Bundesanzeigers bekannt
 gemachten **Empfehlungen der „Regierungskommission Deutscher Corporate
@@ -745,77 +602,55 @@ ausgegebene Aktien auf eigene Veranlassung über ein multilaterales
 Handelssystem im Sinn des § 2 Absatz 8 Satz 1 Nummer 8 des
 Wertpapierhandelsgesetzes gehandelt werden.
 
-\(2\) Die **Erklärung** ist auf der **Internetseite** der Gesellschaft
+2. Die **Erklärung** ist auf der **Internetseite** der Gesellschaft
 dauerhaft **öffentlich zugänglich** zu machen.
+
 
 Bestandteile:
 
--   DCGK Empfehlungen wurde und wird entsprochen (in Vergangenheit und
-    Zukunft)
--   Welchen Empfehlungen wurde nicht entsprochen?
--   Warum wurde diesen Empfehlungen nicht entsprochen?
+1. DCGK Empfehlungen wurde und wird entsprochen (in Vergangenheit und Zukunft)
+2. Welchen Empfehlungen wurde nicht entsprochen?
+3. Falls notwendig: Warum wurde diesen Empfehlungen nicht entsprochen?
 
-Die Entsprechenserklärung richtet sich primär an **Anleger** und andere
-**Stakeholder des Unternehmens**
+> Die Entsprechenserklärung richtet sich primär an **Anleger** und andere **Stakeholder des Unternehmens**
 
-**  Informationsfunktion des Entsprechenserklärung **(Vergangenheit und
-Zukünft)
+**Informationsfunktion des Entsprechenserklärung **(Vergangenheit und Zukünft)
 
-Die Erklärungspflicht soll disziplinierend als Anreiz dazu dienen, dass
-Unternehmen den Empfehlungen des DCGK entsprechen. Abweichungen sollen
-dadurch grundsätzlich vermieden werden und nur selten in gut
-begründbaren Fällen in Betracht gezogen werden
+Die Erklärungspflicht soll disziplinierend als Anreiz dazu dienen, dass Unternehmen den Empfehlungen des DCGK entsprechen. Abweichungen sollen dadurch grundsätzlich vermieden werden und nur selten in gut begründbaren Fällen in Betracht gezogen werden
 
- **Anreizfunktion** **für Befolgung** durch Angst vor Sanktionierungen
-durch Öffentlichkeitsdruck
+**Anreizfunktion** 
+Befolgung** durch Angst vor Sanktionierungen durch Öffentlichkeitsdruck
 
 **Wann muss Entsprechenserklärung abgegeben werden**?
 
-Bei ***Börsennotierung***! (Gesellschaft ist an einem **organisierten
-Markt notiert**, **unabhängig ob im In- oder Ausland)**
+Bei ***Börsennotierung***! (Gesellschaft ist an einem **organisierten Markt notiert**, **unabhängig ob im In- oder Ausland)**
 
-  Im Freiverkehr (=nicht organisierter Markt) gehandelte Unternehmen
-müssen nur dann eine Entsprechenserklärung abgeben, wenn es andere
-Wertpapiere an einem organisierten Markt ausgegeben hat (z.B. Anleihen)
+Im Freiverkehr (=nicht organisierter Markt) gehandelte Unternehmen müssen nur dann eine Entsprechenserklärung abgeben, wenn es andere Wertpapiere an einem organisierten Markt ausgegeben hat (z.B. Anleihen)
 
-  Betrifft nur Gesellschaften, die nach deutschem Recht gegründet sind
-(AG, SE, KGaA), nach ausländischem Recht gegründete Gesellschaften sind
-nicht verpflichtet (auch wenn sie an einer deutschen Börse notiert sind)
+* Betrifft nur Gesellschaften, die nach deutschem Recht gegründet sind (AG, SE, KGaA)
+* nach ausländischem Recht gegründete Gesellschaften sind nicht verpflichtet (auch wenn sie an einer deutschen Börse notiert sind)
 
 **Welches Organ muss die Entsprechenserklärung abgeben? **
 
 Explizite Pflicht von** Vorstand und Aufsichtsrat!**
 
-  Die zwei Organe tragen die Pflicht nicht gemeinsam in der Rolle des
-gesetzlichen Vertreters, wie z.B. die Pflicht zur Aufstellung des
-Jahresabschluss nach HGB
+Die zwei Organe tragen die Pflicht **nicht** gemeinsam in der Rolle des gesetzlichen Vertreters, wie z.B. die Pflicht zur Aufstellung des Jahresabschluss nach HGB
 
-  Durch die unmittelbare Ansprache soll die **Eigenverantwortung**
-**beider Organe** für die Befolgung der DCGK Empfehlungen hervorgehoben
-werden
+> Durch die unmittelbare Ansprache soll die **Eigenverantwortung beider Organe** für die Befolgung der DCGK Empfehlungen hervorgehoben werden
 
-Eine abweichende Entsprechenserklärung beider Organe ist möglich, kommt
-in der Praxis aber sehr selten vor
+Eine abweichende Entsprechenserklärung beider Organe ist möglich, kommt in der Praxis aber sehr selten vor
 
 **Wie wird mit organspezifischen DCGK Vorschriften verfahren?**
 
-Jedes Organ muss sich mit nicht organspezifischen Empfehlungen und den
-eigenen Zuständigkeitsbereichen beschäftigen (Vergangenheitserklärung
-und Absichtserklärungen)
+Jedes Organ muss sich sowohl mit nicht organspezifischen Empfehlungen als auch den eigenen Zuständigkeitsbereichen beschäftigen (Vergangenheitserklärung und Absichtserklärungen)
 
-  Empfehlungen für das jeweils andere Organ müssen zumindest rückwirkend
-bewertet werden
+Empfehlungen für das jeweils andere Organ müssen zumindest rückwirkend bewertet werden
 
- Verifizierung von Vergangenheitserklärung des anderen Organs, nicht
-aber der Absichtserklärungen
+Verifizierung von Vergangenheitserklärung des anderen Organs, nicht aber der Absichtserklärungen
 
-Beispiel: Vorstand muss sich mit allen vorstandspezifischen Empfehlungen
-(Vergangenheit und Zukunft), allgemeinen Empfehlungen sowie der
-Befolgung von Aufsichtsrat spezifischen Reglungen in den vergangenen
-Perioden beschäftigen
+Beispiel: Vorstand muss sich mit allen vorstandspezifischen Empfehlungen (Vergangenheit und Zukunft), allgemeinen Empfehlungen sowie der Befolgung von Aufsichtsrat spezifischen Reglungen in den vergangenen Perioden beschäftigen
 
-Erklärungsinhalt der Entsprechenserklärung
-------------------------------------------
+##### Erklärungsinhalt der Entsprechenserklärung
 
 Zu erklären ist nach §161 AktG:
 
@@ -825,150 +660,83 @@ gemachten Empfehlungen der „Regierungskommission Deutscher Corporate
 Governance Kodex" entsprochen wurde und wird oder welche Empfehlungen
 nicht angewendet wurden oder werden und warum nicht."
 
-* * Entsprechenserklärung beinhaltet **Rechenschafts-, Versprechens- und
-Erläuterungspflichten**
+Entsprechenserklärung beinhaltet **Rechenschafts-, Versprechens- und Erläuterungspflichten**
 
-**Rechenschaftspflicht**: Rechenschaft wird über die Befolgung der DCGK
-Empfehlungen in den letzten 12 Monaten seit der vorherigen Erklärung
-abgegeben (=**Vergangenheitserklärung**)
+**Rechenschaftspflicht**: Rechenschaft wird über die Befolgung der DCGK Empfehlungen in den letzten 12 Monaten seit der vorherigen Erklärung abgegeben (=**Vergangenheitserklärung**)
 
-**Versprechenspflicht**: Die Absicht darüber DCGK Empfehlungen in den
-folgenden 12 Monaten zu befolgen wird abgegeben (=**Absichtserklärung**)
+**Versprechenspflicht**: Die Absicht darüber DCGK Empfehlungen in den folgenden 12 Monaten zu befolgen wird abgegeben (=**Absichtserklärung**)
 
-**Erläuterungspflicht**: Die Erläuterungspflicht besteht ausschließlich
-dann, wenn von einzelnen DCGK Empfehlungen abgewichen wird. Die
-entsprechende Empfehlung soll dabei unter Nennung der jeweiligen
-Textziffer genannt werden und zusätzlich eine Erklärung darüber
-abgegeben werden, welche wesentlichen Gründe dazu geführt haben, dass
-die jeweilige Empfehlung nicht beachtet wurde (**knappe Form, konkrete
-Informationen, wesentliche Abwägungen**)
+**Erläuterungspflicht**: Die Erläuterungspflicht besteht ausschließlich dann, wenn von einzelnen DCGK Empfehlungen abgewichen wird. Die entsprechende Empfehlung soll dabei unter Nennung der jeweiligen Textziffer genannt werden und zusätzlich eine Erklärung darüber abgegeben werden, welche wesentlichen Gründe dazu geführt haben, dass die jeweilige Empfehlung nicht beachtet wurde (**knappe Form, konkrete Informationen, wesentliche Abwägungen**)
 
-*  Erklärungspflicht gilt nur für DCGK Empfehlungen (=soll), nicht für
-Anregungen (=sollte)!*
+> Erklärungspflicht gilt nur für DCGK Empfehlungen (=soll), nicht für Anregungen (=sollte)!*
 
-Offenlegungspflichten 
----------------------
+#### Offenlegungspflichten 
 
--   Entsprechenserklärung **muss jährlich abgegeben werden** (nicht
-    streng tagesgenau, eine Überschreitung um wenige Tage ist
-    unbedenklich)
+- Entsprechenserklärung **muss jährlich abgegeben werden** (nicht streng tagesgenau, eine Überschreitung um wenige Tage ist unbedenklich)
 
--   Entsprechenserklärung muss auf der **Internetseite der Gesellschaft
-    dauerhaft öffentlich zugänglich** sein (erlischt formal nach 12
-    Monaten bei Abgabe einer neuen Entsprechenserklärung, nicht aktuelle
-    Fassungen sollen jedoch nach DCGK Empfehlungen weitere 5 Jahre
-    öffentlich zur Verfügung gestellt werden
+- Entsprechenserklärung muss auf der **Internetseite der Gesellschaft dauerhaft öffentlich zugänglich** sein (erlischt formal nach 12 Monaten bei Abgabe einer neuen Entsprechenserklärung, nicht aktuelle Fassungen sollen jedoch nach DCGK Empfehlungen weitere 5 Jahre öffentlich zur Verfügung gestellt werden
 
--   Entsprechenserklärung ist außerdem **Bestandteil der Erklärung zur
-    Unternehmensführung im publikationspflichtigen Lagebericht** (nach
-    §289 HGB)
+- Entsprechenserklärung ist außerdem **Bestandteil der Erklärung zur Unternehmensführung im publikationspflichtigen Lagebericht** (nach §289 HGB)
 
--   Entsprechenserklärung muss gemeinsam mit dem Jahresabschluss dem
-    Bundesanzeiger zur Veröffentlichung bereitgestellt werden
+- Entsprechenserklärung muss gemeinsam mit dem Jahresabschluss dem Bundesanzeiger zur Veröffentlichung bereitgestellt werden
 
--   Im Anhang des Jahresabschlusses muss ein Vermerk erfolgen, dass die
-    Entsprechenserklärung online zur Verfügung gestellt wurde (inklusive
-    Adresse)
+- Im Anhang des Jahresabschlusses muss ein Vermerk erfolgen, dass die Entsprechenserklärung online zur Verfügung gestellt wurde (inklusive Adresse)
 
-Aktualisierungspflichten
-------------------------
+#### Aktualisierungspflichten
 
-Aktualisierungspflichten unterscheiden sich **nach Kodex Änderungen**
-(DCGK ändert Empfehlungen) und **Absichtsänderungen** (Unternehmen
-ändert seine Absichten zur Befolgung der DCGK Empfehlungen)
+Aktualisierungspflichten unterscheiden sich **nach Kodex Änderungen** (DCGK ändert Empfehlungen) und **Absichtsänderungen** (Unternehmen ändert seine Absichten zur Befolgung der DCGK Empfehlungen)
 
 **Absichtserklärungen**
 
-Die Absichtserklärung beschreibt die Absicht zur zukünftigen Befolgung
-von DCGK Empfehlungen
+Die Absichtserklärung beschreibt die Absicht zur zukünftigen Befolgung von DCGK Empfehlungen
 
-  Eine **Absichtserklärung führt nicht zur Selbstbindung** an die
-erklärten Absichten, Unternehmen kann auch unterjährig von einer
-erklärten Absicht abweichen!
+Eine **Absichtserklärung führt nicht zur Selbstbindung** an die erklärten Absichten, Unternehmen kann auch unterjährig von einer erklärten Absicht abweichen!
 
-Falls ein Unternehmen unterjährig seine Absichten zur Befolgung von DCGK
-Empfehlungen ändert, ergibt sich für das Unternehmen die **Pflicht**
-ihre Entsprechenserklärung zeitnah zu aktualisieren
+Falls ein Unternehmen unterjährig seine Absichten zur Befolgung von DCGK Empfehlungen ändert, ergibt sich für das Unternehmen die **Pflicht** ihre Entsprechenserklärung zeitnah zu aktualisieren
 
-  Aktualisierungspflicht bei unterjähriger Änderung von Absichten soll
-die **Informationsfunktion der Entsprechenserklärung sicherstellen**
+Aktualisierungspflicht bei unterjähriger Änderung von Absichten soll die **Informationsfunktion der Entsprechenserklärung sicherstellen**
 
-**Ergänzung der Entsprechenserklärung, keine neue
-Entsprechenserklärung!**
+**Ergänzung der Entsprechenserklärung, keine neue Entsprechenserklärung!**
 
-**  **Absicht und Empfehlung muss angegeben und begründet werden wie in
-der regulären Erklärung, die Termine zur Abgabe der nächsten
-Entsprechenserklärung bleiben von Ergänzungen unberührt
+> Absicht und Empfehlung muss angegeben und begründet werden wie in der regulären Erklärung, die Termine zur Abgabe der nächsten Entsprechenserklärung bleiben von Ergänzungen unberührt
 
 **Aktualisierungspflichten bei Kodex Änderungen?**
 
-Eine unterjährige Änderung der DCGK Empfehlungen führt **nicht** zu
-einer Aktualisierungspflicht der Unternehmen
+Eine unterjährige Änderung der DCGK Empfehlungen führt **nicht** zu einer Aktualisierungspflicht der Unternehmen
 
-  Entsprechenserklärung verweist statisch auf die DCGK Empfehlungen, die
-zum Verfassungszeitpunkt gültig waren, eine unterjährige Kodexänderung
-beeinflusst somit nicht die Gültigkeit der Entsprechenserklärung (diese
-verweist auf eine vorherige Version des DCGK)
+Entsprechenserklärung verweist statisch auf die DCGK Empfehlungen, die zum Verfassungszeitpunkt gültig waren, eine unterjährige Kodexänderung beeinflusst somit nicht die Gültigkeit der Entsprechenserklärung (diese verweist auf eine vorherige Version des DCGK)
 
-  Bei der Verfassung der nächsten Entsprechenserklärung wird
-anschließend auf die aktualisierte DCGK Fassung eingegangen
+Bei der Verfassung der nächsten Entsprechenserklärung wird anschließend auf die aktualisierte DCGK Fassung eingegangen
 
-Rechtsfolgen von fehlerhaften Entsprechenserklärungen
------------------------------------------------------
+#### Rechtsfolgen von fehlerhaften Entsprechenserklärungen
 
-Abgabe einer fehlerhaften Entsprechenserklärung stellt einen Verstoß
-gegen §161 AktG dar
+Abgabe einer fehlerhaften Entsprechenserklärung stellt einen Verstoß gegen §161 AktG dar (**Pflichtverletzung von Vorstand und Aufsichtsrat**)
 
-**  Pflichtverletzung von Vorstand und Aufsichtsrat**
+Es entsteht i.d.R. kein kausaler Schaden durch eine fehlerhafte Entsprechenserklärung, das Entstehen von **Haftungsansprüchen im Innenverhältnis ist daher sehr unwahrscheinlich**
 
-Es entsteht i.d.R. kein kausaler Schaden durch eine fehlerhafte
-Entsprechenserklärung, das Entstehen von **Haftungsansprüchen im
-Innenverhältnis ist daher sehr unwahrscheinlich**
+Jedoch ist die Entsprechenserklärung eine **wichtige Informationsgrundlage** (=Informationsfunktion der
+Entsprechenserklärung) für **Abstimmungen auf der Hauptversammlung**, falls diese **wesentliche** **Fehler** enthält basieren Abstimmungsergebnisse somit auf der Grundlage von falschen Informationen
 
-Jedoch ist die Entsprechenserklärung eine **wichtige
-Informationsgrundlage** (=Informationsfunktion der
-Entsprechenserklärung) für **Abstimmungen auf der Hauptversammlung**,
-falls diese **wesentliche** **Fehler** enthält basieren
-Abstimmungsergebnisse somit auf der Grundlage von falschen Informationen
+Die Anfechtbarkeit von Hauptversammlung-Beschlüssen kann durch fehlerhafte Entsprechenserklärungen entstehen, Voraussetzung dafür ist aber, dass die fehlerhaften Informationen wesentliche und relevante Informationen für Abstimmungen betreffen
 
- Die Anfechtbarkeit von Hauptversammlung-Beschlüssen kann durch
-fehlerhafte Entsprechenserklärungen entstehen, Voraussetzung dafür ist
-aber, dass die fehlerhaften Informationen wesentliche und relevante
-Informationen für Abstimmungen betreffen
+Beispiel: 
+Entsprechenserklärung enthält Fehler über die Einhaltung von DCGK Empfehlungen zur Wahl des Aufsichtsrats. Falsche Informationen könnten hier wesentlich die Stimmabgabe beeinflussen und ein Beschluss könnte angefochten werden
 
-Beispiel: Entsprechenserklärung enthält Fehler über die Einhaltung von
-DCGK Empfehlungen zur Wahl des Aufsichtsrats. Falsche Informationen
-könnten hier wesentlich die Stimmabgabe beeinflussen und ein Beschluss
-könnte angefochten werden
+#### Erklärung zur Unternehmensführung
 
-Erklärung zur Unternehmensführung
-=================================
+Durch **HGB nach §289f **geregelte **Berichterstattung **die im **Lagebericht** (Einzel- oder Konzernabschluss) enthalten sein muss (alternativ auch online möglich mit entsprechendem Vermerk im Lagebericht)
 
-Durch **HGB nach §289f **geregelte **Berichterstattung **die im
-**Lagebericht** (Einzel- oder Konzernabschluss) enthalten sein muss
-(alternativ auch online möglich mit entsprechendem Vermerk im
-Lagebericht)
+Erklärung ist für alle **börsennotierten Gesellschaften** (AG, SE und KGaA) vorgeschrieben, **die Aktien oder andere Wertpapiere (z.B. Anleihen) an einem organisierten Markt ausgegeben haben** (gleicher Kreis der verpflichteten Gesellschaften wie auch bei Abgabe der Entsprechenserklärung)
 
-  Erklärung ist für alle **börsennotierten Gesellschaften** (AG, SE und
-KGaA) vorgeschrieben, **die Aktien oder andere Wertpapiere (z.B.
-Anleihen) an einem organisierten Markt ausgegeben haben** (gleicher
-Kreis der verpflichteten Gesellschaften wie auch bei Abgabe der
-Entsprechenserklärung)
+**Unterschiede zur Entsprechenserklärung**
 
-** Unterschiede zur Entsprechenserklärung**
+- **Gesetzlicher Vertreter** der Gesellschaft ist zur Abgabe verpflichtet
 
--   **Gesetzlicher Vertreter** der Gesellschaft ist zur Abgabe
-    verpflichtet
+> **Vorstand** muss als gesetzlicher Vertreter die Erklärung zur Unternehmensführung abgeben
 
- **Vorstand** muss als gesetzlicher Vertreter die Erklärung zur
-Unternehmensführung abgeben
+**Tatsachen zur Unternehmensführung (=Ist Zustand bei Erklärung)** müssen dargestellt werden, es werden **keine Absichten für zukünftiges Verhalten** aufgeführt
 
--   **Tatsachen zur Unternehmensführung (=Ist Zustand bei Erklärung)**
-    müssen dargestellt werden, es werden **keine Absichten für
-    zukünftiges Verhalten** aufgeführt
-
-  **Keine Aktualisierungspflicht** bei unterjähriger Veränderung des IST
-Zustands
+**Keine Aktualisierungspflicht** bei unterjähriger Veränderung des IST Zustands
 
  Inhalte der Erklärung zur Unternehmensführung
 ---------------------------------------------
@@ -3589,8 +3357,6 @@ Measuring Success for NGOs ?
 * Different metrics are used but flawd
 	* cost per total expenditure: how many percent of a donation are spend on aim, costs, ...
 	* SROI - Social Return on Investment: Estimates socials value generated dollar equivalent
-
-
 
 
 
