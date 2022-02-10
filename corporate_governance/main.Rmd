@@ -1589,6 +1589,7 @@ Jahren für CEOs von Top 50 US-Unternehmen
     relativen Wertbeitrag für das Unternehmen
 -   Top CEOs sind gleichzeitig selten und besitzen dadurch einen hohe
     Verhandlungsmacht
+- Beobachtung: Vorstandsvergütung korreliert stark mit Unternehmensgröße
 
 **Rechenbeispiel**
 
@@ -1713,6 +1714,10 @@ werden
     von Geschäftsmodell und organisatorischem Aufbau des Unternehmens
     auftreten
 
+- Herausforderungen:
+    - Berücksichtigung von unterschiedlichen Geschäftsmodellen?
+    - Outsourcing von Arbeit - Wie berücksichtigen?
+
 **Fallanwendung?**
 
 -   Berechne falls notwendig die Höhe der Gesamtbezüge für
@@ -1782,8 +1787,7 @@ Bestandteile: Effektiver Anteilsbesitz des Vorstands (gesperrte Aktien
 oder gesperrte Aktienoptionen aus Gegenwart und vergangenen Perioden
 solange noch gesperrt), der sich aus der variablen Vergütung ergibt
 
-Relative Anreizstärke = Anzahl Aktien des Vorstandsmitglieds /
-Gesamtzahl ausstehender Aktien
+> Relative Anreizstärke = Anzahl Aktien des Vorstandsmitglieds / Gesamtzahl ausstehender Aktien
 
   Relatives Ergebnis in %
 
@@ -1828,20 +1832,20 @@ einem Anstieg der Unternehmensaktie um 1%?
 
 **Berechnungsmöglichkeiten Equity at Stake**
 
-1.  =Anzahl Aktien des Vorstands \* Aktienkurs \* 1%
-2.  =Effektiver Anteilsbesitz \* Anzahl Aktien gesamt \* Aktienkurs \*
-    1%
-3.  =Effektiver Anteilsbesitz \* Marktkapitalisierung \* 1%
-4.  =Vermögen des Vorstands / Kursänderung in %
+Ex Ante Berechnung:
+> Anzahl Aktien des Vorstands * Aktienkurs * 1%
+
+Ex Post Berechnung:
+> Delta Vermögen des Vorstands  /  Kursänderung in %
 
 **Beobachtete Werte**
 
--   500.000\$ im Durchschnitt für S&P 500 Unternehmen
+-   500.000$ im Durchschnitt für S&P 500 Unternehmen
 
   Trotz niedriger relativer Anreizstärke von börsennotierten Unternehmen
 (Tendenz eher sinkend) finden sich sehr hohe absolute Anreizstärken
 
-**Rechenbeispiel **
+**Rechenbeispiel**
 
 Aktienbesitz Vorstandsmitglied: 80.000 gesperrte Aktien
 
