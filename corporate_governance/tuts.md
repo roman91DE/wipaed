@@ -55,11 +55,6 @@ To decide on a given strategy a decision has to be made according to the specifi
 * investors aggregated social preference
 * financial harm of csr activity (delta of earnings)
 
-
-
-
-
-
 ## 9 - Funktionen der Hauptversammlung
 
 ### Einflussnahme der Aktionäre
