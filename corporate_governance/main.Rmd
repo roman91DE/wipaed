@@ -2533,8 +2533,17 @@ Börsennotierung/Kredit- oder Versicherungsunternehmen
 
 AR wird von den Aktionären gewählt (=Agent der Aktionäre)
 
-AR hat im Interesse der Aktionäre zu handeln   Versprechen der
+### Funktionen des Aufsichtsrats:
+
+1. Überwachungsfunktion: AR hat im Interesse der Aktionäre zu handeln   Versprechen der
 Aufgabenerfüllung gegenüber den Shareholdern
+
+2. Beratungsfunktion: Beratung des Vorstands
+
+3. Kontaktsfunktion: Vermittlung zwischen Politik und Stakeholdern
+
+4. Interessensausgleich zwischen den beteiligten Interessensgruppen (AN-Vertreter, Shareholder etc.)
+
 
 **Der AR hat die Geschäftsführung zu überwachen (§111 I AktG)**
 
@@ -2555,9 +2564,9 @@ den Vorstand ordnungsmäßig organisiert und überwacht?
 
 -   Unternehmensplanung unter Festlegung und Berücksichtigung von
     Unternehmenszielen sowie Implementation von Kontrollmechanismen
-    (Compliance System, RMS, RFS, interne Revisionen)
+    (Compliance Management System, RMS, RFS, interne Revisionen)
 
-**Wirtschaftlichkeit: **Ist die Liquidität des Unternehmens
+**Wirtschaftlichkeit**: Ist die Liquidität des Unternehmens
 sichergestellt? Werden Ressourcen effizient eingesetzt, um einen
 nachhaltigen und langfristigen Ertrag zu erwirtschaften?
 
@@ -2572,7 +2581,7 @@ dem AR (§90 I AktG). Der Vorstand berichtet dem AR zwingend über:
 -   Unternehmensplanung; Finanz- Investitions-, und Personalplanung,
     Geschäftspolitik
 
-  AR hat zusätzlich die Pflicht zur Gewährleistung seiner
+AR hat zusätzlich die Pflicht zur Gewährleistung seiner
 Überwachungsfunktion die Berichterstattung des Vorstands spezifischer zu
 definieren und zusätzliche Informationen einzuholen
 
@@ -2596,6 +2605,9 @@ Beispiele der Ex Post Überwachung
 
 -   Prüfung des Jahresabschlusses
 -   Abberufung von Vorstandsmitgliedern
+
+
+Die Prüfung der Rechnungslegung ist eine wichtige Aufgabe des AR, dieser kann sich hierbei auf die Arbeit eines Wirtschaftsprüfers berufen, muss jedoch auch eigenständig und eigenverantwortlich prüfen.
 
 **Fallanwendung?**
 
@@ -2624,13 +2636,12 @@ begleitenden Kontrolle beraten
 
 Der Vorstand kann AR bereits vor dem Treffen einer wesentlichen
 Entscheidung konsultieren, um Vorbehalte frühzeitig zu identifizieren.
-**Der Umfang der Beratung liegt jedoch im Ermessensspielraum des AR**
+**Der Umfang der Beratung liegt jedoch im Ermessensspielraum des AR und die Initiative zum Einbezug des AR geht vom Vorstand aus**
 
 Der AR kann je nach Grad der Beratung und Einbindung sowohl als
 „Mitspieler" des Vorstands als auch als „Schiedsrichter" agieren
 
-**Mitspieler -- Hoher Grad der (zukunftsgerichteten) Beratung des
-Vorstands durch AR **
+**Mitspieler -- Hoher Grad der (zukunftsgerichteten) Beratung des Vorstands durch AR**
 
 -   Ex Ante: Hoher Grad der Einbindung/ Beratung in die
     Geschäftstätigkeit (z.B. in strategische und operative
@@ -2669,14 +2680,13 @@ Vorgaben zum Aufbau des AR nach AktG
 
 Größe: Minimum 3 bis maximum 21 Mitglieder des AR sind zulässig
 
-AR Mitglieder werden als Vertreter der Aktionäre von den Aktionären
-**über die Hauptversammlung gewählt. **Der AR schlägt neue
-Mitgliedskandidaten auf der HV vor**. **Nach **DCGK **wird eine**
-Einzelwahl der Mitglieder empfohlen**
+AR Mitglieder werden als Vertreter der Aktionäre von den Aktionären: 
 
-Nach Wahl durch die HV darf ein AR Mitglied **eine maximale Amtsperiode
-von 5 Jahren antreten**, die **Wiederbestellung ist grundsätzlich
-möglic**h nach erneuter Wahl durch die HV
+- **über die Hauptversammlung gewählt** 
+- **Der AR schlägt neue Mitgliedskandidaten auf der HV vor**
+- **Nach DCGK wird eine Einzelwahl der Mitglieder empfohlen**
+
+Nach Wahl durch die HV darf ein AR Mitglied **eine maximale Amtsperiode von 5 Jahren antreten**, die **Wiederbestellung ist grundsätzlich möglich** nach erneuter Wahl durch die HV
 
 Die vorzeitige Abberufung eines AR Mitglieds kann nur mit einer 75%
 Mehrheit der Hauptversammlung beschlossen werden
@@ -2767,7 +2777,7 @@ Gesetzliche Vorgaben des AktG zu Ausschüssen
 
   Der gesamte AR trägt Letztverantwortung trotz Ausschussbildung
 
-**Ausnahme**: P**rüfungsausschuss des AR** für die Überwachung von IKS,
+**Ausnahme**: **Prüfungsausschuss des AR** für die Überwachung von IKS,
 Rechnungslegung ist durch **AktG vorgeschrieben** (DCGK Empfehlung:
 ebenfalls Überwachung der Compliance Aufgabe)
 
@@ -2778,10 +2788,12 @@ AR verantwortlich
 
 **Weitere mögliche AR Ausschüsse**
 
-Personalausschuss zur **Vorbereitung** der Auswahl des Vorstands,
-Vergütungsausschuss zur **Vorbereitung** der Festlegung der
-Vergütungsansprüche, Strategieausschüsse, Präsidialausschüsse
-(Vorbereitung von Sitzungen), Vermittlungsausschuss etc.
+* Personalausschuss zur **Vorbereitung** der Auswahl des Vorstands,
+* Vergütungsausschuss zur **Vorbereitung** der Festlegung der
+* Vergütungsansprüche
+* Strategieausschüsse
+* Präsidialausschüsse (Vorbereitung von Sitzungen)
+* Vermittlungsausschuss etc.
 
 **Fallanwendung**?
 
