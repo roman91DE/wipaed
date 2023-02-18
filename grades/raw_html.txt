@@ -1,0 +1,1462 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
+		<title>Johannes Gutenberg Universität</title>
+		<!--
+			© DATENLOTSEN INFORMATIONSSYSTEME GMBH
+			e-mail: 		info@datenlotsen.de
+			web: 			http://www.datenlotsen.de
+			
+			customer: 		jgu
+			version: 		13.00.003
+			filename:		head.htm
+		//-->
+
+		<!-- IE document mode -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta name="referrer" content="origin">
+		<meta name="keywords" content="Datenlotsen,Datenlotsen Informationssysteme GmbH,CampusNet,Campus Management">
+
+					<!-- Other analytics code - e.g. PIWIK, Tag manager instead of Pageview etc. -->
+			
+			
+			
+				
+						
+						
+					<link rel="shortcut icon" type="image/x-icon" href="/gfx/jgu/icons/favicon.ico">
+				
+		<script src="/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+		<script src="/js/checkDate.js" type="text/javascript"></script>
+		<script src="/js/edittext.js" type="text/javascript"></script>
+		<script src="/js/skripts.js" type="text/javascript"></script>
+		<script src="/js/x.js" type="text/javascript"></script>
+
+						
+						
+				
+			<script type="text/javascript">
+			// hide username and password for sso
+			$(document).ready(function () {
+				$('#fieldSet_login').hide();
+				$('#logIn_btn').mouseover(function(){ $('#fieldSet_login').show(); });
+				$('#logIn_btn_sso,#forgotPassword_btn').mouseover(function(){ $('#fieldSet_login').hide();	});
+			});		
+		</script>
+	
+	<!-- ++++++++++++++++++ DEFAULT STYLESHEETS  ++++++++++++++++++++ -->	
+	<link id="defLayout" href="/css/_default/def_layout.css" rel="stylesheet" type="text/css" media="screen">
+	<link id="defMenu" href="/css/_default/def_menu.css" rel="stylesheet" type="text/css" media="screen">
+	<link id="defStyles" href="/css/_default/def_styles.css" rel="stylesheet" type="text/css"><!-- no media specified - used for screen AND print -->
+	<link id="pagePrint" href="/css/_default/def_print.css" rel="stylesheet" type="text/css" media="print">
+			
+			
+			
+			
+	<!-- ++++++++++++++++++ CUSTOM STYLESHEETS  ++++++++++++++++++++ -->	
+	<link id="pageStyle" href="/css/styles.css" rel="stylesheet" type="text/css">	<!-- no media specified - used for screen AND print -->	
+
+		
+	<link id="pageColors" href="/css/colors.css" rel="stylesheet" type="text/css" media="screen">
+		
+			
+		<!-- ++++++++++++++++++ MINOR IE FIXES ++++++++++++++++++ -->
+		<!--[if IE 9]>
+			<link id="IE9FIXES" href="/css/_default/IE/fixes_ie9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->		
+		<!--[if lt IE 8]>
+			<link id="IE7FIXES" href="/css/_default/IE/fixes_ie.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+			<link id="IE6FIXES" href="/css/_default/IE/fixes_ie6.css" rel="stylesheet" type="text/css"  media="screen" />
+			<noscript>
+				<link id="IE6FIXESNOSCRIPT" href="/css/_default/IE/fixes_ie6_noScript.css" 	rel="stylesheet" type="text/css"  media="screen" />
+			</noscript>
+		<![endif]-->
+		<!-- ++++++++++++++++++ MENU_CSS FOR HIGHLITING ++++++++++++++++++ -->		
+		
+
+
+
+
+	
+
+	<style type="text/css">
+		#pageTopNavi ul.nav #link000877 a.link000877{
+													background-color:#c1002a;
+
+							background: none;
+					}
+						#pageTopNavi ul.nav #link000877 {
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			
+			border-top-left-radius: 0;
+border-top-right-radius: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dadada+0,ffffff+100 */
+background: #dadada; /* Old browsers */
+background: -moz-linear-gradient(top,  #dadada 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #dadada 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #dadada 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		}
+		#pageTopNavi ul.nav #link000877:hover {
+			border-top-left-radius: 0;
+border-top-right-radius: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dadada+0,ffffff+100 */
+background: #dadada; /* Old browsers */
+background: -moz-linear-gradient(top,  #dadada 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #dadada 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #dadada 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		}
+				#pageTopNavi ul.nav #link000877 a.link000877,
+		#pageTopNavi ul.nav #link000877 a.link000877 span{
+			color:#515151;
+							text-decoration:underline;
+						}
+
+		#pageTopNavi ul.nav.depth_1 #link000877{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000877 > a{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000877:before{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000877:first-child:before{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000877:after{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000877:last-child:before{
+			
+		}
+		#pageTopNavi ul.nav.depth_1 #link000877:hover{
+			
+		}
+		#pageTopNavi ul.nav #link000877.tree ul.nav{
+			left:0px;
+			height:auto; /* do NOT change or remove this! def_menu.css set this to 0 for inactive nav (scrollbar fix) */
+			display:block;
+		}
+				#pageTopNavi ul.nav #link000877.tree .tree ul{
+			height:0;
+		}	
+			</style>
+
+
+
+
+	
+
+
+	<style type="text/css">
+		#pageTopNavi ul.nav.depth_2 #link000881 a.link000881,
+		#pageTopNavi ul.nav.depth_2 #link000881 a.link000881 span {
+			background-color:#f0f0f0;
+							color:#515151 !important;
+									font-weight:bold;	
+										text-decoration:underline;
+					}
+				#pageTopNavi ul.nav #link000881 a.link000881{
+			background-image:url(/gfx/jgu/buttons/level2_active.gif);
+			background-repeat:no-repeat;
+			background-position:left;
+		}
+		#pageTopNavi ul.nav #link000881.tree a.link000881{
+			background-image:url(/gfx/jgu/buttons/level2_tree_active.gif);
+			background-repeat:no-repeat !important;
+			background-position:left;
+		}
+				#pageTopNavi ul.nav #link000881.tree ul.nav{
+			height:auto;
+
+		}
+				#pageTopNavi ul.nav #link000881.tree .tree ul{
+			height:0;
+		}
+				
+		
+	</style>	
+
+
+
+	
+
+
+
+	<style type="text/css">
+		#pageTopNavi ul.nav.depth_3 #link000917 a.link000917,
+		#pageTopNavi ul.nav.depth_3 #link000917 a.link000917 span{
+							background-color:#f0f0f0;
+										color:#515151;
+									font-weight:bold;
+										text-decoration:underline;
+					}
+				#pageTopNavi ul.nav #link000917 a.link000917{
+			background-image:url(/gfx/jgu/buttons/level3_active.gif);
+			background-repeat:no-repeat;
+			background-position:left;
+		}
+		#pageTopNavi ul.nav #link000917.tree a.link000917{
+			background-image:url(/gfx/jgu/buttons/level3_tree_active.gif);
+			background-repeat:no-repeat !important;
+			background-position:left;
+		}
+				
+		#pageTopNavi ul.nav #link000917.tree ul.nav{
+			height:auto;
+		}
+				#pageTopNavi ul.nav #link000917.tree .tree ul{
+			height:0;
+		}
+				
+		
+	</style>	
+
+
+	
+	
+
+	</head>
+	<body>
+
+		
+		
+		<div id="Cn-system-desc">                                                                 </div>
+		<script type="text/javascript">
+		  $(document).ready(function(){
+			var SystemDesc = $.trim($("#Cn-system-desc").text());
+			
+			if(SystemDesc !=''){
+				$("#Cn-system-desc").text(SystemDesc);
+				$("#Cn-system-desc").css('display','block');
+			}
+		  });
+		  			var activateSignCheck = false;
+		  		</script>
+		<div id="acc_pageDescription" class="hidden"><a name="keypadDescription" class="hidden">keypadDescription</a>
+			Für maximale Nutzerfreundlichkeit empfehlen wir, die Ausführung von JavaScript und Cookies zu erlauben.Mithilfe der folgenden Accesskeys können Sie im Portal navigieren:
+			<a href="#mainNavi" accesskey="1">1 Hauptmenü</a>
+			<a href="#mainContent" accesskey="2">2 Inhalt</a>
+			<a href="#keypadDescription" accesskey="3">3 Zurück zu dieser Anleitung</a>
+		</div>
+		<div id="pageContainer" class="pageElementTop">
+			<div class="invAnchor">
+				<a name="top" class="invAnchor"></a>
+			</div>
+			<div id="pageHead" class="pageElementTop">
+				<div id="pageHeadTop" class="pageElementTop">
+					<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000917,-Aimprint" class="img img_arrowImprint pageElementLeft">Impressum</a>
+					<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000917,-Acontact" class="img img_arrowContact pageElementLeft">Kontakt</a>
+					<a href="#" onclick="window.print();" class="img img_arrowPrint pageElementLeft">Drucken</a>
+
+												
+					<a href="#bottom" class="img img_arrowDown pageElementRight">Zum Ende der Seite</a>
+				</div>
+				<div id="pageHeadCenter" class="pageElementTop">
+					<div id="pageHeadLeft" class="pageElementLeft">
+												<a href="http://www.uni-mainz.de" title="extern www.uni-mainz.de">
+													<img id="imagePageHeadLeft" src="/gfx/jgu/logo.gif" alt="Logo Johannes Gutenberg Universität">
+						</a>
+					</div>
+								<div id="pageHeadRight" class="pageElementRight">
+						&nbsp;
+					</div>
+				</div>
+								<div id="pageHeadBottom_1" class="pageElementTop">
+					<div id="pageHeadControlsLeft" class="pageElementLeft">
+						<a class="img pageHeadLink" href="#" id="extraNav_link1">Studium an der JGU</a>
+						<a class="img pageHeadLink" href="#" id="extraNav_link2" target="_blank">standardLink undef</a>
+					</div>
+					<div id="pageHeadControlsRight" class="pageElementRight">
+						<a class="img" href="https://www.facebook.com/JGUmainz" id="extraNav_link3" target="_blank">Facebook</a>
+						<a class="img" href="https://twitter.com/uni_mainz" id="extraNav_link4" target="_blank">Twitter</a>
+						<a class="img" href="http://www.youtube.com/universitaetmainz" id="extraNav_link5" target="_blank">Youtube</a>
+					</div>
+				</div>
+				<div id="pageHeadBottom_2" class="pageElementTop">
+					
+					<div id="pageHeadBottom_2sub_1" class="pageElementTop">
+						&nbsp;
+					</div>
+					<div id="pageHeadBottom_2sub_2" class="pageElementTop">
+						&nbsp;
+					</div>
+					&nbsp;
+
+				</div>
+				
+												
+				<div id="pageTopNavi" class="pageElementTop"> <!-- INCLUDING MENU-FILE FOR NAVIGATION-->
+						<a name="mainNavi" class="hidden">&nbsp;</a> <!-- ANCHOR NAVI -->
+							
+<ul class="nav depth_1 linkItemContainer"><li class="tree depth_1 linkItem branchLinkItem " title="NACHRICHTEN/TERMINE" id="link000865"><a class="depth_1 link000865 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=MLSSTART&amp;ARGUMENTS=-N591721198579516,-N000865,">NACHRICHTEN/TERMINE</a><ul class="nav depth_2 linkItemContainer"><li class="intern depth_2 linkItem " title="Nachrichtenarchiv" id="link000867"><a class="depth_2 link000867 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A9Vb06KYDCK6xpHT5CW1qpHf4VlgKQEy5uZo1e6rVIpHpJF3c1T90K-AVVnqxZd~PHVJr8wpT7in-H7VAnKfq5eRPGNspQyame~QPpNY08BfyRKMP1dOlvRV6NVNM6E2tM4glathnk18PxP4Z0NYn2wUx7d8_">Nachrichtenarchiv</a></li><li class="tree depth_2 linkItem branchLinkItem " title="Kalender" id="link000868"><a class="depth_2 link000868 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=SCHEDULER&amp;ARGUMENTS=-N591721198579516,-N000868,-A,-A,-N0">Kalender</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Diese Woche" id="link000871"><a class="depth_3 link000871 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=SCHEDULER&amp;ARGUMENTS=-N591721198579516,-N000871,-A,-A,-N1">Diese Woche</a></li><li class="intern depth_3 linkItem " title="Diesen Monat" id="link000872"><a class="depth_3 link000872 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=MONTH&amp;ARGUMENTS=-N591721198579516,-N000872,-A">Diesen Monat</a></li><li class="intern depth_3 linkItem " title="Termine exportieren" id="link000873"><a class="depth_3 link000873 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=SCHEDULER_EXPORT&amp;ARGUMENTS=-N591721198579516,-N000873,">Termine exportieren</a></li></ul></li></ul></li><li class="tree depth_1 linkItem branchLinkItem " title="STUDIUM" id="link000877"><a class="depth_1 link000877 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000877,-A20%5Fstud%5Fstudium">STUDIUM</a><ul class="nav depth_2 linkItemContainer"><li class="tree depth_2 linkItem branchLinkItem " title="Module/Veranstaltungen" id="link000879"><a class="depth_2 link000879 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000879,-A21%5Fstud%5Fmod%5Flv">Module/Veranstaltungen</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Anmeldestatus" id="link000891"><a class="depth_3 link000891 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=MYREGISTRATIONS&amp;ARGUMENTS=-N591721198579516,-N000891,-N000000000000000">Anmeldestatus</a></li><li class="tree depth_3 linkItem branchLinkItem " title="Anmeldung" id="link000892"><a class="depth_3 link000892 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000892,-A22%5Fstud%5Fanmeldung">Anmeldung</a><ul class="nav depth_4 linkItemContainer"><li class="intern depth_4 linkItem " title="Modul-/Veranstaltungs-anmeldung" id="link000893"><a class="depth_4 link000893 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=REGISTRATION&amp;ARGUMENTS=-N591721198579516,-N000893,">Modul-/Veranstaltungs-anmeldung</a></li><li class="intern depth_4 linkItem " title="Bereichswahl" id="link000894"><a class="depth_4 link000894 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=STUDENTCHOICECOURSES&amp;ARGUMENTS=-N591721198579516,-N000894,">Bereichswahl</a></li><li class="intern depth_4 linkItem " title="Hörer*innenanmeldung" id="link000895"><a class="depth_4 link000895 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AmREF266sA6RfHkCum~pw6QHIoh6aCPF0NoSzcXIB2pJaiqKPz9~9tBgItIOqgSfRacDNwE9mh8vLHMftgZI1xegYEu1-PxC8YV861oT2X7ofpn0SJkgpA0ZZwn3IfWMt5GQGWkgstApxBU0IStubwyyK-VlsslCVL-1qVGZzPRetTHsFjcDQiH3L4A__">Hörer*innenanmeldung</a></li></ul></li><li class="intern depth_3 linkItem " title="Meine Module" id="link000905"><a class="depth_3 link000905 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=MYMODULES&amp;ARGUMENTS=-N591721198579516,-N000905,">Meine Module</a></li><li class="intern depth_3 linkItem " title="Meine Veranstaltungen" id="link000906"><a class="depth_3 link000906 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=PROFCOURSES&amp;ARGUMENTS=-N591721198579516,-N000906,">Meine Veranstaltungen</a></li></ul></li><li class="tree depth_2 linkItem branchLinkItem " title="Prüfungen" id="link000880"><a class="depth_2 link000880 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000880,-A22%5Fstud%5Fprf">Prüfungen</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Angemeldete Prüfungen/Prüfungsliste" id="link000911"><a class="depth_3 link000911 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=MYEXAMS&amp;ARGUMENTS=-N591721198579516,-N000911,">Angemeldete Prüfungen/Prüfungsliste</a></li><li class="intern depth_3 linkItem " title="Prüfungsanmeldung" id="link000912"><a class="depth_3 link000912 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXAMREGISTRATION&amp;ARGUMENTS=-N591721198579516,-N000912,">Prüfungsanmeldung</a></li></ul></li><li class="tree depth_2 linkItem branchLinkItem " title="Ergebnisse" id="link000881"><a class="depth_2 link000881 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000881,-A22%5Fstud%5Fergebn">Ergebnisse</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Prüfungsergebnisse" id="link000915"><a class="depth_3 link000915 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXAMRESULTS&amp;ARGUMENTS=-N591721198579516,-N000915,">Prüfungsergebnisse</a></li><li class="intern depth_3 linkItem " title="Modulleistungen" id="link000916"><a class="depth_3 link000916 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=COURSERESULTS&amp;ARGUMENTS=-N591721198579516,-N000916,">Modulleistungen</a></li><li class="intern depth_3 linkItem " title="Leistungsübersicht" id="link000917"><a class="depth_3 link000917 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=STUDENT_RESULT&amp;ARGUMENTS=-N591721198579516,-N000917,-N0,-N000000000000000,-N000000000000000,-N000000000000000,-N0,-N000000000000000">Leistungsübersicht</a></li><li class="intern depth_3 linkItem " title="Meine Dokumente" id="link000918"><a class="depth_3 link000918 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=CREATEDOCUMENT&amp;ARGUMENTS=-N591721198579516,-N000918,">Meine Dokumente</a></li></ul></li><li class="intern depth_2 linkItem " title="Kontakt" id="link000889"><a class="depth_2 link000889 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000889,-A21%5Fstud%5Fkontakt%5Fform">Kontakt</a></li></ul></li><li class="tree depth_1 linkItem branchLinkItem " title="BEWERBUNG/REGISTRIERUNG" id="link000947"><a class="depth_1 link000947 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000947,-Abuz%5Fstart">BEWERBUNG/REGISTRIERUNG</a><ul class="nav depth_2 linkItemContainer"><li class="intern depth_2 linkItem " title="Meine Bewerbungen" id="link000948"><a class="depth_2 link000948 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-Aww2dWAA0r16M32opHq1~aLJTtT5gaSUMJ0jmAqUriFe2ZAp-VVltpVltiXKMhlOEt~IoQOecqbg103ZYrxvgotgQ2-XUQMkrNYfvlUls4BTYvXJEl0aSYAqwM-hcIiffzqf16KdUpU7Wx7DPJuUEkteQX8jSH6G~MYiiRUk_">Meine Bewerbungen</a></li><li class="intern depth_2 linkItem " title="Informationen für Fachwechsler" id="link000949"><a class="depth_2 link000949 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000949,-Abuz%5Ffw">Informationen für Fachwechsler</a></li><li class="tree depth_2 linkItem branchLinkItem " title="Dokumente" id="link000950"><a class="depth_2 link000950 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000950,-Abuz%5Fdok">Dokumente</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Meine Dokumente" id="link000951"><a class="depth_3 link000951 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=CREATEDOCUMENT&amp;ARGUMENTS=-N591721198579516,-N000951,">Meine Dokumente</a></li></ul></li><li class="intern depth_2 linkItem " title="FAQ" id="link000952"><a class="depth_2 link000952 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000952,-Abuz%5Ffaq">FAQ</a></li></ul></li><li class="tree depth_1 linkItem branchLinkItem " title="VORLESUNGSVERZEICHNIS" id="link000380"><a class="depth_1 link000380 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000380,-A00%5Fvorlesungen">VORLESUNGSVERZEICHNIS</a><ul class="nav depth_2 linkItemContainer"><li class="intern depth_2 linkItem " title="Sommersemester 2023" id="link001262"><a class="depth_2 link001262 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AGkaTgaAXKycqpUl5oToPDwElyPMmTdtHBWeKLMEDB3OqlFyw77~1zi1oZlHq1-mzr2qKBC2KTcCJ~d2nzhOJcKI0jIdVAcAgyJ0lnSKxIfq~RmKww92nBe1sSUtVQtt8DkWxosJGHrshJN0k2hVPzAUc6wVRxga16rujQ4Z7~Z-5o9fiZiqBBAqhbQ__">Sommersemester 2023</a></li><li class="intern depth_2 linkItem " title="Wintersemester 2022/23" id="link001234"><a class="depth_2 link001234 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AdoaNUMtpGS1peQ1pB4bIy152XfkXZiVLnBoATuImM-XnkPcZkUMOpN6GK-VphJiIiY1kjaHMrYCKS1n2qzS8sw7tx0ssR3N5ORekeGMTTErGsydPgcNwb~pRphEqg9xWb6sZIgZ0~DlIJZcq81nZla~ENHAFyAEfichvFP~xg779SQGEoPRgLoNp2w__">Wintersemester 2022/23</a></li><li class="intern depth_2 linkItem " title="Suche" id="link000544"><a class="depth_2 link000544 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AeF4FzCHg1MlrRirofud69suG-QGm23dd0WzWK60x7lJO1kiCP8BgQRGE6p6N7ybGTnjWeTIxu7OSqp31zBFlLJAlihiv12cnkCL6vuhgcDJ4-HJYWqndGjLf~~at8qcNJ1OUYpywQv9nhRBEeqq7n23QBdNTK-s_">Suche</a></li><li class="tree depth_2 linkItem branchLinkItem " title="Archiv" id="link000553"><a class="depth_2 link000553 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000553,-A">Archiv</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Sommersemester 2022" id="link001240"><a class="depth_3 link001240 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AzBOftDPQ8vOdLiOhtBSNh4YTTgdDzyh2QBfA~tgBvh-ob7VGa1BstT5JhK8m9L3nVmDK7vDVVPCnT3KFwX-FyW77Y-lNqBWAAboah-O5CqWEe00DkCPPzsvUzX71pELsK~zIvkLlQ0FsXA79bQYq~abFBsZLYT2y5oN~7C~n4gSgHTGmwv05YlEwRg__">Sommersemester 2022</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2021/22" id="link001230"><a class="depth_3 link001230 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A5TqZWiXFcIFRlaH3zOKAYThy1RestJocmB47fYJWpE8QQnIdIW3Vn8spaOIXeaLAfo1f5AaiSnL4ujY1sxiYeWE2-ve5vgroxAyFD5x1ekkfI6um13wHCrK0ofBquPKVE66ekBikCrzw2fhkcyE2kDF7bTnuHXZ1f8n8peuYGqtEsRGR-VjiwZA9xQ__">Wintersemester 2021/22</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2021" id="link001222"><a class="depth_3 link001222 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A8q4Gb-T8c7FnnS32qi7P5HAXzC1Gd7ZzKTywWB3jSHWwhlRy-djxADzGKmOeI7opJZ1TkxHFr7h6uC4SCFtzvDsqHboEYUzjd61UHAETxRLp~z-lMLSThR6Om0lJfS1Y3xQwsl-sZX9ePMee8QahenaNxgDE3-zqi8X8a929~41E3FHmg7-NTJweNA__">Sommersemester 2021</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2020/21" id="link001214"><a class="depth_3 link001214 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AMpa2DnjYle5WEuJxUSyBWZwvo5CluRDcDfFh~b4ERVTzjnFH4WoiAMHInGNfsfXVK3WVsFP6Iq-nakhQcuU8-tTMaXdostUQlSpFBA16hjmKKiPLgs0JWVwEAJN2cAbe26wQP~N5n4-j9lRuob~8gr~TfXeZzHxiAvqZsoDd0RzofckLbdznseB8AQ__">Wintersemester 2020/21</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2020" id="link001207"><a class="depth_3 link001207 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AjkfXmps1PbhfB1t83j4MlPNDOFkZT8yeA1wjRSzP7WcK4L~~wQsuWQKEHmQhGk7-xoZpssp946IMN3fvJdP5rvS06NQyX5zxu5my5s~Fv0VHZ64iSaHkuF1PnPeeJ-Kyu1Ku-gkNiMsJnq1ScSQwnSXGefef4zHPxWRLK7B83I~lcbALfho8tXue8g__">Sommersemester 2020</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2019/20" id="link001194"><a class="depth_3 link001194 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A~~5j-4jStzKrEA5ixNk2uPTL7YynqWQrKqPYDuLE8AsiDT7H-tPtfzidyYBarE2p9Jx2lDjRn2rNnDXf3k7hSXYnXTeckqMsDR7W6--t4Fw7SOoMpq6VEaTW5ZcZz5CqBVQFMmEmCumgfvrtmE5YyxPDoV1C5Vz0e4w95y6yGvt2kE27OXHHoekM0Q__">Wintersemester 2019/20</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2019" id="link001188"><a class="depth_3 link001188 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AmDoWgZYUobA1OdKHzGolZOkMztzPG2OISQgQlOY7sx5igNdRYgUAaBMadtcl1OEaebUSARQpnaifQJUj9lcFyK~Jecs5cgiY9X38Wa8K5QAHM~WEbtI6RGWF3Y8csi1k4e0K~wNMaZgPM~BTH5KrzjY-9JRKQGNCQrcbumhWCTXN5U-t-OIRbolUKg__">Sommersemester 2019</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2018/19" id="link001180"><a class="depth_3 link001180 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A9xNsQet1ggOIBDnh6dn~76DYIHWIRWrLy5KqPLv1Ro1F2DK7D8sgPfs~qtQsqqS7loUp~puKkF8KWFF3ZIEGttOakGDEzUSkno3Zzn9ghmkZ8Lvpl9dzsLQwgIjNV5~i~Hjnqp1gn9rbJFV6-qjmjgft5fBv4d8Md7Vq2LDrr8KPOMtO1S3BtAUziQ__">Wintersemester 2018/19</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2018" id="link001173"><a class="depth_3 link001173 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A9sLsChgqQrpcfeAd8ipiaxtEUEWA5Uz2i7OearZIRWYfhTcuzqrRdo5SF7Ey872e0wa~xl7ezCiJy~NDLOjPVnEdirc0d3gXUaAZIAhZx16MUrv10zbJnuB6h9zu7qThPwFiwOreZpzGlKSfRm5w67-VJJN45ts6eaqm11mJkBlhH-iwnPXkiQBG2w__">Sommersemester 2018</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2017/18" id="link001168"><a class="depth_3 link001168 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A-vbA2A8TwRD2~ovoawPpghHK9fDtikfdQppNpd1MQuC55GzBnM5Yuxz3z6dMSUHh-C0Rk8OU8EBcm8WK5EW5XO6WLiE2o1nYSy--aaWMHUOLyCW2xq8ZflYzrFDICjT46cOlLaT9FCsuAdByj2Sm7LG3wCRX-7nh4kFbmpqVhBPZASLpglq8BhXPCA__">Wintersemester 2017/18</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2017" id="link001155"><a class="depth_3 link001155 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AahY6mwSyMaIBU4ENUISOXFb3phyDja6P59831B2~jqqiaeXLr9eunG0LcNSYWSjc7H33xLmhFlPriYoNrtDsQYM897G0wmLzxhblYXmnRRWyFfgMkbRhybd0VTz99OhPPFem2BXM~8xKRG2HnZgUFlIIO6RfomgeAxuK7~EE3bYzPBxsUoTw3co35g__">Sommersemester 2017</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2016/17" id="link001118"><a class="depth_3 link001118 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A7Yc3tEU9np2Nra~J6XgEc9bBoQmBHWM300NWk5H7tIg0pzSVJgF3o9MYwTqeMfByX1FBDVPM7F2YajI7JHXiFR1XWVVdB1NI8aLMrMAOTNAW0P5llBaBK2CKxky5afPBc1Hrn4HiICMHjMf8QU7tVXzjD61AvBZUATnWaqEjMOr5jYcdFWJHuP-Qjg__">Wintersemester 2016/17</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2016" id="link000830"><a class="depth_3 link000830 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A~afXTBAYz99AxWN3gwlE6x7S~AaL6GGEb-pmKjVpyOnCjrAX0ZOjT~LKdBpre4IYVaE~047R585RF~mZgqwbsIN7v9n4COlT7FhAHP~U7ZnMh56euUjOdRUXfrIT-E0jRy~FvdpjIW8yuALvVvyYXJ4m5ZZHOKtvAJb7wqrzokDyuO~RIamBiJkv1g__">Sommersemester 2016</a></li><li class="intern depth_3 linkItem event" title="Wintersemester 2015/16" id="link000820"><a class="depth_3 link000820 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-APYEzD-Whq3lRwfLeptHskhAG4pR5Wvj394zXP63SjCRZbgh4wSId4V2A5~dppZ6DklJxRxKkLkd6bj8KyzuoiOUv3sYdcsGnO3yYlcODZg0yKdB1QDzK70mibia8XQa1vnZaccfNagUnX~wMAxbedA21-H~8H1bcL1DzhaxmRP~oHfIJbZXCv5~GUQ__">Wintersemester 2015/16</a></li><li class="intern depth_3 linkItem event" title="Sommersemester 2015" id="link000810"><a class="depth_3 link000810 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AVp5ojNXIq-bJYCLNwfalBpNLRAq3eLNGbm-qQMNc3iFnj3ljozqglghblgDwHqO53ZBN9cKaA84V4P-N0xlOg53JVHKFp~5BEK9eCrVgb8W8JcZkdZACygVGic34qGuaVR1DtlEEiJZ9h-vqwcRRllWxoju~etct~zp9UkkidBX82fBcMYkYm3ODEA__">Sommersemester 2015</a></li><li class="intern depth_3 linkItem event" title="Wintersemester 2014/15" id="link000802"><a class="depth_3 link000802 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AKAtRwTgqjJvDIWNCfqDMjPVmBpcLoN~CUMF3x73~OU87qHmahXPukMJDpQjHwP1UUYoOaCkpMxXE6byJMNsHLjHF6FxqFyxYrzs8SDqdZlgUcbl0qnC9XO9Uj7bSXzG-uMATTR2WXHFawt92oqWQxUt4ObYf3QpviCDeGfPseJSmfPbpZWO8gZFW2Q__">Wintersemester 2014/15</a></li><li class="intern depth_3 linkItem event" title="Sommersemester 2014" id="link000795"><a class="depth_3 link000795 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AT2rIId40infhRqdZtdKcjdsfizLeDqXoMgfHSB8RihStmXYhO9Crni-twlu-GT8SNzmoFX0jBWhMo1l-6sKSBMxyQlzFQI4qizniEiDSJMbXiv0Lic3~Si1w~s3xlXw-LbM~SdcgqxXHdvPsMNLIrSySGUKU4KDpDAaOsC3OsEeswcL0bdu5HbrGPw__">Sommersemester 2014</a></li><li class="intern depth_3 linkItem event" title="Wintersemester 2013/14" id="link000785"><a class="depth_3 link000785 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AlmkuDaUlMBu0f-GyT3EspI9EMbwxBefZLo55U14V22YJn2s9QA6H5CTulqyvDp6gMgfOIseNGP3nuSQZqHQYE7lCl-BOk~ZIKodczA59pPUjTqeWKDq8TaryfmxEYc2EmluL0GXjOdOoBPpx8bXWz72cNwr69q3yz6EjVCIxtYM4IzE5eVE5~8vTtw__">Wintersemester 2013/14</a></li><li class="intern depth_3 linkItem event" title="Sommersemester 2013" id="link000771"><a class="depth_3 link000771 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AMWq5UECYgIigXtuIKmKq5rKavICcvn06Qn-V9EJJtS5IM0Y2BPHqZweM57tmbvtdSWkci3R9t3Y4J85ozHfFlR5FGeuTvIUz30RMwMcilJwAVrAIX8dt19Xy4DFjjpd2wW0kEGOUbe5MNSbS69PJdokWWLviSQegNzx3w2JCDgIhZDzeIEPhqKG9tA__">Sommersemester 2013</a></li><li class="intern depth_3 linkItem event" title="Wintersemester 2012/13" id="link000762"><a class="depth_3 link000762 navLink event" href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A6lIud4-JSduFMCUqeTrEdgBWh0zorZ1XaXvg-XXcbMVwenEZfZegxUGnasFb7aU5Y7edAfNzLKHqb79Hp-ReFoNQwK19ZpcFuZVPGPxTn1n5NDdERnHVb5gTKGKbGU1Jfrf~TCcavvgyvLvOGOuWSutQu5tmC7ETzA9qmpouwhyzhZJG398XqtdifA__">Wintersemester 2012/13</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2012" id="link000749"><a class="depth_3 link000749 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A32ixTztgGW7CA6fXWSCaVQ6FefyB6GKYsZIgxeTqsHzvIwBxSTzR1TgRON8dcINw7NRvO75qK6ytcPmbhYUlWJJU3c0RiEU7HjxHatDsgt2Ebo5ZULzhMiklMQQif9HPQ5c0LG3LDkzTq7uPe2xbERybikxQ2CrEWSeInjgGoT6WCZRVcAvww1ZKbA__">Sommersemester 2012</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2011/12" id="link000730"><a class="depth_3 link000730 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-ABxJGbhH-UDxei7w75ldgr5LG7H67PctLd--mpLH2yGHRCzekEqz~zMMjJQuXVDwpkHlqDej~PHslcMXr81OwQ1glGMQ5w58SWpx1yh1aYJTciqtHQccAzYD2SArzC-ICJ4n8vw8YoLa8jpONw25ABQO6a4a3hDBJBFveWjqaPo~kx75OomwUqtRFMA__">Wintersemester 2011/12</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2011" id="link000615"><a class="depth_3 link000615 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AM9A11hzsuHNLLv2iI5Hn~2m~1zS4nQRKZF8nAL-5z0byBY~w-ljj9WG0K3AVFCGWveU-oenPZi1QmhawAbSCcfLnc8fvIHoMHJhDfskAnUPAWZcIz6nG8YwjETLH3eM8V2AaE7773gu0FVh40DWfuLEAaVIVu02huB176eJZjy9QLkhp6e3AuWGbIA__">Sommersemester 2011</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2010/11" id="link000590"><a class="depth_3 link000590 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AxIosUieML0rONDz3HTOJ1bfSGZA6JZ-12X6x-V4wXu8HnlpBYiR7HbWwITVvA1vTnxBzOABKMo3PR5SYxqam2vl9jgZGQ3EXnK0G8tpixVPF8cW3brCT2EaH~617EcdNtx7H1ZNJ9Dmk5n5kF7th73KCsLsgNLiB0kPT5YxrS7HF6nRBchSDCpRbuw__">Wintersemester 2010/11</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2010" id="link000580"><a class="depth_3 link000580 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-An1FbVsyDhpb0Z6ihcby-6TDAPRcpzccUGVm0aq8WNu4YMQRNGINjpPOIsRRitkVQf26CFQImqcDetRTt2ETNqiwVC7ZtKE4uMcM~R--iS7afXFPaRSaoEZNhfsVO2xIHCYbG85recz0xLvzfNcGYDVgSDBtRN-A46ZcvS-wTPpkboH8SZi1VQT6Yww__">Sommersemester 2010</a></li><li class="intern depth_3 linkItem " title="Wintersemester 2009/10" id="link000574"><a class="depth_3 link000574 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AgHq-92JNATki2bwW0Mc~Tb8CU2q8PRDMMsCDIFaHI5yZmbOO2v8Rgv0XFwx6Zefa0iUCpQhTsr6KjiAglYImbQ59w5ORoz-xlnmYpnc7H9eX5MNyv80vEDvJ5F~FCODtYBRoY32tWaUzcmxyJsw8gkxwgG~ZKVKV2B0m3~pgHmd4rd7dSnliR2jb6g__">Wintersemester 2009/10</a></li><li class="intern depth_3 linkItem " title="Sommersemester 2009" id="link000554"><a class="depth_3 link000554 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A3wS~~AJnHvun2Vf0-hOLWcemJpzkaX2RyBcyKZCxI17hliau684huBRaZ7VThSVsA57aslO8y--DaL-Z~q22jVDK38rkA0lAqRtzF9zywIn6Aof2RYZmdslqezS1tjq4dxkmLb0YwBQhJO7AwBaKrkAK5g8igSiE6CrkSU3pOuAdFt7SHqvQlALZfA__">Sommersemester 2009</a></li></ul></li></ul></li><li class="tree depth_1 linkItem branchLinkItem " title="SERVICE" id="link000933"><a class="depth_1 link000933 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000933,-A01%5Fservice">SERVICE</a><ul class="nav depth_2 linkItemContainer"><li class="intern depth_2 linkItem " title="Persönliche Daten" id="link000935"><a class="depth_2 link000935 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=PERSADDRESS&amp;ARGUMENTS=-N591721198579516,-N000935,">Persönliche Daten</a></li><li class="tree depth_2 linkItem branchLinkItem " title="TAN-Verfahren" id="link000936"><a class="depth_2 link000936 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000936,-A21%5Fstud%5Ftan%2Dverfahren">TAN-Verfahren</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="TAN-Manager" id="link000937"><a class="depth_3 link000937 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A5IhoB2dzINYGFFNZxfDKvguwD3JbVaAru9pBiRzuWRiiNaXvnyGPbX9HF3~uHNuaGafOZH3j6rodsaiAGfMh3qGwNrzrrdqdsaFN1DthuAQiDeNCuxwc6z6mhw-lIsbELDEgXJu1sP5B4wB4ywtmQihbow__">TAN-Manager</a></li><li class="intern depth_3 linkItem " title="Ersatz-TAN anfordern" id="link000938"><a class="depth_3 link000938 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000938,-A22%5Fstud%5Ftan%2Dersatz%5Fform">Ersatz-TAN anfordern</a></li></ul></li><li class="intern depth_2 linkItem " title="Meine Dokumente" id="link000939"><a class="depth_2 link000939 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=CREATEDOCUMENT&amp;ARGUMENTS=-N591721198579516,-N000939,">Meine Dokumente</a></li><li class="tree depth_2 linkItem branchLinkItem " title="Anträge" id="link000940"><a class="depth_2 link000940 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000940,-A21%5Fstud%5Fantraege">Anträge</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Elektronische Anträge" id="link001164"><a class="depth_3 link001164 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-A01rWjaMaktyxUvoVUaDbC5rph5jhUgmAabl54EB2b~zp-y9wxCMBT78~0Wd5jWplGOLwQ22c5Q9kNVb1mXZYTAWe5Eslp-HxxvK64kCjzY0A24-LGYMiofKLV2UYARMeg7WN1MiPRXXwsDYeY18Ptb0b3nU79R6ZYw__">Elektronische Anträge</a></li></ul></li><li class="tree depth_2 linkItem branchLinkItem " title="Meine Rückmeldeinformationen" id="link001197"><a class="depth_2 link001197 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N001197,-A21%5Fstud%5Fsperren">Meine Rückmeldeinformationen</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Meine Sperren" id="link001198"><a class="depth_3 link001198 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=HOLDINFO&amp;ARGUMENTS=-N591721198579516,-N001198,">Meine Sperren</a></li></ul></li><li class="tree depth_2 linkItem branchLinkItem " title="Räume" id="link001134"><a class="depth_2 link001134 navLink branchLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N001134,-A01%5Fraeume">Räume</a><ul class="nav depth_3 linkItemContainer"><li class="intern depth_3 linkItem " title="Raumliste" id="link001135"><a class="depth_3 link001135 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=ACTION&amp;ARGUMENTS=-AcA-C~UWl4aVxFp9MivDcYSYAm6oIP9~gntWzJ5p57iIBGZorYB1Uuw0MkF50wvBpewWBWqC9pdQjzWfnkR8tqTd4Fxm9HfXYBrK5YnRmikftlzjbLxoKR4TfIgOn723OrReJCL9kaAKQ2256GiPYyjE_">Raumliste</a></li><li class="intern depth_3 linkItem " title="Raumsuche" id="link001136"><a class="depth_3 link001136 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N001136,-A01%5Fraumsuche">Raumsuche</a></li><li class="intern depth_3 linkItem " title="Gebäudeliste/Campusplan" id="link001244"><a class="depth_3 link001244 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N001244,-A01%5Fcampusplan">Gebäudeliste/Campusplan</a></li></ul></li></ul></li><li class="intern depth_1 linkItem " title="HILFE" id="link001070"><a class="depth_1 link001070 navLink " href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N001070,-A00%5Fhilfe">HILFE</a></li></ul>
+			
+				</div>
+				<div id="pageHeadBottom_3" class="pageElementTop">
+
+											<div id="pageHeadSwitchLang" class="pageElementRight">
+						
+							
+															<a href="/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=CHANGELANGUAGE&amp;ARGUMENTS=-N591721198579516,-N002" class="img img_LangEnglish pageElementLeft" title="English">English</a>
+							
+														
+														
+																								<a id="logoutButton" class="img img_arrowLogout" title="Abmelden" href="https://cndsf.zdv.uni-mainz.de/IdentityServer/Account/Logout?returnUrl=https%3a%2f%2fjogustine.uni-mainz.de%2Fscripts%2Fmgrqispi.dll%3FAPPNAME%3DCampusNet%26PRGNAME%3DLOGOUT%26ARGUMENTS%3D-N591721198579516%2C-N001&amp;cancelUrl=https%3a%2f%2fcndsf.zdv.uni-mainz.de%2FIdentityServer%2Fconnect%2Fauthorize%3Fclient_id%3DClassicWeb%26scope%3Dopenid%2520DSF%26response_mode%3Dquery%26response_type%3Dcode%26nonce%3DkQEKs7lCwN2CEXvCDeD1Zw%3D%3D%26redirect_uri%3Dhttps%253a%252f%252fjogustine.uni-mainz.de%252Fscripts%252Fmgrqispi.dll%253FAPPNAME%253DCampusNet%2526PRGNAME%253DLOGINCHECK%2526ARGUMENTS%253D-N000000000000001%252Cids_mode%2526ids_mode%253DY">Abmelden</a>
+																					</div>
+									</div>
+			</div>
+			
+			<div id="pageContentContainer" class="pageElementTop">
+				<!-- Anker für Content2 -->		
+				<div id="pageLeft" class="pageElementLeft"> <!-- LEFT COL OF CONTENT -->
+				 	<div id="pageLeftTop"></div>
+				</div>
+				
+				<div id="pageContent" class="pageElementLeft">
+					<div id="featureBanner"></div>
+					<a name="mainContent" class="hidden">&nbsp;</a> <!-- ANCHOR MAIN CONTENT -->
+					<div id="pageContentTop" class="pageElementTop">
+												<div id="loginData">
+							<span class="loginDataLoggedAs"><b>Sie sind angemeldet als<span class="colon">:</span> </b></span>
+							<span class="loginDataName" id="loginDataName"><b>Name<span class="colon">:</span> </b>Roman Titus Höhn</span> <span class="loginDataDate"><b>am<span class="colon">:</span></b> 17.02.2023</span> <span class="loginDataTime"><b>um<span class="colon time_colon">:</span></b> 20:08 Uhr</span>
+						</div>
+											</div>
+					<div id="contentSpacer_IE" class="pageElementTop"><!-- FORCE MIN HEIGHT IN IE<7 -->
+					<!--[if lt IE 7]>
+						<p class="error">
+							Sie verwenden eine Browserversion, die nicht mehr unterstützt wird. Bitte upgraden Sie Ihren Browser auf die aktuelle Version, um funktionale Störungen und Darstellungsprobleme zu vermeiden.
+						</p>
+					<![endif]-->
+							
+					
+<!--
+	© DATENLOTSEN INFORMATIONSSYSTEME GMBH
+	e-mail: 		info@datenlotsen.de
+	web: 			http://www.datenlotsen.de
+	
+	customer: 		jgu
+	version: 		13.00.003
+	filename:		students_results.htm
+//-->
+
+	<script type="text/javascript"></script>
+	
+
+<h1>Studienergebnisse von: Roman Titus Höhn</h1>
+
+	
+
+<div class="tb">
+	<form id="students_results" action="/scripts/mgrqispi.dll" method="post">
+		<div>
+			<div class="tbhead">Master Wirtschaftspädagogik (2018)</div>
+				
+		</div>
+	</form>
+
+						<table class="nb list students_results">
+				<thead>
+				<tr class="tbsubhead">
+					<th colspan="2"></th>
+					<th style="text-align:center;">Datum</th>
+										<th style="text-align:right;">Credits</th>
+															<th style="text-align:right;">Angerechnet</th>
+					
+					<th class="tbsubhead" style="text-align:right;">Note</th>
+
+																				<th class="tbsubhead" style="text-align:center;">ECTS-Note</th>
+															
+					<th class="tbsubhead" style="text-align:center;">Status</th>
+				</tr>
+				</thead>
+				<tbody>
+				
+
+											<tr class="subhead level00">
+							<td colspan="2">
+								Wirtschaftspädagogik
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+											<tr class="subhead level01">
+							<td colspan="2">
+								Wirtschaftswissenschaften
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+											<tr class="subhead level02">
+							<td colspan="2">
+								Kerntheorien und Kernmethoden
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level02">Summe&nbsp;Kerntheorien und Kernmethoden</td>
+
+															<td class="level02">&nbsp;</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;"></td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;"></td>
+								
+								<td class="level02" style="text-align:right;">
+									 &nbsp; 
+								</td>
+
+																																	<td class="level02" style="text-align:left;">&nbsp;</td>
+																																						<td class="level02" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+							
+							
+							
+							
+							
+						
+															
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.C52.2400</td>
+									  <td class="tbdata">
+										  											<a name="_374328395022734" id="result_id_374328395022734" href="#374328395022734" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N374328395022734','Ergebnisdetails',800,600);">Corporate Finance Theory</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_374328395022734');
+											   PopupLink.href='#374328395022734';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">2,7</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.996.3310</td>
+									  <td class="tbdata">
+										  											<a name="_379615152579396" id="result_id_379615152579396" href="#379615152579396" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N379615152579396','Ergebnisdetails',800,600);">Computational Intelligence</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_379615152579396');
+											   PopupLink.href='#379615152579396';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.08.079.555</td>
+									  <td class="tbdata">
+										  											<a name="_375848155183930" id="result_id_375848155183930" href="#375848155183930" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N375848155183930','Ergebnisdetails',800,600);">Einführung in die Programmierung (Exp.)</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_375848155183930');
+											   PopupLink.href='#375848155183930';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.08.079.565</td>
+									  <td class="tbdata">
+										  											<a name="_378014819990474" id="result_id_378014819990474" href="#378014819990474" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N378014819990474','Ergebnisdetails',800,600);">Einführung in die Softwareentwicklung (Exp.)</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_378014819990474');
+											   PopupLink.href='#378014819990474';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">2,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+											<tr class="subhead level02">
+							<td colspan="2">
+								Internationale Ausrichtungen und volkswirtschaftliche Vertiefung
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.184.4105</td>
+									  <td class="tbdata">
+										  											<a name="_370764949350214" id="result_id_370764949350214" href="#370764949350214" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N370764949350214','Ergebnisdetails',800,600);">Mikroökonomie II</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_370764949350214');
+											   PopupLink.href='#370764949350214';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">3,3</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level02">Summe&nbsp;Internationale Ausrichtungen und volkswirtschaftliche Vertiefung</td>
+
+															<td class="level02">&nbsp;</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;">  6,0</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;">  6,0</td>
+								
+								<td class="level02" style="text-align:right;">
+									 &nbsp; 
+								</td>
+
+																																	<td class="level02" style="text-align:left;">&nbsp;</td>
+																																						<td class="level02" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+													<tr>
+								<td colspan="   8" class="level02">
+																			In diesem Bereich sind   1 Module einzubringen.
+																	</td>
+							</tr>
+						
+						
+							
+							
+							
+							
+							
+						
+															
+
+											<tr class="subhead level02">
+							<td colspan="2">
+								Fachdidaktik
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.181.203a</td>
+									  <td class="tbdata">
+										  											<a name="_372786463302459" id="result_id_372786463302459" href="#372786463302459" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N372786463302459','Ergebnisdetails',800,600);">Modul 2.03a: Lehr-Lern- und Unterweisungsprozesse II</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_372786463302459');
+											   PopupLink.href='#372786463302459';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  8,0</td>
+																				<td class="tbdata" style="text-align:right;">  8,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,7</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level02">Summe&nbsp;Fachdidaktik</td>
+
+															<td class="level02">&nbsp;</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;">  8,0</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;">  8,0</td>
+								
+								<td class="level02" style="text-align:right;">
+									 &nbsp; 
+								</td>
+
+																																	<td class="level02" style="text-align:left;">&nbsp;</td>
+																																						<td class="level02" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+													<tr>
+								<td colspan="   8" class="level02">
+																			In diesem Bereich sind   1 Module einzubringen.
+																	</td>
+							</tr>
+						
+						
+							
+							
+							
+							
+							
+						
+															
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level01">Summe&nbsp;Wirtschaftswissenschaften</td>
+
+															<td class="level01">&nbsp;</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"> 38,0</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"> 38,0</td>
+								
+								<td class="level01" style="text-align:right;">
+									    1,9 
+								</td>
+
+																																	<td class="level01" style="text-align:left;">&nbsp;</td>
+																																						<td class="level01" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+							
+							
+															<tr>
+									<td colspan="   8" class="level01">
+																				In diesem Bereich sind  38,0 Credits einzubringen.
+																		</td>
+								</tr>
+							
+							
+							
+						
+															
+
+											<tr class="subhead level01">
+							<td colspan="2">
+								Wirtschaftspädagogik
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.181.201</td>
+									  <td class="tbdata">
+										  											<a name="_371605031585945" id="result_id_371605031585945" href="#371605031585945" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N371605031585945','Ergebnisdetails',800,600);">Berufs- und Wirtschaftspädagogik II: Theorien und Konzepte (Modul 2.01)</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_371605031585945');
+											   PopupLink.href='#371605031585945';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.181.202</td>
+									  <td class="tbdata">
+										  											<a name="_379827834198421" id="result_id_379827834198421" href="#379827834198421" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N379827834198421','Ergebnisdetails',800,600);">Modul 2.02: Unterweisungs- und unterrichtspraktische Studien II</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_379827834198421');
+											   PopupLink.href='#379827834198421';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;"> 12,0</td>
+																				<td class="tbdata" style="text-align:right;"> 12,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,3</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.181.204</td>
+									  <td class="tbdata">
+										  											<a name="_383065995693739" id="result_id_383065995693739" href="#383065995693739" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N383065995693739','Ergebnisdetails',800,600);">Modul 2.04: Empirische Berufsbildungsforschung II</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_383065995693739');
+											   PopupLink.href='#383065995693739';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level01">Summe&nbsp;Wirtschaftspädagogik</td>
+
+															<td class="level01">&nbsp;</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"> 24,0</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"> 24,0</td>
+								
+								<td class="level01" style="text-align:right;">
+									    1,2 
+								</td>
+
+																																	<td class="level01" style="text-align:left;">&nbsp;</td>
+																																						<td class="level01" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+							
+							
+							
+							
+							
+						
+															
+
+											<tr class="subhead level01">
+							<td colspan="2">
+								Allgemeines Schwerpunktfach
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+											<tr class="subhead level02">
+							<td colspan="2">
+								Management and Economics
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.181.580</td>
+									  <td class="tbdata">
+										  											<a name="_380774950280610" id="result_id_380774950280610" href="#380774950280610" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N380774950280610','Ergebnisdetails',800,600);">Personalauswahl</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_380774950280610');
+											   PopupLink.href='#380774950280610';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,3</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.C52.1310</td>
+									  <td class="tbdata">
+										  											<a name="_374328390198681" id="result_id_374328390198681" href="#374328390198681" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N374328390198681','Ergebnisdetails',800,600);">Corporate Governance deutscher Unternehmen</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_374328390198681');
+											   PopupLink.href='#374328390198681';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">3,7</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.C52.1410</td>
+									  <td class="tbdata">
+										  											<a name="_370764960528026" id="result_id_370764960528026" href="#370764960528026" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N370764960528026','Ergebnisdetails',800,600);">Performancemessung und Anreizgestaltung</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_370764960528026');
+											   PopupLink.href='#370764960528026';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">4,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.C52.1340</td>
+									  <td class="tbdata">
+										  											<a name="_372217170527898" id="result_id_372217170527898" href="#372217170527898" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N372217170527898','Ergebnisdetails',800,600);">Wirtschaftsprüfung</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_372217170527898');
+											   PopupLink.href='#372217170527898';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">1,7</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.996.4110</td>
+									  <td class="tbdata">
+										  											<a name="_370764953646960" id="result_id_370764953646960" href="#370764953646960" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N370764953646960','Ergebnisdetails',800,600);">International Market-Oriented Management</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_370764953646960');
+											   PopupLink.href='#370764953646960';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">3,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.996.4140</td>
+									  <td class="tbdata">
+										  											<a name="_372217166243911" id="result_id_372217166243911" href="#372217166243911" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N372217166243911','Ergebnisdetails',800,600);">Aufbaumodul International Management and Marketing IV: Market Research</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_372217166243911');
+											   PopupLink.href='#372217166243911';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">2,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+											<tr>
+													 									  <td class="tbdata">M.03.996.4180</td>
+									  <td class="tbdata">
+										  											<a name="_378023670476245" id="result_id_378023670476245" href="#378023670476245" onclick="javascript: dl_popUp('/scripts/mgrqispi.dll?APPNAME=CampusNet&amp;PRGNAME=RESULTDETAILS&amp;ARGUMENTS=-N591721198579516,-N000917,-N378023670476245','Ergebnisdetails',800,600);">Aufbaumodul International Management and Marketing V: Marketing Intelligence</a>
+											   <script type="text/javascript">
+											   <!--
+											   var PopupLink=document.getElementById('result_id_378023670476245');
+											   PopupLink.href='#378023670476245';
+											   //-->
+											   </script>
+										  										   </td>
+							 												<td class="tbdata" style="text-align:right;">&nbsp;</td>
+													<td class="tbdata" style="text-align:right;">  6,0</td>
+																				<td class="tbdata" style="text-align:right;">  6,0</td>
+						
+							<td class="tbdata" style="text-align:right;">4,0</td>
+
+																													<td class="tbdata" style="text-align:center;">&nbsp;</td>
+																					
+							<td class="tbdata" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level02">Summe&nbsp;Management and Economics</td>
+
+															<td class="level02">&nbsp;</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;"> 42,0</td>
+								
+																<td class="level02" style="text-align:right;white-space:nowrap;"> 42,0</td>
+								
+								<td class="level02" style="text-align:right;">
+									    2,8 
+								</td>
+
+																																	<td class="level02" style="text-align:left;">&nbsp;</td>
+																																						<td class="level02" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+							
+							
+															<tr>
+									<td colspan="   8" class="level02">
+																				In diesem Bereich sind  42,0 Credits einzubringen.
+																		</td>
+								</tr>
+							
+							
+							
+						
+															
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level01">Summe&nbsp;Allgemeines Schwerpunktfach</td>
+
+															<td class="level01">&nbsp;</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"> 42,0</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"> 42,0</td>
+								
+								<td class="level01" style="text-align:right;">
+									    2,8 
+								</td>
+
+																																	<td class="level01" style="text-align:left;">&nbsp;</td>
+																																						<td class="level01" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+															<tr>
+									<td colspan="   8" class="level01">
+																					Es sind maximal  42,0 Credits einzubringen.
+																			</td>
+								</tr>
+							
+							
+							
+							
+							
+						
+															
+
+											<tr class="subhead level01">
+							<td colspan="2">
+								Masterarbeit
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level01">Summe&nbsp;Masterarbeit</td>
+
+															<td class="level01">&nbsp;</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"></td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"></td>
+								
+								<td class="level01" style="text-align:right;">
+									  
+								</td>
+
+																																	<td class="level01" style="text-align:left;">&nbsp;</td>
+																																						<td class="level01" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+							
+							
+							
+							
+							
+						
+															
+
+											<tr class="subhead level01">
+							<td colspan="2">
+								Zusatzqualifikationen
+							</td>
+							<td style="text-align:center;"></td>
+														<td></td>
+																					<td></td>
+														
+							<td></td>
+
+																													<td style="text-align:center;">&nbsp;</td>
+																					
+							<td></td>
+						</tr>
+					
+
+					
+
+					
+									
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level01">Summe&nbsp;Zusatzqualifikationen</td>
+
+															<td class="level01">&nbsp;</td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"></td>
+								
+																<td class="level01" style="text-align:right;white-space:nowrap;"></td>
+								
+								<td class="level01" style="text-align:right;">
+									 &nbsp; 
+								</td>
+
+																																	<td class="level01" style="text-align:left;">&nbsp;</td>
+																																						<td class="level01" style="text-align:center;"><img src="/img/individual/pass.gif" alt="Bestanden" title="Bestanden"></td>
+						</tr>
+
+						
+						
+							
+							
+							
+							
+							
+						
+															
+
+					
+
+					
+
+					
+											<tr>
+							<td colspan="2" class="level00">Summe&nbsp;Wirtschaftspädagogik</td>
+
+															<td class="level00">&nbsp;</td>
+								
+																<td class="level00" style="text-align:right;white-space:nowrap;">104,0</td>
+								
+																<td class="level00" style="text-align:right;white-space:nowrap;">104,0</td>
+								
+								<td class="level00" style="text-align:right;">
+									 &nbsp; 
+								</td>
+
+																																	<td class="level00" style="text-align:left;">&nbsp;</td>
+																																						<td class="level00" style="text-align:center;"><img src="/img/individual/open.gif" alt="Offen" title="Offen"></td>
+						</tr>
+
+						
+												
+													<tr>
+								<td colspan="   8" class="level00">
+									Erforderliche Credits für Abschluss: 120,0&nbsp;
+									</td>
+								</tr>
+																			</tbody>
+			</table>
+			
+
+<!-- ++++++++++++++++GPA++++++++++++++++ -->
+
+<table class="nb list students_results">
+	<tbody><tr>
+	<th class="tbsubhead" style="text-align:left;">Gesamt-GPA</th>
+	<th class="tbsubhead" style="text-align:right;">   2,1</th>
+	</tr>
+	          	
+		<tr>
+	<th class="tbsubhead" style="text-align:left;">Hauptfach-GPA</th>
+	<th class="tbsubhead" style="text-align:right;">   2,1</th>
+	</tr>
+	</tbody></table>
+
+<!-- ++++++++++++++++GPA END+++++++++++ -->
+</div> <!-- "tb" end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Close Button that navigates the user back to the advisor page -->
+		<!--
+			© DATENLOTSEN INFORMATIONSSYSTEME GMBH
+			e-mail: 		info@datenlotsen.de
+			web: 			http://www.datenlotsen.de
+			
+			customer: 		jgu
+			version: 		13.00.003
+			filename:		foot.htm
+		//-->
+					</div>
+				</div>
+			</div>
+									<div id="pageFoot" class="pageElementTop">
+				<div id="pageFootControls" class="pageElementTop">
+					<div id="pageFootControlsLeft">
+																	<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000917,-Aimprint" class="img img_arrowImprint pageElementLeft" id="pageFootControl_imp">Impressum</a>
+																																									<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000917,-Acontact" class="img img_arrowContact pageElementLeft" id="pageFootControl_con">Kontakt</a>
+																											<a href="#" onclick="window.print();" class="img img_arrowPrint pageElementLeft" id="pageFootControl_pri">Drucken</a>
+						
+																														<a href="?APPNAME=CampusNet&amp;PRGNAME=EXTERNALPAGES&amp;ARGUMENTS=-N591721198579516,-N000917,-ADatenschutz" class="img img_arrowPrivacy pageElementLeft" id="pageFootControl_privacy">Datenschutz</a>
+																										</div>
+					<div id="pageFootControlsRight">
+						<a href="#top" class="img img_arrowUp pageElementRight" id="pageFootControl_up">Zum Seitenanfang</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="IEdiv">&nbsp;</div><!-- purpose of this is to avoid a pretty strange bug in IE's -->
+
+		<!-- in case the schedule exceeds the given width in lower IE's-->
+		<!--[if lt IE 7]>
+			<script language="JavaScript" type="text/javascript">
+				adjustWidth();
+			</script>
+		<![endif]-->
+
+		<div class="invAnchor">
+			<a name="bottom" class="invAnchor">&nbsp;</a>
+		</div>
+
+
+	
+
+	
+</body></html>
